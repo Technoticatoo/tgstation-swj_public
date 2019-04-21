@@ -844,3 +844,63 @@
 	strip_delay = 130
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	actions_types = list()
+
+
+
+// STORMTROOPER ARMOURS
+
+// Stormtrooper
+/obj/item/clothing/head/helmet/space/hardsuit/stormtrooper
+	name = "Stormtrooper Helmet"
+	desc = "A special helmet designed for work in a hazardous, low pressure environment. Armoured and mass produced for troopers of the Imperial Army."
+	icon_state = "hardsuit0-stormtrooper"
+	item_state = "stormtrooper_helm"
+	item_color = "stormtrooper"
+	armor = list("melee" = 35, "bullet" = 15, "laser" = 30,"energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
+
+
+/obj/item/clothing/suit/space/hardsuit/stormtrooper
+	icon_state = "hardsuit-stormtrooper"
+	name = "Stormtrooper Armour"
+	desc = "A special armour designed for work in a hazardous, low pressure environment. Armoured and mass produced for troopers of the Imperial Army."
+	item_state = "stormtrooper_hardsuit"
+	armor = list("melee" = 35, "bullet" = 15, "laser" = 30, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/stormtrooper
+
+
+
+// Scouttrooper
+/obj/item/clothing/head/helmet/space/hardsuit/scouttrooper
+	name = "Scout Trooper Helmet"
+	desc = "A special helmet designed for work in a hazardous, low pressure environment. Armoured and mass produced for scouts of the Imperial Army."
+	icon_state = "hardsuit0-scouttrooper"
+	item_state = "scouttrooper_helm"
+	item_color = "scouttrooper"
+	armor = list("melee" = 35, "bullet" = 15, "laser" = 30,"energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
+
+
+/obj/item/clothing/suit/space/hardsuit/scouttrooper
+	icon_state = "hardsuit-scouttrooper"
+	name = "Scout Trooper Armour"
+	desc = "A special armour designed for work in a hazardous, low pressure environment. Armoured and mass produced for scouts of the Imperial Army."
+	item_state = "scouttrooper_hardsuit"
+	armor = list("melee" = 25, "bullet" = 15, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/scouttrooper
+
+// Sith Hardsuit
+/obj/item/clothing/head/helmet/space/hardsuit/sith
+	name = "Sith Hardsuit Helmet"
+	desc = "A special helmet designed for work in a hazardous, low pressure environment. A Sith does not need armour, the force bends to their will... But they still cannot fly in space without help!"
+	icon_state = "syndicate-helm-black-red"
+	item_state = "syndicate-helm-black-red"
+	item_color = "sith"
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 80,"energy" = 80, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+
+
+/obj/item/clothing/suit/space/hardsuit/sith
+	icon_state = "syndicate-helm-black-red"
+	name = "Sith Hardsuit"
+	desc = "A special helmet designed for work in a hazardous, low pressure environment. A Sith does not need armour, the force bends to their will... But they still cannot fly in space without help!"
+	item_state = "syndicate-helm-black-red"
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 80,"energy" = 80, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/sith
