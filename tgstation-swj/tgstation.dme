@@ -2353,6 +2353,7 @@
 #include "code\modules\projectiles\guns\energy\mounted.dm"
 #include "code\modules\projectiles\guns\energy\pulse.dm"
 #include "code\modules\projectiles\guns\energy\special.dm"
+#include "code\modules\projectiles\guns\energy\starwars.dm"
 #include "code\modules\projectiles\guns\energy\stun.dm"
 #include "code\modules\projectiles\guns\magic\staff.dm"
 #include "code\modules\projectiles\guns\magic\wand.dm"
