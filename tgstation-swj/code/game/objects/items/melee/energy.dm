@@ -85,21 +85,21 @@
 	return (BRUTELOSS|FIRELOSS)
 
 /obj/item/melee/transforming/energy/sword
-	name = "energy sword"
-	desc = "May the force be within you."
+	name = "Single-Bladed Lightsabre"
+	desc = "This is the weapon of a Jedi Knight (Or Sith Lord). Not as clumsy or as random as a blaster. An elegant weapon... for a more civilized age."
 	icon_state = "sword0"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
 	force = 3
-	throwforce = 5
+	throwforce = 10
 	hitsound = "swing_hit" //it starts deactivated
 	attack_verb_off = list("tapped", "poked")
-	throw_speed = 3
-	throw_range = 5
+	throw_speed = 5
+	throw_range = 10
 	sharpness = IS_SHARP
 	embedding = list("embed_chance" = 75, "embedded_impact_pain_multiplier" = 10)
-	armour_penetration = 35
-	block_chance = 50
+	armour_penetration = 75
+	block_chance = 85
 
 /obj/item/melee/transforming/energy/sword/transform_weapon(mob/living/user, supress_message_text)
 	. = ..()

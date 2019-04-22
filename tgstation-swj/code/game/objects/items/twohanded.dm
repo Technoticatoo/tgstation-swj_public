@@ -266,12 +266,12 @@
 	icon_state = "dualsaber0"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
-	name = "double-bladed energy sword"
-	desc = "Handle with care."
+	name = "Double-Bladed Lightsabre"
+	desc = "'This is the weapon of a Jedi Knight (Or Sith Lord). Not as clumsy or as random as a blaster. An elegant weapon... for a more civilized age.' This weapon consists of two blades, designed to more than double the lethality."
 	force = 3
-	throwforce = 5
-	throw_speed = 3
-	throw_range = 5
+	throwforce = 10
+	throw_speed = 5
+	throw_range = 10
 	w_class = WEIGHT_CLASS_SMALL
 	var/w_class_on = WEIGHT_CLASS_BULKY
 	force_unwielded = 3
@@ -279,11 +279,11 @@
 	wieldsound = 'sound/weapons/saberon.ogg'
 	unwieldsound = 'sound/weapons/saberoff.ogg'
 	hitsound = "swing_hit"
-	armour_penetration = 35
+	armour_penetration = 75
 	item_color = "green"
 	light_color = "#00ff00"//green
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-	block_chance = 75
+	block_chance = 99
 	max_integrity = 200
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 70)
 	resistance_flags = FIRE_PROOF

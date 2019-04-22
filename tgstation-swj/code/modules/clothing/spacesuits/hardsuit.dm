@@ -898,9 +898,9 @@
 
 
 /obj/item/clothing/suit/space/hardsuit/sith
-	icon_state = "syndicate-helm-black-red"
+	icon_state = "syndicate-black-red"
 	name = "Sith Hardsuit"
 	desc = "A special helmet designed for work in a hazardous, low pressure environment. A Sith does not need armour, the force bends to their will... But they still cannot fly in space without help!"
-	item_state = "syndicate-helm-black-red"
+	item_state = "syndicate-black-red"
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 80,"energy" = 80, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/sith
