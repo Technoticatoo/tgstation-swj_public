@@ -1,9 +1,9 @@
 //Cleanbot
 /mob/living/simple_animal/bot/cleanbot
-	name = "\improper Cleanbot"
+	name = "\improper Mouse droid"
 	desc = "A little cleaning robot, he looks so excited!"
 	icon = 'icons/mob/aibots.dmi'
-	icon_state = "cleanbot0"
+	icon_state = "mousedroid0"
 	density = FALSE
 	anchored = FALSE
 	health = 25
@@ -155,7 +155,7 @@
 			else
 				shuffle = TRUE	//Shuffle the list the next time we scan so we dont both go the same way.
 			path = list()
-		
+
 		if(!path || path.len == 0) //No path, need a new one
 			//Try to produce a path to the target, and ignore airlocks to which it has access.
 			path = get_path_to(src, target.loc, /turf/proc/Distance_cardinal, 0, 30, id=access_card)
@@ -187,7 +187,12 @@
 		/obj/effect/decal/cleanable/greenglow,
 		/obj/effect/decal/cleanable/dirt,
 		/obj/effect/decal/cleanable/insectguts,
-		/obj/effect/decal/remains
+		/obj/effect/decal/remains,
+		/obj/effect/decal/cleanable/shreds,
+		/obj/effect/decal/cleanable/cobweb,
+		/obj/effect/decal/cleanable/cobweb/cobweb2,
+		/obj/effect/decal/cleanable/chem_pile,
+		/obj/effect/decal/cleanable/glitter,
 		)
 
 	if(blood)
