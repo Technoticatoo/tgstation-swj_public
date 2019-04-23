@@ -5,6 +5,7 @@
     H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceck(null))
     H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/forceth(null))
     H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceln(null))
+    H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceslow(null))
 
 
 

@@ -2584,6 +2584,7 @@
 #include "code\modules\spells\spell_types\force_choke.dm"
 #include "code\modules\spells\spell_types\force_jump.dm"
 #include "code\modules\spells\spell_types\force_lightning.dm"
+#include "code\modules\spells\spell_types\force_slow.dm"
 #include "code\modules\spells\spell_types\force_speed.dm"
 #include "code\modules\spells\spell_types\force_throw.dm"
 #include "code\modules\spells\spell_types\forcewall.dm"
