@@ -483,7 +483,7 @@
 	obj_flags = UNIQUE_RENAME
 	force = 15
 	throwforce = 10
-	slot_flags = ITEM_SLOT_BELT
+	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK
 	w_class = WEIGHT_CLASS_SMALL
 	block_chance = 50
 	armour_penetration = 75
