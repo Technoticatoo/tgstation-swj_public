@@ -13,7 +13,7 @@
 	antag_flag = ROLE_REV
 	false_report_weight = 10
 	restricted_jobs = list("Stormtrooper", "Master Sergeant", "Interrogator", "AI", "Cyborg","Captain", "Lieutenant", "Stormtrooper Commander", "Chief Engineer", "Science Director", "Chief Medical Officer")
-	required_players = 30
+	required_players = 5
 	required_enemies = 2
 	recommended_enemies = 3
 	enemy_minimum_age = 14
@@ -21,7 +21,7 @@
 	announce_span = "danger"
 	announce_text = "Some crewmembers are attempting a coup!\n\
 	<span class='danger'>Rebels</span>: Expand your cause and overthrow the heads of staff by execution or otherwise.\n\
-	<span class='notice'>Crew</span>: Prevent the rebellionaries from taking over the station."
+	<span class='notice'>Crew</span>: Prevent the rebels from taking over the station."
 
 	var/finished = 0
 	var/check_counter = 0
@@ -35,7 +35,7 @@
 ///////////////////////////
 /datum/game_mode/rebellion/announce()
 	to_chat(world, "<B>The current game mode is - Rebellion!</B>")
-	to_chat(world, "<B>Some crewmembers are attempting to start a rebellion!<BR>\nRebellionaries - Kill the Captain, HoP, HoS, CE, RD and CMO. Convert other crewmembers (excluding the heads of staff, and Stormtroopers) to your cause by flashing them. Protect your leaders.<BR>\nPersonnel - Protect the heads of staff. Kill the leaders of the rebellion, and brainwash the other rebellionaries (by beating them in the head).</B>")
+	to_chat(world, "<B>Some crewmembers are attempting to start a rebellion!<BR>\nRebels - Kill the Captain, HoP, HoS, CE, RD and CMO. Convert other crewmembers (excluding the heads of staff, and Stormtroopers) to your cause by flashing them. Protect your leaders.<BR>\nPersonnel - Protect the heads of staff. Kill the leaders of the rebellion, and brainwash the other rebels (by beating them in the head).</B>")
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -164,7 +164,7 @@
 //Checks for a head victory//
 /////////////////////////////
 /datum/game_mode/rebellion/proc/check_heads_victory()
-	for(var/datum/mind/rev_mind in rebellion.head_rebellionaries())
+	for(var/datum/mind/rev_mind in rebellion.head_rebels())
 		var/turf/T = get_turf(rev_mind.current)
 		if(!considered_afk(rev_mind) && considered_alive(rev_mind) && is_station_level(T.z))
 			if(ishuman(rev_mind.current))
@@ -184,7 +184,7 @@
 //TODO What should be displayed for revs in non-rev rounds
 /datum/game_mode/rebellion/special_report()
 	if(finished == 1)
-		return "<span class='redtext big'>The heads of staff were killed or exiled! The rebellionaries win!</span>"
+		return "<span class='redtext big'>The heads of staff were killed or exiled! The rebels win!</span>"
 	else if(finished == 2)
 		return "<span class='redtext big'>The heads of staff managed to stop the rebellion!</span>"
 

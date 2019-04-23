@@ -53,7 +53,7 @@
 	hidden = TRUE
 
 /datum/mood_event/rebellion
-	description = "<span class='nicegreen'>VIVA LA REVOLUTION!</span>\n"
+	description = "<span class='nicegreen'>For the Republic!</span>\n"
 	mood_change = 3
 	hidden = TRUE
 
