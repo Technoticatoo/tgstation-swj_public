@@ -612,7 +612,7 @@
 
 /obj/item/storage/belt/sabre
 	name = "sabre sheath"
-	desc = "An ornate sheath designed to hold an officer's blade."
+	desc = "A sheath designed to hold most types of blades."
 	icon_state = "sheath"
 	item_state = "sheath"
 	w_class = WEIGHT_CLASS_BULKY
@@ -624,7 +624,11 @@
 	STR.rustle_sound = FALSE
 	STR.max_w_class = WEIGHT_CLASS_BULKY
 	STR.can_hold = typecacheof(list(
-		/obj/item/melee/sabre
+		/obj/item/melee/sabre,
+		/obj/item/melee/transforming/energy/sword,
+		/obj/item/melee/transforming/energy/sword/saber,
+		/obj/item/melee/transforming/energy/sword/pirate,
+		/obj/item/melee/transforming/energy/blade
 		))
 
 /obj/item/storage/belt/sabre/examine(mob/user)
