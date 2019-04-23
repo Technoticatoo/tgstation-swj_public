@@ -11,7 +11,7 @@
 	//set to negatives for healing
 	var/amt_dam_fire = 0
 	var/amt_dam_brute = 30
-	var/amt_dam_oxy = 0
+	var/amt_dam_oxy = 10
 	var/amt_dam_tox = 0
 
 	var/amt_eye_blind = 0
