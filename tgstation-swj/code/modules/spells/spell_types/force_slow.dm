@@ -31,7 +31,7 @@
 		//damage/healing
 		//disabling
 		target.Knockdown(amt_knockdown)
-		target.apply_status_effect(STATUS_EFFECT_BELLIGERENT)
+		target.apply_status_effect(STATUS_EFFECT_SLOW)
 
 		//summoning
 		if(summon_type)

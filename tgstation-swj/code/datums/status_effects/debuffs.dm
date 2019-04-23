@@ -148,6 +148,55 @@
 	if(owner.m_intent == MOVE_INTENT_WALK)
 		owner.toggle_move_intent()
 
+/datum/status_effect/slow
+	id = "slow"
+	duration = 70
+	tick_interval = 0 //tick as fast as possible
+	status_type = STATUS_EFFECT_REPLACE
+	alert_type = /obj/screen/alert/status_effect/slow
+	var/leg_damage_on_toggle = 0 //damage on initial application and when the owner tries to toggle to run
+	var/cultist_damage_on_toggle = 0 //damage on initial application and when the owner tries to toggle to run, but to cultists
+
+/obj/screen/alert/status_effect/slow
+	name = "Slow"
+	desc = "<b><font color=#880020>The force slows you!</font></b>"
+	icon = 'icons/starwars/force_powers.dmi'
+	icon_state = "force_slow"
+	alerttooltipstyle = ""
+
+/datum/status_effect/slow/on_apply()
+	return do_movement_toggle(TRUE)
+
+/datum/status_effect/slow/tick()
+	if(!do_movement_toggle())
+		qdel(src)
+
+/datum/status_effect/slow/proc/do_movement_toggle(force_damage)
+	var/number_legs = owner.get_num_legs(FALSE)
+	if(iscarbon(owner) && !is_servant_of_ratvar(owner) && !owner.anti_magic_check() && number_legs)
+		if(force_damage || owner.m_intent != MOVE_INTENT_WALK)
+			if(GLOB.ratvar_awakens)
+				owner.Knockdown(20)
+			if(iscultist(owner))
+				owner.apply_damage(cultist_damage_on_toggle * 0.5, BURN, BODY_ZONE_L_LEG)
+				owner.apply_damage(cultist_damage_on_toggle * 0.5, BURN, BODY_ZONE_R_LEG)
+			else
+				owner.apply_damage(leg_damage_on_toggle * 0.5, BURN, BODY_ZONE_L_LEG)
+				owner.apply_damage(leg_damage_on_toggle * 0.5, BURN, BODY_ZONE_R_LEG)
+		if(owner.m_intent != MOVE_INTENT_WALK)
+			if(!iscultist(owner))
+				to_chat(owner, "<span class='warning'>Your leg[number_legs > 1 ? "s barely move":" barely moves"]!</span>")
+			else //Cultists take extra burn damage
+				to_chat(owner, "<span class='warning'>Your leg[number_legs > 1 ? "s hurt":" hurts"] with pain!</span>")
+			owner.toggle_move_intent()
+		return TRUE
+	return FALSE
+
+/datum/status_effect/slow/on_remove()
+	if(owner.m_intent == MOVE_INTENT_WALK)
+		owner.toggle_move_intent()
+
+
 /datum/status_effect/maniamotor
 	id = "maniamotor"
 	duration = -1
