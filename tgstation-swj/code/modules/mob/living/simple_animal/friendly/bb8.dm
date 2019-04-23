@@ -2,7 +2,7 @@
 /mob/living/simple_animal/pet/bb8
 	name = "bb8"
 	desc = "BB8!!"
-	icon = 'icons/mob/robots.dmi'
+	icon = 'icons/starwars/droids.dmi'
 	icon_state = "bb8"
 	icon_living = "bb8"
 	icon_dead = "bb8_gib"
