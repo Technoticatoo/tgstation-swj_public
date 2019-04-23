@@ -2,8 +2,10 @@
 	name = "Force Slow"
 	desc = "Slow your target to a crawl!."
 	clothes_req = FALSE
-	invocation = "Force Choke"
+	invocation = "Force Slow"
 	invocation_type = "emote"
+	cooldown_min = 50 //12 deciseconds reduction per rank
+	charge_max = 100
 	var/amt_knockdown = 0
 	var/destroys = "none" //can be "none", "gib" or "disintegrate"
 
