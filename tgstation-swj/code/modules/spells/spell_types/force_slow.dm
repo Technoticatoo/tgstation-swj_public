@@ -29,7 +29,8 @@
 		//damage/healing
 		//disabling
 		target.Knockdown(amt_knockdown)
-		target.toggle_move_intent()
+		if(target.m_intent != MOVE_INTENT_WALK)
+			target.toggle_move_intent()
 
 		//summoning
 		if(summon_type)
