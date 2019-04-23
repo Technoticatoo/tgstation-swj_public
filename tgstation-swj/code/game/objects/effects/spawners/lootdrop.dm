@@ -330,3 +330,11 @@
 				/obj/item/circuitboard/computer/apc_control,
 				/obj/item/circuitboard/computer/robotics
 				)
+//star wars
+
+/obj/effect/spawner/lootdrop/starwars/droid/bb8
+	name = "bb8 npc droid spawner"
+	lootcount = 1
+	loot = list(
+				/mob/living/simple_animal/pet/bb8
+				)
