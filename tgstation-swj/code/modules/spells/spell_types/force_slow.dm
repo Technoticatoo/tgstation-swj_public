@@ -31,8 +31,7 @@
 		//damage/healing
 		//disabling
 		target.Knockdown(amt_knockdown)
-		if(target.m_intent != MOVE_INTENT_WALK)
-			target.toggle_move_intent()
+		target.apply_status_effect(STATUS_EFFECT_BELLIGERENT)
 
 		//summoning
 		if(summon_type)
