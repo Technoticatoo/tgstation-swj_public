@@ -1,0 +1,11 @@
+{
+    "map_name": "IPV Pendragon",
+    "map_path": "map_files/IPVPendragon",
+    "map_file": "IPVPendragon.dmm",
+    "shuttles": {
+	    "emergency": "emergency_ipvpendragon",
+	    "whiteship": "whiteship_ipvpendragon",
+	    "ferry": "ferry_fancy",
+	    "cargo": "cargo_box"
+    }
+}
