@@ -1053,3 +1053,6 @@
 
 /mob/living/carbon/human/species/rodian
 	race = /datum/species/rodian
+
+/mob/living/carbon/human/species/zabrak
+	race = /datum/species/zabrak

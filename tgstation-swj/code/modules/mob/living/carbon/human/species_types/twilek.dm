@@ -11,5 +11,5 @@
 	default_features = list("mcolor" = "853", "wings" = "None")
 
 
-/datum/species/wookie/qualifies_for_rank(rank, list/features)
-	return TRUE	//Wookies are always allowed in all roles
+/datum/species/twilek/qualifies_for_rank(rank, list/features)
+	return TRUE	//Twilek are always allowed in all roles
