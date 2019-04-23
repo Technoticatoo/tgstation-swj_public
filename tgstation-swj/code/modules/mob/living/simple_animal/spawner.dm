@@ -110,3 +110,36 @@
 	name = "wumborian fugu den"
 	desc = "A den housing a nest of wumborian fugus, how do they all even fit in there?"
 	mob_types = list(/mob/living/simple_animal/hostile/asteroid/fugu)
+
+//star wars spawners
+
+/mob/living/simple_animal/hostile/spawner/starwars/npc/droid_dispenser
+	name = "droid dispenser"
+	desc = "A clone wars era droid dispenser. Warning, this is a parent type and not an actual spawner. Yell at admins."
+	icon_state = "hole"
+	icon_living = "hole"
+	icon = 'icons/mob/nest.dmi'
+	health = 150
+	maxHealth = 150
+	max_mobs = 15
+	spawn_time = 150	// 150
+	mob_types = list(/mob/living/simple_animal/hostile/buzzdroid)
+	spawn_text = "climbs out of"
+	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	faction = list("droid")
+	sentience_type = SENTIENCE_BOSS
+
+/mob/living/simple_animal/hostile/spawner/starwars/npc/droid_dispenser/buzzdroid
+	name = "buzz droid dispenser"
+	desc = "A clone wars era droid dispenser. This one is carrying buzz droids."
+	icon_state = "droid_dispenser"
+	icon_living = "droid_dispenser"
+	icon = 'icons/mob/robots.dmi'
+	health = 25
+	maxHealth = 25
+	max_mobs = 10
+	spawn_time = 300
+	mob_types = list(/mob/living/simple_animal/hostile/buzzdroid)
+	spawn_text = "is dispensed from"
+	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	sentience_type = SENTIENCE_BOSS
