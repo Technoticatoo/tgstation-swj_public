@@ -281,7 +281,7 @@
 	/*r_hand = /obj/item/spellbook
 	l_hand = /obj/item/staff*/
 	back = /obj/item/storage/backpack
-	backpack_contents = list(/obj/item/melee/jedi_sword=1, /obj/item/storage/box=1)
+	backpack_contents = list(/obj/item/melee/transforming/energy/sword/saber/blue=1, /obj/item/storage/box=1)
 
 /datum/outfit/jedi/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(visualsOnly)
