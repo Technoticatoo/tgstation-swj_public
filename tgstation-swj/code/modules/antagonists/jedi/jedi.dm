@@ -125,6 +125,7 @@
 	H.equipOutfit(outfit_type)
 	owner.AddSpell(new /obj/effect/proc_holder/spell/self/forceheal(null))
 	owner.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcehealothers(null))
+	owner.AddSpell(new /obj/effect/proc_holder/spell/self/forceprotect(null))
 
 /datum/antagonist/jedi/greet()
 	to_chat(owner, "<span class='boldannounce'>You are the Jedi!</span>")
