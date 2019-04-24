@@ -11,7 +11,7 @@
 	cooldown_min = 50
 	school = "restoration"
 	sound = 'sound/magic/staff_healing.ogg'
-	action_icon_state = "force_heal"
+	action_icon_state = "force_heal_targeted"
 
 	//set to negatives for healing
 	var/amt_heal_fire = -10
