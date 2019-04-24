@@ -1,7 +1,6 @@
-	/obj/effect/proc_holder/spell/self/forceprotect //This spell exists mainly for debugging purposes, and also to show how casting works
+/obj/effect/proc_holder/spell/self/forceprotect //This spell exists mainly for debugging purposes, and also to show how casting works
 	name = "Force Protect"
 	desc = "The Force protects you from damage."
-	human_req = TRUE
 	clothes_req = FALSE
 	charge_max = 100
 	cooldown_min = 50
@@ -9,7 +8,7 @@
 	invocation_type = "shout"
 	school = "transmutation"
 	//sound = 'sound/magic/staff_healing.ogg'
-	action_icon_state = "force_protect"
+	action_icon_state = "force_armor"
 
 
 /obj/effect/proc_holder/spell/self/forceheal/cast(mob/living/carbon/human/user) //Note the lack of "list/targets" here. Instead, use a "user" var depending on mob requirements.
