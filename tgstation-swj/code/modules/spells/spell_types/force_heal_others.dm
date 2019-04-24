@@ -4,9 +4,6 @@
 	clothes_req = FALSE
 	invocation = "May the force heal you!"
 	invocation_type = "shout"
-	var/amt_knockdown = 0
-	var/amt_unconscious = 0
-	var/amt_stun = 0
 	charge_max = 100
 	cooldown_min = 50
 	school = "restoration"
@@ -24,8 +21,6 @@
 	var/summon_type = null //this will put an obj at the target's location
 
 	var/check_anti_magic = TRUE
-	var/check_holy = FALSE
-	action_icon_state = "force_heal"
 
 /obj/effect/proc_holder/spell/targeted/forcehealothers/cast(list/targets,mob/user = usr)
 	for(var/mob/living/target in targets)
