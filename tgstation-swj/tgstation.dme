@@ -2584,6 +2584,8 @@
 #include "code\modules\spells\spell_types\ethereal_jaunt.dm"
 #include "code\modules\spells\spell_types\explosion.dm"
 #include "code\modules\spells\spell_types\force_choke.dm"
+#include "code\modules\spells\spell_types\force_heal_others.dm"
+#include "code\modules\spells\spell_types\force_healing.dm"
 #include "code\modules\spells\spell_types\force_jump.dm"
 #include "code\modules\spells\spell_types\force_lightning.dm"
 #include "code\modules\spells\spell_types\force_slow.dm"

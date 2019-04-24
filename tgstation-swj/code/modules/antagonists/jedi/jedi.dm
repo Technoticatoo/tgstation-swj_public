@@ -123,7 +123,8 @@
 	if(H.age < wiz_age)
 		H.age = wiz_age
 	H.equipOutfit(outfit_type)
-	owner.AddSpell(new /obj/effect/proc_holder/spell/self/basic_heal(null))
+	owner.AddSpell(new /obj/effect/proc_holder/spell/self/forceheal(null))
+	owner.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcehealothers(null))
 
 /datum/antagonist/jedi/greet()
 	to_chat(owner, "<span class='boldannounce'>You are the Jedi!</span>")
