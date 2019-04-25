@@ -532,7 +532,7 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/hos
 	jetpack = /obj/item/tank/jetpack/suit
 
-	//Captain
+//Captain
 /obj/item/clothing/head/helmet/space/hardsuit/captain
 	name = "captain's hardsuit helmet"
 	icon_state = "capspace"

@@ -296,12 +296,12 @@ GLOBAL_LIST_INIT(available_depts, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICAL, S
 
 	belt = /obj/item/pda/security
 	ears = /obj/item/radio/headset/headset_sec/alt
-	uniform = /obj/item/clothing/under/rank/security
+	uniform = /obj/item/clothing/under/rank/security/stormtrooper
 	gloves = /obj/item/clothing/gloves/color/black
 	//head = /obj/item/clothing/head/helmet/sec
 	//suit = /obj/item/clothing/suit/armor/vest/alt
-	head = /obj/item/clothing/head/helmet/space/hardsuit/security
-	suit = /obj/item/clothing/suit/space/hardsuit/security
+	head = /obj/item/clothing/head/helmet/space/hardsuit/stormtrooper
+	suit = /obj/item/clothing/suit/space/hardsuit/stormtrooper
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/assembly/flash/handheld

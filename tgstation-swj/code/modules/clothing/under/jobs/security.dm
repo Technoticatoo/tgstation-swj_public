@@ -147,3 +147,17 @@
 	item_state = "blueshift"
 	item_color = "blueshift"
 	can_adjust = FALSE
+
+
+/obj/item/clothing/under/rank/security/stormtrooper
+	name = "security jumpsuit"
+	desc = "A tactical security jumpsuit for officers complete with imperial belt buckle."
+	icon_state = "stormtrooper_under"
+	item_state = "stormtrooper_under"
+	item_color = "stormtrooper_under"
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
+	strip_delay = 50
+	alt_covers_chest = TRUE
+	sensor_mode = SENSOR_COORDS
+	random_sensor = FALSE
+
