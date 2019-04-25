@@ -978,3 +978,10 @@
 	name = "Pay Stand (Machine Board)"
 	build_path = /obj/machinery/paystand
 	req_components = list()
+
+/obj/item/circuitboard/machine/vending/armory/weapon_vendor
+	name = "Armory Weapons Vendor (Machine Board)"
+	build_path = /obj/machinery/vending/armory/weapon_vendor
+	req_components = list(
+		/obj/item/stack/sheet/glass = 1,
+		/obj/item/vending_refill/donksoft = 1)
