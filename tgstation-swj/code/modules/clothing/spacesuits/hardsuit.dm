@@ -565,8 +565,8 @@
 
 /obj/item/clothing/head/helmet/space/hardsuit/sith
 	name = "sith's hardsuit helmet"
-	icon_state = "syndicate-helm-black-red"
-	item_state = "syndicate-helm-black-red"
+	icon_state = "sith_hardsuit_helmet"
+	item_state = "sith_hardsuit_helmet"
 	desc = "A Sith helmet, evil by design."
 	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 25, "bomb" = 50, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100)
 	resistance_flags = FIRE_PROOF | ACID_PROOF
@@ -581,8 +581,8 @@
 /obj/item/clothing/suit/space/hardsuit/sith
 	name = "Sith Armor"
 	desc = "A Sith does not need aror, the force bends to their will."
-	icon_state = "syndicate-black-red"
-	item_state = "syndicate-black-red"
+	icon_state = "sith_hardsuit"
+	item_state = "sith_hardsuit"
 	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 25, "bomb" = 50, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100)
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
