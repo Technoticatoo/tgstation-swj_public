@@ -1,0 +1,11 @@
+{
+    "map_name": "Ice Colony",
+    "map_path": "map_files/Ice",
+    "map_file": "ice.dmm",
+    "shuttles": {
+	    "cargo": "cargo_box",
+	    "ferry": "ferry_fancy",
+	    "whiteship": "whiteship_box",
+	    "emergency": "emergency_box"
+    }
+}
