@@ -523,3 +523,100 @@
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
 	defer_change = 1
+
+//sw ice minerals
+
+/turf/closed/mineral/random/ice
+	name = "ice rock"
+	icon_state = "icerock_diamond"
+	smooth_icon = 'icons/turf/walls/icerock_wall.dmi'
+	environment_type = "snow"
+	turf_type = /turf/open/floor/plating/asteroid/ice/ice_land_surface
+	baseturfs = /turf/open/floor/plating/asteroid/ice/ice_land_surface
+	initial_gas_mix = ICE_DEFAULT_ATMOS
+	defer_change = 1
+
+	mineralChance = 10
+	mineralSpawnChanceList = list(
+		/turf/closed/mineral/uranium/snow = 5, /turf/closed/mineral/diamond/snow = 1, /turf/closed/mineral/gold/snow = 10, /turf/closed/mineral/titanium/snow = 11,
+		/turf/closed/mineral/silver/snow = 12, /turf/closed/mineral/plasma/snow = 20, /turf/closed/mineral/iron/snow = 40,
+		/turf/closed/mineral/gibtonite/snow = 4)
+		//turf/open/floor/plating/asteroid/airless/cave/volcanic - removed because its for creating random dungeons
+		//, /turf/closed/mineral/bscrystal/volcanic = 1 - removed for now because idk what it is
+
+
+/turf/open/floor/plating/asteroid/ice/ice_land_surface
+	initial_gas_mix = ICE_DEFAULT_ATMOS
+	planetary_atmos = TRUE
+	baseturfs = /turf/open/floor/plating/asteroid/snow/ice
+
+//all the ice mineral paths
+
+/turf/closed/mineral/iron/snow
+	icon_state = "icerock_iron"
+	smooth_icon = 'icons/turf/walls/icerock_wall.dmi'
+	turf_type = /turf/open/floor/plating/asteroid/snow/ice
+	baseturfs = /turf/open/floor/plating/asteroid/snow/ice
+	mineralType = /obj/item/stack/ore/iron
+	spreadChance = 20
+	spread = 1
+	scan_state = "rock_Iron"
+
+/turf/closed/mineral/uranium/snow
+	icon_state = "icerock_iron"
+	smooth_icon = 'icons/turf/walls/icerock_wall.dmi'
+	mineralType = /obj/item/stack/ore/uranium
+	spreadChance = 5
+	spread = 1
+	scan_state = "rock_Uranium"
+
+/turf/closed/mineral/diamond/snow
+	icon_state = "icerock_diamond"
+	smooth_icon = 'icons/turf/walls/icerock_wall.dmi'
+	turf_type = /turf/open/floor/plating/asteroid/snow/ice
+	baseturfs = /turf/open/floor/plating/asteroid/snow/ice
+	mineralType = /obj/item/stack/ore/diamond
+	spreadChance = 0
+	spread = 1
+	scan_state = "rock_Diamond"
+
+/turf/closed/mineral/gold/snow
+	icon_state = "icerock_iron"
+	smooth_icon = 'icons/turf/walls/icerock_wall.dmi'
+	mineralType = /obj/item/stack/ore/gold
+	spreadChance = 5
+	spread = 1
+	scan_state = "rock_Gold"
+
+/turf/closed/mineral/silver/snow
+	icon_state = "icerock_iron"
+	smooth_icon = 'icons/turf/walls/icerock_wall.dmi'
+	mineralType = /obj/item/stack/ore/silver
+	spreadChance = 5
+	spread = 1
+	scan_state = "rock_Silver"
+
+/turf/closed/mineral/titanium/snow
+	icon_state = "icerock_iron"
+	smooth_icon = 'icons/turf/walls/icerock_wall.dmi'
+	mineralType = /obj/item/stack/ore/titanium
+	spreadChance = 5
+	spread = 1
+	scan_state = "rock_Titanium"
+
+/turf/closed/mineral/plasma/snow
+	icon_state = "icerock_plasma"
+	smooth_icon = 'icons/turf/walls/icerock_wall.dmi'
+	turf_type = /turf/open/floor/plating/asteroid/snow/ice
+	baseturfs = /turf/open/floor/plating/asteroid/snow/ice
+	mineralType = /obj/item/stack/ore/plasma
+	spreadChance = 8
+	spread = 1
+	scan_state = "rock_Plasma"
+
+/turf/closed/mineral/gibtonite/snow
+	environment_type = "basalt"
+	turf_type = /turf/open/floor/plating/asteroid/snow/ice
+	baseturfs = /turf/open/floor/plating/asteroid/snow/ice
+	initial_gas_mix = ICE_DEFAULT_ATMOS
+	defer_change = 1
