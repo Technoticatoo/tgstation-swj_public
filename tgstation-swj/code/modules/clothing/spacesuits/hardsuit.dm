@@ -868,6 +868,24 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/stormtrooper
 
 
+// Stormtrooper Commander
+/obj/item/clothing/head/helmet/space/hardsuit/stcommander
+	name = "Stormtrooper Commander Helmet"
+	desc = "A special helmet designed for work in a hazardous, low pressure environment. Armoured and mass produced for Commanders of the Imperial Army."
+	icon_state = "hardsuit0-stcommander"
+	item_state = "stcommander_helm"
+	item_color = "stcommander"
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 80,"energy" = 80, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+
+
+/obj/item/clothing/suit/space/hardsuit/stcommander
+	icon_state = "hardsuit-stcommander"
+	name = "Stormtrooper Commander Armour"
+	desc = "A special armour designed for work in a hazardous, low pressure environment. Armoured and mass produced for Commanders of the Imperial Army."
+	item_state = "stcommander_hardsuit"
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 80,"energy" = 80, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/stcommander
+
 
 // Scouttrooper
 /obj/item/clothing/head/helmet/space/hardsuit/scouttrooper
