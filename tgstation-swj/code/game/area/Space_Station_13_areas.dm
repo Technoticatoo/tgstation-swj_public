@@ -1340,4 +1340,4 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/quartermaster/mining/garage
 	name = "Cargo Mining Garage "
-	icon_state = "mining_garage"
+	icon_state = "mine_garage"
