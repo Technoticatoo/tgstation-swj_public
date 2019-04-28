@@ -37,3 +37,16 @@
 	flight_x_offset = 18
 	flight_y_offset = 11
 	ammo_type = list(/obj/item/ammo_casing/energy/ion/e12d)
+
+//DL-44
+/obj/item/gun/energy/laser/dl44
+	name = "DL-44 Blaster Pistol"
+	desc = "Considered one of the most powerful blaster pistols in the galaxy, delivering massive damage at close range. The DL-44, however, overheated quickly."
+	icon = 'icons/starwars/weapons.dmi'
+	icon_state = "dl44"
+	item_state = "dl44"
+	w_class = WEIGHT_CLASS_NORMAL
+	materials = list(MAT_METAL=2000)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/dl44)
+	ammo_x_offset = 1
+	shaded_charge = 1

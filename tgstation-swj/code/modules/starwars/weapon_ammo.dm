@@ -61,3 +61,9 @@
 	projectile_type = /obj/item/projectile/ion
 	select_name = "ion"
 	fire_sound = 'sound/starwars/e12d.ogg'
+
+/obj/item/ammo_casing/energy/laser/dl44
+	projectile_type = /obj/item/projectile/beam/laser
+	select_name = "kill"
+	e_cost = 20
+	fire_sound = 'sound/starwars/dl44.ogg'
