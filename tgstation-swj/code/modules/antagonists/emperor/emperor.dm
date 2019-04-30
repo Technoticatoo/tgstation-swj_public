@@ -10,7 +10,7 @@
 	var/employer = "The Empire"
 	var/give_objectives = TRUE
 	var/should_give_codewords = TRUE
-	var/should_equip = FALSE
+	var/should_equip = TRUE
 	var/emperor_kind = EMPEROR_HUMAN //Set on initial assignment
 	can_hijack = HIJACK_HIJACKER
 	var/strip = TRUE //strip before equipping
@@ -18,11 +18,10 @@
 	var/outfit_type = /datum/outfit/emperor
 
 /datum/antagonist/emperor/on_gain()
-	//SSticker.mode.emperors += owner
+	cloth_emperor()
 	owner.special_role = special_role
 	if(give_objectives)
 		forge_emperor_objectives()
-	equip_emperor()
 	finalize_emperor()
 	..()
 
@@ -47,7 +46,7 @@
 	owner.special_role = null
 	..()
 
-/datum/antagonist/emperor/proc/equip_emperor()
+/datum/antagonist/emperor/proc/cloth_emperor()
 	if(!owner)
 		return
 	var/mob/living/carbon/human/H = owner.current
@@ -186,7 +185,7 @@
 		return
 	var/mob/emperor_mob=owner.current
 
-	to_chat(emperor_mob, "<U><B>The Rebel provided you with the following information on how to identify their agents:</B></U>")
+	to_chat(emperor_mob, "<U><B>The Rebels provided you with the following information on how to identify their agents:</B></U>")
 	to_chat(emperor_mob, "<B>Code Phrase</B>: <span class='danger'>[GLOB.syndicate_code_phrase]</span>")
 	to_chat(emperor_mob, "<B>Code Response</B>: <span class='danger'>[GLOB.syndicate_code_response]</span>")
 

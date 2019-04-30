@@ -3,19 +3,20 @@
 	config_tag = "emperor"
 	false_report_weight = 10
 	traitors_possible = 3 //hard limit on traitors if scaling is turned off
-	restricted_jobs = list("Stormtrooper", "Master Sergeant", "Interrogator", "AI", "Cyborg","Captain", "Lieutenant", "Stormtrooper Commander", "Chief Engineer", "Science Director", "Chief Medical Officer","Sith")
-	required_players = 1
+	restricted_jobs = list("AI", "Cyborg")
+	required_players = 1	// how many of each type are required
 	required_enemies = 1	// how many of each type are required
 	recommended_enemies = 3
 	reroll_friendly = 1
+	enemy_minimum_age = 0
 
 	var/list/possible_emperors = list()
-	var/list/emperors= list()
+	var/list/emperors = list()
 	var/const/emperor_amount = 1 //hard limit on emperors if scaling is turned off
 
 /datum/game_mode/traitor/emperor/announce()
-	to_chat(world, "<B>The current game mode is - The Emperors visit!</B>")
-	to_chat(world, "<B>The Emperor is visiting the station, the Rebel scum may try tó assassinate him! Do not let the emperor die or the traitors escape!</B>")
+	to_chat(world, "<B>The current game mode is - The Emperor visits!</B>")
+	to_chat(world, "<B>The Emperor is visiting, the Rebel scum has send assassins to the station, do not let the Emperor die!</B>")
 
 /datum/game_mode/traitor/emperor/can_start()
 	if(!..())
@@ -35,6 +36,8 @@
 	var/list/datum/mind/possible_emperors = get_players_for_role(ROLE_EMPEROR)
 
 	var/num_emperors = 1
+
+	//var/csc = 1
 
 	if(possible_emperors.len>0)
 		for(var/j = 0, j < num_emperors, j++)
@@ -56,17 +59,17 @@
 	return ..()
 
 /datum/game_mode/traitor/emperor/make_antag_chance(mob/living/carbon/human/character) //Assigns emperor to latejoiners
-	var/csc = 1
+//	var/csc = 1
 	var/emperorcap = 1
 	if(emperors.len >= emperorcap) //Caps number of latejoin antagonists
 		..()
 		return
-	if(emperors.len <= (emperorcap - 2) || prob(100 / (csc * 4)))
+	if(emperors.len < 1)
 		if(ROLE_EMPEROR in character.client.prefs.be_special)
 			if(!jobban_isbanned(character, ROLE_EMPEROR) && !QDELETED(character) && !jobban_isbanned(character, ROLE_SYNDICATE) && !QDELETED(character))
 				if(age_check(character.client))
 					if(!(character.job in restricted_jobs))
-						character.mind.make_Emperor()
+						character.mind.make_Changeling()
 						emperors += character.mind
 	if(QDELETED(character))
 		return
