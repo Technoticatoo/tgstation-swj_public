@@ -38,40 +38,40 @@
 	ambientsounds = HIGHSEC
 
 /area/ruin/unpowered/syndicate_lava_base/engineering
-	name = "Rebel Lavaland Engineering"
+	name = "Syndicate Lavaland Engineering"
 
 /area/ruin/unpowered/syndicate_lava_base/medbay
-	name = "Rebel Lavaland Medbay"
+	name = "Syndicate Lavaland Medbay"
 
 /area/ruin/unpowered/syndicate_lava_base/arrivals
-	name = "Rebel Lavaland Arrivals"
+	name = "Syndicate Lavaland Arrivals"
 
 /area/ruin/unpowered/syndicate_lava_base/bar
-	name = "Rebel Lavaland Bar"
+	name = "Syndicate Lavaland Bar"
 
 /area/ruin/unpowered/syndicate_lava_base/main
-	name = "Rebel Lavaland Primary Hallway"
+	name = "Syndicate Lavaland Primary Hallway"
 
 /area/ruin/unpowered/syndicate_lava_base/cargo
-	name = "Rebel Lavaland Cargo Bay"
+	name = "Syndicate Lavaland Cargo Bay"
 
 /area/ruin/unpowered/syndicate_lava_base/chemistry
-	name = "Rebel Lavaland Chemistry"
+	name = "Syndicate Lavaland Chemistry"
 
 /area/ruin/unpowered/syndicate_lava_base/virology
-	name = "Rebel Lavaland Virology"
+	name = "Syndicate Lavaland Virology"
 
 /area/ruin/unpowered/syndicate_lava_base/testlab
-	name = "Rebel Lavaland Experimentation Lab"
+	name = "Syndicate Lavaland Experimentation Lab"
 
 /area/ruin/unpowered/syndicate_lava_base/dormitories
-	name = "Rebel Lavaland Dormitories"
+	name = "Syndicate Lavaland Dormitories"
 
 /area/ruin/unpowered/syndicate_lava_base/telecomms
-	name = "Rebel Lavaland Telecommunications"
+	name = "Syndicate Lavaland Telecommunications"
 
 /area/ruin/unpowered/syndicate_lava_base/circuits
-	name = "Rebel Lavaland Circuit Lab"
+	name = "Syndicate Lavaland Circuit Lab"
 
 
 //Xeno Nest

@@ -10,7 +10,7 @@
 	// add an entry in change_appearance() if you add to here
 	var/list/possible_appearances = list("Assistant", "Clown", "Mime",
 		"Traitor", "Nuke Op", "Cultist", "Clockwork Cultist",
-		"Rebel", "Jedi", "Shadowling", "Xenomorph", "Xenomorph Maid", "Swarmer",
+		"Syndicate", "Jedi", "Shadowling", "Xenomorph", "Xenomorph Maid", "Swarmer",
 		"Ash Walker", "Deathsquad Officer", "Ian", "Slaughter Demon",
 		"Laughter Demon", "Private Stormtrooper")
 	var/pushed_over = FALSE //If the cutout is pushed over and has to be righted
@@ -127,7 +127,7 @@
 			name = "[pick(GLOB.first_names_male)] [pick(GLOB.last_names)]"
 			desc = "A cardboard cutout of a servant of Ratvar."
 			icon_state = "cutout_servant"
-		if("Rebel")
+		if("Syndicate")
 			name = "Unknown"
 			desc = "A cardboard cutout of a rebel."
 			icon_state = "cutout_viva"
@@ -184,5 +184,5 @@
 /obj/item/cardboard_cutout/setDir(newdir)
 	dir = SOUTH
 
-/obj/item/cardboard_cutout/adaptive //Purchased by Rebel agents, these cutouts are indistinguishable from normal cutouts but aren't discolored when their appearance is changed
+/obj/item/cardboard_cutout/adaptive //Purchased by Syndicate agents, these cutouts are indistinguishable from normal cutouts but aren't discolored when their appearance is changed
 	deceptive = TRUE

@@ -539,7 +539,7 @@
 	hat_offset = 0
 
 /obj/item/robot_module/syndicate
-	name = "Rebel Assault"
+	name = "Syndicate Assault"
 	basic_modules = list(
 		/obj/item/assembly/flash/cyborg,
 		/obj/item/melee/transforming/energy/sword/cyborg,
@@ -568,7 +568,7 @@
 	Syndi.faction += "silicon" //ai is your bff now!
 
 /obj/item/robot_module/syndicate_medical
-	name = "Rebel Medical"
+	name = "Syndicate Medical"
 	basic_modules = list(
 		/obj/item/assembly/flash/cyborg,
 		/obj/item/reagent_containers/borghypo/syndicate,
@@ -598,7 +598,7 @@
 	hat_offset = 3
 
 /obj/item/robot_module/saboteur
-	name = "Rebel Saboteur"
+	name = "Syndicate Saboteur"
 	basic_modules = list(
 		/obj/item/assembly/flash/cyborg,
 		/obj/item/borg/sight/thermal,

@@ -19,7 +19,7 @@
 */
 
 /mob/living/simple_animal/hostile/syndicate/mecha_pilot
-	name = "Rebel Mecha Pilot"
+	name = "Syndicate Mecha Pilot"
 	desc = "Death to Imperial. This variant comes in MECHA DEATH flavour."
 	wanted_objects = list()
 	search_objects = 0
@@ -46,7 +46,7 @@
 
 /mob/living/simple_animal/hostile/syndicate/mecha_pilot/nanotrasen //nanotrasen are syndies! no it's just a weird path.
 	name = "Imperial Mecha Pilot"
-	desc = "Death to the Rebel. This variant comes in MECHA DEATH flavour."
+	desc = "Death to the Syndicate. This variant comes in MECHA DEATH flavour."
 	icon_living = "nanotrasen"
 	icon_state = "nanotrasen"
 	faction = list("nanotrasen")
@@ -54,7 +54,7 @@
 
 /mob/living/simple_animal/hostile/syndicate/mecha_pilot/no_mech/nanotrasen
 	name = "Imperial Mecha Pilot"
-	desc = "Death to the Rebel. This variant comes in MECHA DEATH flavour."
+	desc = "Death to the Syndicate. This variant comes in MECHA DEATH flavour."
 	icon_living = "nanotrasen"
 	icon_state = "nanotrasen"
 	faction = list("nanotrasen")

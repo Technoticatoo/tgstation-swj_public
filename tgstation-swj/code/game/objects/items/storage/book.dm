@@ -213,14 +213,14 @@ GLOBAL_LIST_INIT(bibleitemstates, list("bible", "koran", "scrapbook", "bible",  
 
 /obj/item/storage/book/bible/syndicate
 	icon_state ="ebook"
-	deity_name = "The Rebel"
+	deity_name = "The Syndicate"
 	throw_speed = 2
 	throwforce = 18
 	throw_range = 7
 	force = 18
 	hitsound = 'sound/weapons/sear.ogg'
 	damtype = BURN
-	name = "Rebel Tome"
+	name = "Syndicate Tome"
 	attack_verb = list("attacked", "burned", "blessed", "damned", "scorched")
 	var/uses = 1
 

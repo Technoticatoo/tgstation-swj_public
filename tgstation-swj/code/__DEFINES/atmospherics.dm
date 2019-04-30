@@ -217,7 +217,7 @@
 #define INCINERATOR_ATMOS_AIRLOCK_INTERIOR 		"atmos_incinerator_airlock_interior"
 #define INCINERATOR_ATMOS_AIRLOCK_EXTERIOR 		"atmos_incinerator_airlock_exterior"
 
-//Rebel lavaland base incinerator (lavaland_surface_syndicate_base1.dmm)
+//Syndicate lavaland base incinerator (lavaland_surface_syndicate_base1.dmm)
 #define INCINERATOR_SYNDICATELAVA_IGNITER 				"syndicatelava_igniter"
 #define INCINERATOR_SYNDICATELAVA_MAINVENT 				"syndicatelava_mainvent"
 #define INCINERATOR_SYNDICATELAVA_AUXVENT 				"syndicatelava_auxvent"

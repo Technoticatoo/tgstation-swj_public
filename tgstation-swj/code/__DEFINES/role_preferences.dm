@@ -6,14 +6,14 @@
 
 //These are synced with the Database, if you change the values of the defines
 //then you MUST update the database!
-#define ROLE_SYNDICATE				"Rebel"
+#define ROLE_SYNDICATE				"Syndicate"
 #define ROLE_TRAITOR				"traitor"
 #define ROLE_OPERATIVE				"operative"
 #define ROLE_CHANGELING				"changeling"
 #define ROLE_WIZARD					"jedi"
 #define ROLE_MALF					"malf AI"
 #define ROLE_REV					"rebel"
-#define ROLE_REV_HEAD				"Head Rebel"
+#define ROLE_REV_HEAD				"Head Syndicate"
 #define ROLE_ALIEN					"xenomorph"
 #define ROLE_PAI					"pAI"
 #define ROLE_CULTIST				"cultist"

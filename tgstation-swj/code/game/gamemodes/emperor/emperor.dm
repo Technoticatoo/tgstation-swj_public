@@ -4,6 +4,7 @@
 	false_report_weight = 10
 	traitors_possible = 3 //hard limit on traitors if scaling is turned off
 	restricted_jobs = list("AI", "Cyborg")
+	protected_jobs = list("Captain")
 	required_players = 1	// how many of each type are required
 	required_enemies = 1	// how many of each type are required
 	recommended_enemies = 3
@@ -16,7 +17,7 @@
 
 /datum/game_mode/traitor/emperor/announce()
 	to_chat(world, "<B>The current game mode is - The Emperor visits!</B>")
-	to_chat(world, "<B>The Emperor is visiting, the Rebel scum has send assassins to the station, do not let the Emperor die!</B>")
+	to_chat(world, "<B>The Emperor is visiting, the Syndicate scum has send assassins to the station, do not let the Emperor die!</B>")
 
 /datum/game_mode/traitor/emperor/can_start()
 	if(!..())
@@ -52,6 +53,7 @@
 		return ..()
 	else
 		return 0
+	return 1
 
 /datum/game_mode/traitor/emperor/post_setup()
 	for(var/datum/mind/emperor in emperors)
@@ -76,4 +78,4 @@
 	..()
 
 /datum/game_mode/traitor/emperor/generate_report()
-	return "The Emperor has come to visit the station, Rebel specialists have arrived to assassinate him and fullfill secondary objectives."
+	return "The Emperor has come to visit the station, Syndicate specialists have arrived to assassinate him and fullfill secondary objectives."

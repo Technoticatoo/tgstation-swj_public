@@ -199,11 +199,11 @@
 /obj/item/book/manual/nuclear
 	name = "Fission Mailed: Nuclear Sabotage 101"
 	icon_state ="bookNuclear"
-	author = "Rebel"
+	author = "Syndicate"
 	title = "Fission Mailed: Nuclear Sabotage 101"
 	dat = {"<html>
 			Nuclear Explosives 101:<br>
-			Hello and thank you for choosing the Rebel for your nuclear information needs.<br>
+			Hello and thank you for choosing the Syndicate for your nuclear information needs.<br>
 			Today's crash course will deal with the operation of a Fusion Class Kuat made Nuclear Device.<br>
 			First and foremost, DO NOT TOUCH ANYTHING UNTIL THE BOMB IS IN PLACE.<br>
 			Pressing any button on the compacted bomb will cause it to extend and bolt itself into place.<br>
@@ -218,7 +218,7 @@
 			Now the bomb CAN ONLY be detonated using the timer. Manual detonation is not an option.<br>
 			Note: Imperial is a pain in the neck.<br>
 			Toggle off the SAFETY.<br>
-			Note: You wouldn't believe how many Rebel Operatives with doctorates have forgotten this step.<br>
+			Note: You wouldn't believe how many Syndicate Operatives with doctorates have forgotten this step.<br>
 			So use the - - and + + to set a det time between 5 seconds and 10 minutes.<br>
 			Then press the timer toggle button to start the countdown.<br>
 			Now remove the auth. disk so that the buttons deactivate.<br>

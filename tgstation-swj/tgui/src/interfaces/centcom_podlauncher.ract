@@ -92,7 +92,7 @@
         <ui-button style='{{data.styleChoice == 2 ? "selected" : null}}' action='styleBluespace' tooltip-side='left'
         tooltip='Changes the pods style from the default Centcom color scheme to the same as the stations upgraded blue-and-white Bluespace Supplypods.'>Advanced</ui-button>
         <ui-button style='{{data.styleChoice == 4 ? "selected" : null}}' action='styleSyndie' tooltip-side='left'
-        tooltip='Changes the pods style from the default Centcom color scheme to a menacing black and blood-red. Great for sending meme-ops in style!'>Rebel</ui-button>
+        tooltip='Changes the pods style from the default Centcom color scheme to a menacing black and blood-red. Great for sending meme-ops in style!'>Syndicate</ui-button>
         <ui-button style='{{data.styleChoice == 5 ? "selected" : null}}' action='styleBlue' tooltip-side='left'
         tooltip='Changes the pods style from the default Centcom color scheme to a menacing black and dark blue. Great for sending deathsquads in style!'>Deathsquad</ui-button>
          <ui-button style='{{data.styleChoice == 6 ? "selected" : null}}' action='styleCult' tooltip-side='left'
@@ -100,7 +100,7 @@
         <ui-button style='{{data.styleChoice == 7 ? "selected" : null}}' action='styleMissile' tooltip-side='left'
         tooltip='Changes the pods style from the default Centcom style to a large missile. Combos well with a missile mode, so the missile doesnt stick around after landing.'>Missile</ui-button>
         <ui-button style='{{data.styleChoice == 8 ? "selected" : null}}' action='styleSMissile' tooltip-side='left'
-        tooltip='Changes the pods style from the default Centcom style to a large blood-red missile. Combos well with missile mode, so the missile doesnt stick around after landing.'>Rebel Missile</ui-button>
+        tooltip='Changes the pods style from the default Centcom style to a large blood-red missile. Combos well with missile mode, so the missile doesnt stick around after landing.'>Syndicate Missile</ui-button>
         <ui-button style='{{data.styleChoice == 9 ? "selected" : null}}' action='styleBox' tooltip-side='left'
         tooltip='Changes the pods style from the default Centcom style to a large, dark-green military supply crate.'>Supply Crate</ui-button>
         <ui-button style='{{data.styleChoice == 10 ? "selected" : null}}' action='styleHONK' tooltip-side='left'

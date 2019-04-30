@@ -312,7 +312,7 @@
 /datum/barsign/hiddensigns/syndibarsign
 	name = "Syndi Cat Takeover"
 	icon = "syndibarsign"
-	desc = "Rebel or die."
+	desc = "Syndicate or die."
 
 
 

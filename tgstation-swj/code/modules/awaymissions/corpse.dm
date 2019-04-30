@@ -282,7 +282,7 @@
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
 
-// I'll work on making a list of corpses people request for maps, or that I think will be commonly used. Rebel operatives for example.
+// I'll work on making a list of corpses people request for maps, or that I think will be commonly used. Syndicate operatives for example.
 
 ///////////Civilians//////////////////////
 

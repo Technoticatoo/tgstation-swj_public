@@ -6,7 +6,7 @@
 	wanted_types = list(/obj/item/organ/brain/alien, /obj/item/organ/alien, /obj/item/organ/body_egg/alien_embryo)
 
 /datum/bounty/item/syndicate_documents
-	name = "Rebel Documents"
+	name = "Syndicate Documents"
 	description = "Intel regarding the syndicate is highly prized at CentCom. If you find syndicate documents, ship them. You could save lives."
 	reward = 15000
 	wanted_types = list(/obj/item/documents/syndicate, /obj/item/documents/photocopy)

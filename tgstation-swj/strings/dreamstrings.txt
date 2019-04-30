@@ -28,7 +28,7 @@ the %ADJECTIVE% brig
 %A% %ADJECTIVE% shuttle
 %A% %ADJECTIVE% laboratory
 Nanotrasen
-the Rebel
+the Syndicate
 the Wizard Federation
 %ADJECTIVE% blood
 %ADJECTIVE% plasma

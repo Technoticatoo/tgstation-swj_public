@@ -330,7 +330,7 @@
 	build_path = /obj/machinery/computer/shuttle/monastery_shuttle
 
 /obj/item/circuitboard/computer/syndicate_shuttle
-	name = "Rebel Shuttle (Computer Board)"
+	name = "Syndicate Shuttle (Computer Board)"
 	build_path = /obj/machinery/computer/shuttle/syndicate
 	var/challenge = FALSE
 	var/moved = FALSE

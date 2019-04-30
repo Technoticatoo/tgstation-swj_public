@@ -129,7 +129,7 @@
 		return TRUE
 	. = ..()
 
-// Overthrow target objective. A crewmember in particular has a certain bond with some centcom officials, and the Rebel want you to target him in particular, even though he's not a head.
+// Overthrow target objective. A crewmember in particular has a certain bond with some centcom officials, and the Syndicate want you to target him in particular, even though he's not a head.
 /datum/objective/overthrow/target
 
 /datum/objective/overthrow/target/update_explanation_text()

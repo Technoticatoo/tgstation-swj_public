@@ -27,30 +27,30 @@
 
 ////////////////////////////Multi-area shuttles////////////////////////////
 
-////////////////////////////Rebel infiltrator////////////////////////////
+////////////////////////////Syndicate infiltrator////////////////////////////
 
 /area/shuttle/syndicate
-	name = "Rebel Infiltrator"
+	name = "Syndicate Infiltrator"
 	blob_allowed = FALSE
 	ambientsounds = HIGHSEC
 	canSmoothWithAreas = /area/shuttle/syndicate
 
 /area/shuttle/syndicate/bridge
-	name = "Rebel Infiltrator Control"
+	name = "Syndicate Infiltrator Control"
 
 /area/shuttle/syndicate/medical
-	name = "Rebel Infiltrator Medbay"
+	name = "Syndicate Infiltrator Medbay"
 
 /area/shuttle/syndicate/armory
-	name = "Rebel Infiltrator Armory"
+	name = "Syndicate Infiltrator Armory"
 
 /area/shuttle/syndicate/eva
-	name = "Rebel Infiltrator EVA"
+	name = "Syndicate Infiltrator EVA"
 
 /area/shuttle/syndicate/hallway
 
 /area/shuttle/syndicate/airlock
-	name = "Rebel Infiltrator Airlock"
+	name = "Syndicate Infiltrator Airlock"
 
 ////////////////////////////Pirate Shuttle////////////////////////////
 
@@ -174,7 +174,7 @@
 	blob_allowed = FALSE
 
 /area/shuttle/syndicate_scout
-	name = "Rebel Scout"
+	name = "Syndicate Scout"
 	blob_allowed = FALSE
 
 /area/shuttle/caravan
@@ -182,13 +182,13 @@
 	requires_power = TRUE
 
 /area/shuttle/caravan/syndicate1
-	name = "Rebel Fighter"
+	name = "Syndicate Fighter"
 
 /area/shuttle/caravan/syndicate2
-	name = "Rebel Fighter"
+	name = "Syndicate Fighter"
 
 /area/shuttle/caravan/syndicate3
-	name = "Rebel Drop Ship"
+	name = "Syndicate Drop Ship"
 
 /area/shuttle/caravan/pirate
 	name = "Pirate Cutter"

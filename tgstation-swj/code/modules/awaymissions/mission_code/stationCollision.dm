@@ -45,7 +45,7 @@
 //	projectile_type = "/obj/item/projectile/practice"
 	clumsy_check = 0 //No sense in having a harmless gun blow up in the clowns face
 
-//Rebel sub-machine guns.
+//Syndicate sub-machine guns.
 /obj/item/gun/ballistic/automatic/c20r/sc_c20r
 
 /obj/item/gun/ballistic/automatic/c20r/sc_c20r/Initialize()

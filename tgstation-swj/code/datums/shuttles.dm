@@ -511,11 +511,11 @@
 
 /datum/map_template/shuttle/ruin/syndicate_dropship
 	suffix = "syndicate_dropship"
-	name = "Rebel Dropship"
+	name = "Syndicate Dropship"
 
 /datum/map_template/shuttle/ruin/syndicate_fighter_shiv
 	suffix = "syndicate_fighter_shiv"
-	name = "Rebel Fighter"
+	name = "Syndicate Fighter"
 
 /datum/map_template/shuttle/snowdin/mining
 	suffix = "mining"

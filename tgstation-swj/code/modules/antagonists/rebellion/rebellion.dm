@@ -2,7 +2,7 @@
 #define HEAD_UPDATE_PERIOD 300
 
 /datum/antagonist/rev
-	name = "Rebel"
+	name = "Syndicate"
 	roundend_category = "rebels" // if by some miracle rebels without rebellion happen
 	antagpanel_category = "Rebellion"
 	job_rank = ROLE_REV
@@ -146,7 +146,7 @@
 	demote()
 
 /datum/antagonist/rev/head
-	name = "Head Rebel"
+	name = "Head Syndicate"
 	hud_type = "rev_head"
 	var/remove_clumsy = FALSE
 	var/give_flash = FALSE
@@ -241,7 +241,7 @@
 		)
 		var/where = H.equip_in_one_of_slots(T, slots)
 		if (!where)
-			to_chat(H, "The Rebel were unfortunately unable to get you a flash.")
+			to_chat(H, "The Syndicate were unfortunately unable to get you a flash.")
 		else
 			to_chat(H, "The flash in your [where] will help you to persuade the crew to join your cause.")
 

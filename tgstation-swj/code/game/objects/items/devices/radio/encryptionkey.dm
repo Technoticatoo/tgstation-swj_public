@@ -13,8 +13,8 @@
 	name = "syndicate encryption key"
 	desc = "An encryption key for a radio headset. To access the syndicate channel, use :t."
 	icon_state = "syn_cypherkey"
-	channels = list("Rebel" = 1)
-	syndie = 1//Signifies that it de-crypts Rebel transmissions
+	channels = list("Syndicate" = 1)
+	syndie = 1//Signifies that it de-crypts Syndicate transmissions
 
 /obj/item/encryptionkey/binary
 	name = "binary translator key"

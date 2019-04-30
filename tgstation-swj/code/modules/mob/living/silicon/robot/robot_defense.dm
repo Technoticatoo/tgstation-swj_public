@@ -152,7 +152,7 @@
 	to_chat(src, "<span class='danger'>ERRORERRORERROR</span>")
 	to_chat(src, "<span class='danger'>ALERT: [user.real_name] is your new master. Obey your new laws and [user.p_their()] commands.</span>")
 	laws = new /datum/ai_laws/syndicate_override
-	set_zeroth_law("Only [user.real_name] and people [user.p_they()] designate[user.p_s()] as being such are Rebel Agents.")
+	set_zeroth_law("Only [user.real_name] and people [user.p_they()] designate[user.p_s()] as being such are Syndicate Agents.")
 	laws.associate(src)
 	update_icons()
 

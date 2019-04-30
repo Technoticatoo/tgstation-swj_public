@@ -15,7 +15,7 @@
 
 
 /mob/living/simple_animal/hostile/syndicate
-	name = "Rebel Operative"
+	name = "Syndicate Operative"
 	desc = "Death to Imperial."
 	icon = 'icons/mob/simple_human.dmi'
 	icon_state = "syndicate"
@@ -56,7 +56,7 @@
 /mob/living/simple_animal/hostile/syndicate/space
 	icon_state = "syndicate_space"
 	icon_living = "syndicate_space"
-	name = "Rebel Commando"
+	name = "Syndicate Commando"
 	maxHealth = 170
 	health = 170
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
@@ -71,7 +71,7 @@
 /mob/living/simple_animal/hostile/syndicate/space/stormtrooper
 	icon_state = "syndicate_stormtrooper"
 	icon_living = "syndicate_stormtrooper"
-	name = "Rebel Stormtrooper"
+	name = "Syndicate Stormtrooper"
 	maxHealth = 250
 	health = 250
 
@@ -88,7 +88,7 @@
 /mob/living/simple_animal/hostile/syndicate/melee/space
 	icon_state = "syndicate_space_knife"
 	icon_living = "syndicate_space_knife"
-	name = "Rebel Commando"
+	name = "Syndicate Commando"
 	maxHealth = 170
 	health = 170
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
@@ -103,7 +103,7 @@
 /mob/living/simple_animal/hostile/syndicate/melee/space/stormtrooper
 	icon_state = "syndicate_stormtrooper_knife"
 	icon_living = "syndicate_stormtrooper_knife"
-	name = "Rebel Stormtrooper"
+	name = "Syndicate Stormtrooper"
 	maxHealth = 250
 	health = 250
 
@@ -139,7 +139,7 @@
 /mob/living/simple_animal/hostile/syndicate/melee/sword/space
 	icon_state = "syndicate_space_sword"
 	icon_living = "syndicate_space_sword"
-	name = "Rebel Commando"
+	name = "Syndicate Commando"
 	maxHealth = 170
 	health = 170
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
@@ -159,7 +159,7 @@
 /mob/living/simple_animal/hostile/syndicate/melee/sword/space/stormtrooper
 	icon_state = "syndicate_stormtrooper_sword"
 	icon_living = "syndicate_stormtrooper_sword"
-	name = "Rebel Stormtrooper"
+	name = "Syndicate Stormtrooper"
 	maxHealth = 250
 	health = 250
 
@@ -184,7 +184,7 @@
 /mob/living/simple_animal/hostile/syndicate/ranged/space
 	icon_state = "syndicate_space_pistol"
 	icon_living = "syndicate_space_pistol"
-	name = "Rebel Commando"
+	name = "Syndicate Commando"
 	maxHealth = 170
 	health = 170
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
@@ -199,7 +199,7 @@
 /mob/living/simple_animal/hostile/syndicate/ranged/space/stormtrooper
 	icon_state = "syndicate_stormtrooper_pistol"
 	icon_living = "syndicate_stormtrooper_pistol"
-	name = "Rebel Stormtrooper"
+	name = "Syndicate Stormtrooper"
 	maxHealth = 250
 	health = 250
 
@@ -211,13 +211,13 @@
 	projectilesound = 'sound/weapons/gunshot_smg.ogg'
 
 /mob/living/simple_animal/hostile/syndicate/ranged/smg/pilot //caravan ambush ruin
-	name = "Rebel Salvage Pilot"
+	name = "Syndicate Salvage Pilot"
 	loot = list(/obj/effect/mob_spawn/human/corpse/syndicatesoldier)
 
 /mob/living/simple_animal/hostile/syndicate/ranged/smg/space
 	icon_state = "syndicate_space_smg"
 	icon_living = "syndicate_space_smg"
-	name = "Rebel Commando"
+	name = "Syndicate Commando"
 	maxHealth = 170
 	health = 170
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
@@ -232,7 +232,7 @@
 /mob/living/simple_animal/hostile/syndicate/ranged/smg/space/stormtrooper
 	icon_state = "syndicate_stormtrooper_smg"
 	icon_living = "syndicate_stormtrooper_smg"
-	name = "Rebel Stormtrooper"
+	name = "Syndicate Stormtrooper"
 	maxHealth = 250
 	health = 250
 
@@ -247,7 +247,7 @@
 /mob/living/simple_animal/hostile/syndicate/ranged/shotgun/space
 	icon_state = "syndicate_space_shotgun"
 	icon_living = "syndicate_space_shotgun"
-	name = "Rebel Commando"
+	name = "Syndicate Commando"
 	maxHealth = 170
 	health = 170
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
@@ -262,7 +262,7 @@
 /mob/living/simple_animal/hostile/syndicate/ranged/shotgun/space/stormtrooper
 	icon_state = "syndicate_stormtrooper_shotgun"
 	icon_living = "syndicate_stormtrooper_shotgun"
-	name = "Rebel Stormtrooper"
+	name = "Syndicate Stormtrooper"
 	maxHealth = 250
 	health = 250
 

@@ -286,9 +286,9 @@ update_label("John Doe", "Clowny")
 
 /obj/item/card/id/syndicate_command
 	name = "syndicate ID card"
-	desc = "An ID straight from the Rebel."
-	registered_name = "Rebel"
-	assignment = "Rebel Overlord"
+	desc = "An ID straight from the Syndicate."
+	registered_name = "Syndicate"
+	assignment = "Syndicate Overlord"
 	access = list(ACCESS_SYNDICATE)
 
 /obj/item/card/id/captains_spare

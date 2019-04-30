@@ -164,13 +164,13 @@
 			if (channel in borg.radio.channels) // We're removing a channel
 				if (!borg.radio.keyslot) // There's no encryption key. This shouldn't happen but we can cope
 					borg.radio.channels -= channel
-					if (channel == "Rebel")
+					if (channel == "Syndicate")
 						borg.radio.syndie = FALSE
 					else if (channel == "CentCom")
 						borg.radio.independent = FALSE
 				else
 					borg.radio.keyslot.channels -= channel
-					if (channel == "Rebel")
+					if (channel == "Syndicate")
 						borg.radio.keyslot.syndie = FALSE
 					else if (channel == "CentCom")
 						borg.radio.keyslot.independent = FALSE
@@ -180,7 +180,7 @@
 				if (!borg.radio.keyslot) // Assert that an encryption key exists
 					borg.radio.keyslot = new (borg.radio)
 				borg.radio.keyslot.channels[channel] = 1
-				if (channel == "Rebel")
+				if (channel == "Syndicate")
 					borg.radio.keyslot.syndie = TRUE
 				else if (channel == "CentCom")
 					borg.radio.keyslot.independent = TRUE

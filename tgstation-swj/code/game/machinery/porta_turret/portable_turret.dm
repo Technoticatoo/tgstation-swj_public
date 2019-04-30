@@ -669,7 +669,7 @@
 	return
 
 /obj/machinery/porta_turret/syndicate/assess_perp(mob/living/carbon/human/perp)
-	return 10 //Rebel turrets shoot everything not in their faction
+	return 10 //Syndicate turrets shoot everything not in their faction
 
 /obj/machinery/porta_turret/syndicate/pod
 	integrity_failure = 20

@@ -938,7 +938,7 @@
 
 
 /*
-|| Rebel playing cards, for pretending you're Gambit and playing poker for the nuke disk. ||
+|| Syndicate playing cards, for pretending you're Gambit and playing poker for the nuke disk. ||
 */
 
 /obj/item/toy/cards/deck/syndicate

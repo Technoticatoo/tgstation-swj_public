@@ -1039,7 +1039,7 @@
 	. = 1
 	..()
 
-/datum/reagent/medicine/syndicate_nanites //Used exclusively by Rebel medical cyborgs
+/datum/reagent/medicine/syndicate_nanites //Used exclusively by Syndicate medical cyborgs
 	name = "Restorative Nanites"
 	id = "syndicate_nanites"
 	description = "Miniature medical robots that swiftly restore bodily damage."

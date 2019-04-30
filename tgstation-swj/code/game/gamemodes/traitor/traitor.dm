@@ -19,7 +19,7 @@
 	enemy_minimum_age = 0
 
 	announce_span = "danger"
-	announce_text = "There are Rebel agents on the station!\n\
+	announce_text = "There are Syndicate agents on the station!\n\
 	<span class='danger'>Traitors</span>: Accomplish your objectives.\n\
 	<span class='notice'>Crew</span>: Do not let the traitors succeed!"
 
@@ -95,5 +95,5 @@
 	character.add_antag_datum(new_antag)
 
 /datum/game_mode/traitor/generate_report()
-	return "Although more specific threats are commonplace, you should always remain vigilant for Rebel agents aboard your station. Rebel communications have implied that many \
-		Imperial employees are Rebel agents with hidden memories that may be activated at a moment's notice, so it's possible that these agents might not even know their positions."
+	return "Although more specific threats are commonplace, you should always remain vigilant for Syndicate agents aboard your station. Syndicate communications have implied that many \
+		Imperial employees are Syndicate agents with hidden memories that may be activated at a moment's notice, so it's possible that these agents might not even know their positions."
