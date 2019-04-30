@@ -9,7 +9,7 @@
 	enemy_minimum_age = 14
 
 	announce_span = "danger"
-	announce_text = "Syndicate forces are approaching the station in an attempt to destroy it!\n\
+	announce_text = "Rebel forces are approaching the station in an attempt to destroy it!\n\
 	<span class='danger'>Operatives</span>: Secure the nuclear authentication disk and use your nuke to destroy the station.\n\
 	<span class='notice'>Crew</span>: Defend the nuclear authentication disk and ensure that it leaves with you on the emergency shuttle."
 
@@ -116,7 +116,7 @@
 	return M && istype(M) && M.mind && M.mind.has_antag_datum(/datum/antagonist/nukeop)
 
 /datum/outfit/syndicate
-	name = "Syndicate Operative - Basic"
+	name = "Rebel Operative - Basic"
 
 	uniform = /obj/item/clothing/under/syndicate
 	shoes = /obj/item/clothing/shoes/combat
@@ -135,7 +135,7 @@
 
 
 /datum/outfit/syndicate/leader
-	name = "Syndicate Leader - Basic"
+	name = "Rebel Leader - Basic"
 	id = /obj/item/card/id/syndicate/nuke_leader
 	r_hand = /obj/item/nuclear_challenge
 	command_radio = TRUE
@@ -162,7 +162,7 @@
 	H.update_icons()
 
 /datum/outfit/syndicate/full
-	name = "Syndicate Operative - Full Kit"
+	name = "Rebel Operative - Full Kit"
 
 	glasses = /obj/item/clothing/glasses/night
 	mask = /obj/item/clothing/mask/gas/syndicate

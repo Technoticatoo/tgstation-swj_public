@@ -90,23 +90,23 @@
 	name = "incomplete servant golem shell"
 	shell_type = /obj/effect/mob_spawn/human/golem/servant
 
-///Syndicate Listening Post
+///Rebel Listening Post
 
 /obj/effect/mob_spawn/human/lavaland_syndicate
-	name = "Syndicate Bioweapon Scientist"
+	name = "Rebel Bioweapon Scientist"
 	roundstart = FALSE
 	death = FALSE
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper_s"
 	flavour_text = "<span class='big bold'>You are a syndicate agent,</span><b> employed in a top secret research facility developing biological weapons. Unfortunately, your hated enemy, Imperial, has begun mining in this sector. <b>Continue your research as best you can, and try to keep a low profile. <font size=6>DON'T</font> abandon the base without good cause.</b> The base is rigged with explosives should the worst happen, do not let the base fall into enemy hands!</b>"
 	outfit = /datum/outfit/lavaland_syndicate
-	assignedrole = "Lavaland Syndicate"
+	assignedrole = "Lavaland Rebel"
 
 /obj/effect/mob_spawn/human/lavaland_syndicate/special(mob/living/new_spawn)
 	new_spawn.grant_language(/datum/language/codespeak)
 
 /datum/outfit/lavaland_syndicate
-	name = "Lavaland Syndicate Agent"
+	name = "Lavaland Rebel Agent"
 	r_hand = /obj/item/gun/ballistic/automatic/sniper_rifle
 	uniform = /obj/item/clothing/under/syndicate
 	suit = /obj/item/clothing/suit/toggle/labcoat
@@ -122,7 +122,7 @@
 	H.faction |= ROLE_SYNDICATE
 
 /obj/effect/mob_spawn/human/lavaland_syndicate/comms
-	name = "Syndicate Comms Agent"
+	name = "Rebel Comms Agent"
 	flavour_text = "<span class='big bold'>You are a syndicate agent,</span><b> employed in a top secret research facility developing biological weapons. Unfortunately, your hated enemy, Imperial, has begun mining in this sector. <b>Monitor enemy activity as best you can, and try to keep a low profile. <font size=6>DON'T</font> abandon the base without good cause.</b> Use the communication equipment to provide support to any field agents, and sow disinformation to throw Imperial off your trail. Do not let the base fall into enemy hands!</b>"
 	outfit = /datum/outfit/lavaland_syndicate/comms
 
@@ -133,7 +133,7 @@
 		return INITIALIZE_HINT_QDEL
 
 /datum/outfit/lavaland_syndicate/comms
-	name = "Lavaland Syndicate Comms Agent"
+	name = "Lavaland Rebel Comms Agent"
 	r_hand = /obj/item/melee/transforming/energy/sword/saber
 	mask = /obj/item/clothing/mask/chameleon/gps
 	suit = /obj/item/clothing/suit/armor/vest

@@ -8,7 +8,7 @@
 	job_rank = ROLE_TRAITOR
 	antag_moodlet = /datum/mood_event/focused
 	var/special_role = ROLE_TRAITOR
-	var/employer = "The Syndicate"
+	var/employer = "The Rebel"
 	var/give_objectives = TRUE
 	var/should_give_codewords = TRUE
 	var/should_equip = TRUE
@@ -242,7 +242,7 @@
 		return
 	var/mob/traitor_mob=owner.current
 
-	to_chat(traitor_mob, "<U><B>The Syndicate provided you with the following information on how to identify their agents:</B></U>")
+	to_chat(traitor_mob, "<U><B>The Rebel provided you with the following information on how to identify their agents:</B></U>")
 	to_chat(traitor_mob, "<B>Code Phrase</B>: <span class='danger'>[GLOB.syndicate_code_phrase]</span>")
 	to_chat(traitor_mob, "<B>Code Response</B>: <span class='danger'>[GLOB.syndicate_code_response]</span>")
 
@@ -259,7 +259,7 @@
 	var/law_borg = "Accomplish your AI's objectives at all costs."
 	killer.set_zeroth_law(law, law_borg)
 	killer.set_syndie_radio()
-	to_chat(killer, "Your radio has been upgraded! Use :t to speak on an encrypted channel with Syndicate Agents!")
+	to_chat(killer, "Your radio has been upgraded! Use :t to speak on an encrypted channel with Rebel Agents!")
 	killer.add_malf_picker()
 
 /datum/antagonist/traitor/proc/equip(var/silent = FALSE)
@@ -303,7 +303,7 @@
 	var/equipped_slot = mob.equip_in_one_of_slots(folder, slots)
 	if (equipped_slot)
 		where = "In your [equipped_slot]"
-	to_chat(mob, "<BR><BR><span class='info'>[where] is a folder containing <b>secret documents</b> that another Syndicate group wants. We have set up a meeting with one of their agents on station to make an exchange. Exercise extreme caution as they cannot be trusted and may be hostile.</span><BR>")
+	to_chat(mob, "<BR><BR><span class='info'>[where] is a folder containing <b>secret documents</b> that another Rebel group wants. We have set up a meeting with one of their agents on station to make an exchange. Exercise extreme caution as they cannot be trusted and may be hostile.</span><BR>")
 
 //TODO Collate
 /datum/antagonist/traitor/roundend_report()

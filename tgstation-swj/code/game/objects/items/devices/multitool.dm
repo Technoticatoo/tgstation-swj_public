@@ -101,7 +101,7 @@
 
 
 
-// Syndicate device disguised as a multitool; it will turn red when an AI camera is nearby.
+// Rebel device disguised as a multitool; it will turn red when an AI camera is nearby.
 
 /obj/item/multitool/ai_detect
 	var/track_cooldown = 0

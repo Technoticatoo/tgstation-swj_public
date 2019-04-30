@@ -841,7 +841,7 @@
 	//Antagonist (Orange)
 		var/isbanned_dept = jobban_isbanned(M, ROLE_SYNDICATE)
 		dat += "<table cellpadding='1' cellspacing='0' width='100%'>"
-		dat += "<tr bgcolor='ffeeaa'><th colspan='10'><a href='?src=[REF(src)];[HrefToken()];jobban3=Syndicate;jobban4=[REF(M)]'>Antagonist Positions</a> | "
+		dat += "<tr bgcolor='ffeeaa'><th colspan='10'><a href='?src=[REF(src)];[HrefToken()];jobban3=Rebel;jobban4=[REF(M)]'>Antagonist Positions</a> | "
 		dat += "<a href='?src=[REF(src)];[HrefToken()];jobban3=teamantags;jobban4=[REF(M)]'>Team Antagonists</a> | "
 		dat += "<a href='?src=[REF(src)];[HrefToken()];jobban3=convertantags;jobban4=[REF(M)]'>Conversion Antagonists</a></th></tr><tr align='center'></th>"
 
@@ -1882,12 +1882,12 @@
 		var/mob/M = locate(href_list["CentComReply"])
 		usr.client.admin_headset_message(M, "CentCom")
 
-	else if(href_list["SyndicateReply"])
+	else if(href_list["RebelReply"])
 		if(!check_rights(R_ADMIN))
 			return
 
-		var/mob/M = locate(href_list["SyndicateReply"])
-		usr.client.admin_headset_message(M, "Syndicate")
+		var/mob/M = locate(href_list["RebelReply"])
+		usr.client.admin_headset_message(M, "Rebel")
 
 	else if(href_list["HeadsetMessage"])
 		if(!check_rights(R_ADMIN))

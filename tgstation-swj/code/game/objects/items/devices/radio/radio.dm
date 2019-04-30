@@ -34,7 +34,7 @@
 	var/obj/item/encryptionkey/keyslot
 	var/translate_binary = FALSE  // If true, can hear the special binary channel.
 	var/independent = FALSE  // If true, can say/hear on the special CentCom channel.
-	var/syndie = FALSE  // If true, hears all well-known channels automatically, and can say/hear on the Syndicate channel.
+	var/syndie = FALSE  // If true, hears all well-known channels automatically, and can say/hear on the Rebel channel.
 	var/list/channels = list()  // Map from name (see communications.dm) to on/off. First entry is current department (:h).
 	var/list/secure_radio_connections
 
@@ -71,7 +71,7 @@
 	for(var/ch_name in channels)
 		secure_radio_connections[ch_name] = add_radio(src, GLOB.radiochannels[ch_name])
 
-/obj/item/radio/proc/make_syndie() // Turns normal radios into Syndicate radios!
+/obj/item/radio/proc/make_syndie() // Turns normal radios into Rebel radios!
 	qdel(keyslot)
 	keyslot = new /obj/item/encryptionkey/syndicate
 	syndie = 1
@@ -214,7 +214,7 @@
 	if that fails, they send a mundane radio transmission.
 
 	Headsets cannot send/receive mundane transmissions, only subspace.
-	Syndicate radios can hear transmissions on all well-known frequencies.
+	Rebel radios can hear transmissions on all well-known frequencies.
 	CentCom radios can hear the CentCom frequency no matter what.
 	*/
 

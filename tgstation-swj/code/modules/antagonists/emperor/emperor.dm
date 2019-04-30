@@ -10,15 +10,19 @@
 	var/employer = "The Empire"
 	var/give_objectives = TRUE
 	var/should_give_codewords = TRUE
-	var/should_equip = TRUE
+	var/should_equip = FALSE
 	var/emperor_kind = EMPEROR_HUMAN //Set on initial assignment
 	can_hijack = HIJACK_HIJACKER
+	var/strip = TRUE //strip before equipping
+	var/hud_version = "jedi"
+	var/outfit_type = /datum/outfit/emperor
 
 /datum/antagonist/emperor/on_gain()
 	//SSticker.mode.emperors += owner
 	owner.special_role = special_role
 	if(give_objectives)
 		forge_emperor_objectives()
+	equip_emperor()
 	finalize_emperor()
 	..()
 
@@ -42,6 +46,22 @@
 		to_chat(owner.current,"<span class='userdanger'> You are no longer the [special_role]! </span>")
 	owner.special_role = null
 	..()
+
+/datum/antagonist/emperor/proc/equip_emperor()
+	if(!owner)
+		return
+	var/mob/living/carbon/human/H = owner.current
+	if(!istype(H))
+		return
+	if(strip)
+		H.delete_equipment()
+	//Jedis are human by default. Use the mirror if you want something else.
+	H.set_species(/datum/species/human)
+	H.equipOutfit(outfit_type)
+	owner.AddSpell(new /obj/effect/proc_holder/spell/self/forceheal(null))
+	owner.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcehealothers(null))
+	owner.AddSpell(new /obj/effect/proc_holder/spell/self/forceprotect(null))
+	owner.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcewall(null))
 
 /datum/antagonist/emperor/proc/add_objective(datum/objective/O)
 	objectives += O
@@ -166,7 +186,7 @@
 		return
 	var/mob/emperor_mob=owner.current
 
-	to_chat(emperor_mob, "<U><B>The Syndicate provided you with the following information on how to identify their agents:</B></U>")
+	to_chat(emperor_mob, "<U><B>The Rebel provided you with the following information on how to identify their agents:</B></U>")
 	to_chat(emperor_mob, "<B>Code Phrase</B>: <span class='danger'>[GLOB.syndicate_code_phrase]</span>")
 	to_chat(emperor_mob, "<B>Code Response</B>: <span class='danger'>[GLOB.syndicate_code_response]</span>")
 
@@ -183,7 +203,7 @@
 	var/law_borg = "Accomplish your AI's objectives at all costs."
 	killer.set_zeroth_law(law, law_borg)
 	killer.set_syndie_radio()
-	to_chat(killer, "Your radio has been upgraded! Use :t to speak on an encrypted channel with Syndicate Agents!")
+	to_chat(killer, "Your radio has been upgraded! Use :t to speak on an encrypted channel with Rebel Agents!")
 	killer.add_malf_picker()
 
 /datum/antagonist/emperor/proc/equip(var/silent = FALSE)
@@ -227,7 +247,7 @@
 	var/equipped_slot = mob.equip_in_one_of_slots(folder, slots)
 	if (equipped_slot)
 		where = "In your [equipped_slot]"
-	to_chat(mob, "<BR><BR><span class='info'>[where] is a folder containing <b>secret documents</b> that another Syndicate group wants. We have set up a meeting with one of their agents on station to make an exchange. Exercise extreme caution as they cannot be trusted and may be hostile.</span><BR>")
+	to_chat(mob, "<BR><BR><span class='info'>[where] is a folder containing <b>secret documents</b> that another Rebel group wants. We have set up a meeting with one of their agents on station to make an exchange. Exercise extreme caution as they cannot be trusted and may be hostile.</span><BR>")
 
 //TODO Collate
 /datum/antagonist/emperor/roundend_report()

@@ -124,7 +124,7 @@
 
 /obj/machinery/computer/pod/old/syndicate
 	name = "\improper ProComp Executive IIc"
-	desc = "The Syndicate operate on a tight budget. Operates external airlocks."
+	desc = "The Rebel operate on a tight budget. Operates external airlocks."
 	title = "External Airlock Controls"
 	req_access = list(ACCESS_SYNDICATE)
 

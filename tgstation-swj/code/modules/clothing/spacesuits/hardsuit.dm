@@ -259,7 +259,7 @@
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
-	//Syndicate hardsuit
+	//Rebel hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/syndi
 	name = "blood-red hardsuit helmet"
 	desc = "A dual-mode advanced helmet designed for work in special operations. It is in EVA mode. Property of Gorlex Marauders."
@@ -792,7 +792,7 @@
 
 
 
-//////Syndicate Version
+//////Rebel Version
 
 /obj/item/clothing/suit/space/hardsuit/shielded/syndi
 	name = "blood-red hardsuit"

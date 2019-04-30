@@ -567,7 +567,7 @@
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "lavalandsyndi";
-	name = "Syndicate Research Experimentation Shutters"
+	name = "Rebel Research Experimentation Shutters"
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/neutral{
@@ -588,7 +588,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/poddoor/preopen{
 	id = "lavalandsyndi";
-	name = "Syndicate Research Experimentation Shutters"
+	name = "Rebel Research Experimentation Shutters"
 	},
 /turf/open/floor/plating,
 /area/ruin/unpowered/syndicate_lava_base/testlab)
@@ -796,7 +796,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/monkey{
-	faction = list("neutral","Syndicate")
+	faction = list("neutral","Rebel")
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -837,7 +837,7 @@
 	},
 /obj/machinery/button/door{
 	id = "lavalandsyndi";
-	name = "Syndicate Experimentation Lockdown Control";
+	name = "Rebel Experimentation Lockdown Control";
 	pixel_y = 26;
 	req_access_txt = "150"
 	},
@@ -1143,7 +1143,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/monkey{
-	faction = list("neutral","Syndicate")
+	faction = list("neutral","Rebel")
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -2481,7 +2481,7 @@
 "hp" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/monkey{
-	faction = list("neutral","Syndicate")
+	faction = list("neutral","Rebel")
 	},
 /turf/open/floor/plasteel/white/side{
 	dir = 9
@@ -2498,7 +2498,7 @@
 /area/ruin/unpowered/syndicate_lava_base/virology)
 "hr" = (
 /mob/living/carbon/monkey{
-	faction = list("neutral","Syndicate")
+	faction = list("neutral","Rebel")
 	},
 /turf/open/floor/plasteel/white/side{
 	dir = 5
@@ -2637,7 +2637,7 @@
 /area/ruin/unpowered/syndicate_lava_base/cargo)
 "hE" = (
 /mob/living/carbon/monkey{
-	faction = list("neutral","Syndicate")
+	faction = list("neutral","Rebel")
 	},
 /turf/open/floor/plasteel/white/side{
 	dir = 10
@@ -2654,7 +2654,7 @@
 "hG" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/monkey{
-	faction = list("neutral","Syndicate")
+	faction = list("neutral","Rebel")
 	},
 /turf/open/floor/plasteel/white/side{
 	dir = 6
@@ -4875,7 +4875,7 @@
 "lQ" = (
 /obj/machinery/air_sensor{
 	frequency = 1442;
-	id_tag = "Syndicate_Construction_o2_sensor"
+	id_tag = "Rebel_Construction_o2_sensor"
 	},
 /turf/open/floor/plating/airless,
 /area/ruin/unpowered/syndicate_lava_base/engineering)
@@ -6189,7 +6189,7 @@
 /obj/structure/table/reinforced,
 /obj/item/radio/intercom{
 	freerange = 1;
-	name = "Syndicate Radio Intercom"
+	name = "Rebel Radio Intercom"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -6431,7 +6431,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/poddoor/preopen{
 	id = "lavalandsyndi";
-	name = "Syndicate Research Experimentation Shutters"
+	name = "Rebel Research Experimentation Shutters"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,

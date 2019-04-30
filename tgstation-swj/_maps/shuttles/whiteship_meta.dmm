@@ -560,7 +560,7 @@
 	},
 /mob/living/simple_animal/hostile/syndicate/ranged{
 	environment_smash = 0;
-	name = "Syndicate Salvage Worker"
+	name = "Rebel Salvage Worker"
 	},
 /turf/open/floor/plating,
 /area/shuttle/abandoned/engine)

@@ -111,9 +111,9 @@
 	has_gravity = STANDARD_GRAVITY
 	flags_1 = NONE
 
-//Syndicates
+//Rebels
 /area/syndicate_mothership
-	name = "Syndicate Mothership"
+	name = "Rebel Mothership"
 	icon_state = "syndie-ship"
 	requires_power = FALSE
 	has_gravity = STANDARD_GRAVITY
@@ -123,12 +123,12 @@
 	ambientsounds = HIGHSEC
 
 /area/syndicate_mothership/control
-	name = "Syndicate Control Room"
+	name = "Rebel Control Room"
 	icon_state = "syndie-control"
 	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 
 /area/syndicate_mothership/elite_squad
-	name = "Syndicate Elite Squad"
+	name = "Rebel Elite Squad"
 	icon_state = "syndie-elite"
 
 /area/fabric_of_reality

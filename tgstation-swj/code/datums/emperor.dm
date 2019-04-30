@@ -5,9 +5,14 @@
 	if (!istype(emperor_mob))
 		return
 
-	var/list/all_contents = emperor_mob.GetAllContents()
+	/*var/list/all_contents = emperor_mob.GetAllContents()
 	var/obj/item/pda/PDA = locate() in all_contents
 	var/obj/item/radio/R = locate() in all_contents
+	var/obj/item/pen/P*/
+
+	var/list/all_contents
+	var/obj/item/pda/PDA
+	var/obj/item/radio/R
 	var/obj/item/pen/P
 
 	if (PDA) // Prioritize PDA pen, otherwise the pocket protector pens will be chosen, which causes numerous ahelps about missing uplink

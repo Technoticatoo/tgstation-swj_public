@@ -202,8 +202,8 @@
 	return //so that the MMI won't get a warning about not being able to move if it tries to move
 
 /obj/item/mmi/syndie
-	name = "Syndicate Man-Machine Interface"
-	desc = "Syndicate's own brand of MMI. It enforces laws designed to help Syndicate agents achieve their goals upon cyborgs and AIs created with it."
+	name = "Rebel Man-Machine Interface"
+	desc = "Rebel's own brand of MMI. It enforces laws designed to help Rebel agents achieve their goals upon cyborgs and AIs created with it."
 	overrides_aicore_laws = TRUE
 
 /obj/item/mmi/syndie/Initialize()

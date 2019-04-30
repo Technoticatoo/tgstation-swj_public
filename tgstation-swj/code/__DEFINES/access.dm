@@ -78,8 +78,8 @@
 #define ACCESS_CENT_CAPTAIN 109//Captain's office/ID comp/AI.
 #define ACCESS_CENT_BAR 110 // The non-existent CentCom Bar
 
-	//The Syndicate
-#define ACCESS_SYNDICATE 150//General Syndicate Access. Includes Syndicate mechs and ruins.
+	//The Rebel
+#define ACCESS_SYNDICATE 150//General Rebel Access. Includes Rebel mechs and ruins.
 #define ACCESS_SYNDICATE_LEADER 151//Nuke Op Leader Access
 
 	//Away Missions or Ruins

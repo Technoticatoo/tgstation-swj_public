@@ -496,7 +496,7 @@
 
 
 
-///Syndicate Detonator (aka the big red button)///
+///Rebel Detonator (aka the big red button)///
 
 /obj/item/syndicatedetonator
 	name = "big red button"

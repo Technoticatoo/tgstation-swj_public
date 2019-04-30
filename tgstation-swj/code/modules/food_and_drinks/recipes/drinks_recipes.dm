@@ -396,7 +396,7 @@
 	required_reagents = list("ale" = 1, "irishcream" = 1)
 
 /datum/chemical_reaction/syndicatebomb
-	name = "Syndicate Bomb"
+	name = "Rebel Bomb"
 	id = "syndicatebomb"
 	results = list("syndicatebomb" = 2)
 	required_reagents = list("beer" = 1, "whiskeycola" = 1)

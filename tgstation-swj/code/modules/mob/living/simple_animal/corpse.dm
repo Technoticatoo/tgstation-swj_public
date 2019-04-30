@@ -9,14 +9,14 @@
 //List of different corpse types
 
 /obj/effect/mob_spawn/human/corpse/syndicatesoldier
-	name = "Syndicate Operative"
+	name = "Rebel Operative"
 	id_job = "Operative"
 	hair_style = "Bald"
 	facial_hair_style = "Shaved"
 	outfit = /datum/outfit/syndicatesoldiercorpse
 
 /datum/outfit/syndicatesoldiercorpse
-	name = "Syndicate Operative Corpse"
+	name = "Rebel Operative Corpse"
 	uniform = /obj/item/clothing/under/syndicate
 	suit = /obj/item/clothing/suit/armor/vest
 	shoes = /obj/item/clothing/shoes/combat
@@ -28,14 +28,14 @@
 	id = /obj/item/card/id/syndicate
 
 /obj/effect/mob_spawn/human/corpse/syndicatecommando
-	name = "Syndicate Commando"
+	name = "Rebel Commando"
 	id_job = "Operative"
 	hair_style = "Bald"
 	facial_hair_style = "Shaved"
 	outfit = /datum/outfit/syndicatecommandocorpse
 
 /datum/outfit/syndicatecommandocorpse
-	name = "Syndicate Commando Corpse"
+	name = "Rebel Commando Corpse"
 	uniform = /obj/item/clothing/under/syndicate
 	suit = /obj/item/clothing/suit/space/hardsuit/syndi
 	shoes = /obj/item/clothing/shoes/combat
@@ -48,14 +48,14 @@
 
 
 /obj/effect/mob_spawn/human/corpse/syndicatestormtrooper
-	name = "Syndicate Stormtrooper"
+	name = "Rebel Stormtrooper"
 	id_job = "Operative"
 	hair_style = "Bald"
 	facial_hair_style = "Shaved"
 	outfit = /datum/outfit/syndicatestormtroopercorpse
 
 /datum/outfit/syndicatestormtroopercorpse
-	name = "Syndicate Stormtrooper Corpse"
+	name = "Rebel Stormtrooper Corpse"
 	uniform = /obj/item/clothing/under/syndicate
 	suit = /obj/item/clothing/suit/space/hardsuit/syndi/elite
 	shoes = /obj/item/clothing/shoes/combat

@@ -131,7 +131,7 @@
 		do_sparks(4, TRUE, src)
 		qdel(src)
 	else
-		to_chat(user, "<span class='warning'>Unable to connect to Syndicate command. Please wait and try again later or use the teleporter on your uplink to get your points refunded.</span>")
+		to_chat(user, "<span class='warning'>Unable to connect to Rebel command. Please wait and try again later or use the teleporter on your uplink to get your points refunded.</span>")
 
 /obj/item/antag_spawner/nuke_ops/spawn_antag(client/C, turf/T, kind, datum/mind/user)
 	var/mob/living/carbon/human/M = new/mob/living/carbon/human(T)
@@ -219,7 +219,7 @@
 	var/datum/antagonist/nukeop/new_borg = new()
 	new_borg.send_to_spawnpoint = FALSE
 	R.mind.add_antag_datum(new_borg,creator_op.nuke_team)
-	R.mind.special_role = "Syndicate Cyborg"
+	R.mind.special_role = "Rebel Cyborg"
 
 ///////////SLAUGHTER DEMON
 

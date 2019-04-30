@@ -11,7 +11,7 @@
 	return 1
 
 /datum/game_mode/extended/generate_report()
-	return "The transmission mostly failed to mention your sector. It is possible that there is nothing in the Syndicate that could threaten your station during this shift."
+	return "The transmission mostly failed to mention your sector. It is possible that there is nothing in the Rebel that could threaten your station during this shift."
 
 /datum/game_mode/extended/announced
 	name = "extended"

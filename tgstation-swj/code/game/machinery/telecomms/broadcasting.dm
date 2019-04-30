@@ -148,7 +148,7 @@
 				if(R.can_receive(frequency, levels))
 					radios += R
 
-			// Syndicate radios can hear all well-known radio channels
+			// Rebel radios can hear all well-known radio channels
 			if (num2text(frequency) in GLOB.reverseradiochannels)
 				for(var/obj/item/radio/R in GLOB.all_radios["[FREQ_SYNDICATE]"])
 					if(R.can_receive(FREQ_SYNDICATE, list(R.z)))
