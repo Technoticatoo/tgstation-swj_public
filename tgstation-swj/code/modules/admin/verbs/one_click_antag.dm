@@ -456,3 +456,33 @@
 /datum/admins/proc/makeRevenant()
 	new /datum/round_event/ghost_role/revenant(TRUE, TRUE)
 	return 1
+
+/datum/admins/proc/makeEmperor()
+
+	var/datum/game_mode/traitor/emperor/temp = new
+	if(CONFIG_GET(flag/protect_roles_from_antagonist))
+		temp.restricted_jobs += temp.protected_jobs
+
+	if(CONFIG_GET(flag/protect_assistant_from_antagonist))
+		temp.restricted_jobs += "Assistant"
+
+	var/list/mob/living/carbon/human/candidates = list()
+	var/mob/living/carbon/human/H = null
+
+	for(var/mob/living/carbon/human/applicant in GLOB.player_list)
+		if(isReadytoRumble(applicant, ROLE_EMPEROR))
+			if(temp.age_check(applicant.client))
+				if(!(applicant.job in temp.restricted_jobs))
+					candidates += applicant
+
+	if(candidates.len)
+		var/numEmperor = 1
+
+		for(var/i = 0, i<numEmperor, i++)
+			H = pick(candidates)
+			H.mind.make_Emperor()
+			candidates.Remove(H)
+
+		return 1
+
+	return 0

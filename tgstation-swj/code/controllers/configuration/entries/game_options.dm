@@ -354,3 +354,7 @@
 /datum/config_entry/number/monkeycap
 	config_entry_value = 64
 	min_val = 0
+
+/datum/config_entry/number/emperor_objectives_amount
+	config_entry_value = 2
+	min_val = 0

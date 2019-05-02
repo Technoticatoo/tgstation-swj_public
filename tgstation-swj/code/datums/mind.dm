@@ -744,3 +744,10 @@
 	..()
 	mind.assigned_role = ROLE_PAI
 	mind.special_role = ""
+
+/datum/mind/proc/make_Emperor()
+	var/datum/antagonist/emperor/C = has_antag_datum(/datum/antagonist/emperor)
+	if(!C)
+		C = add_antag_datum(/datum/antagonist/emperor)
+		special_role = ROLE_EMPEROR
+	return C

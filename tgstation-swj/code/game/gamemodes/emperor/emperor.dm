@@ -51,7 +51,7 @@
 			emperor.special_role = ROLE_EMPEROR
 			emperors += emperor
 			emperor.restricted_roles = restricted_jobs
-		return ..()
+		return 1
 	else
 		return 0
 	return 1
