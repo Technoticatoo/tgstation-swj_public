@@ -2,7 +2,7 @@
 #define HEAD_UPDATE_PERIOD 300
 
 /datum/antagonist/rev
-	name = "Syndicate"
+	name = "Rebel"
 	roundend_category = "rebels" // if by some miracle rebels without rebellion happen
 	antagpanel_category = "Rebellion"
 	job_rank = ROLE_REV
@@ -146,7 +146,7 @@
 	demote()
 
 /datum/antagonist/rev/head
-	name = "Head Syndicate"
+	name = "Head Rebel"
 	hud_type = "rev_head"
 	var/remove_clumsy = FALSE
 	var/give_flash = FALSE

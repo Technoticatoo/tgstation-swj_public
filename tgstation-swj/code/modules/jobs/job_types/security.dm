@@ -130,14 +130,14 @@ Master Sergeant
 Interrogator
 */
 /datum/job/detective
-	title = "ISB Agent"
+	title = "Interrogator"
 	flag = DETECTIVE
-	department_head = list("Master Sergeant")
+	department_head = list("Stormtrooper Commander")
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Master Sergeant"
+	supervisors = "the Stormtrooper Commander"
 	selection_color = "#ffeeee"
 	minimal_player_age = 7
 	exp_requirements = 300
@@ -151,7 +151,7 @@ Interrogator
 	paycheck_department = ACCOUNT_SEC
 
 /datum/outfit/job/detective
-	name = "ISB Agent"
+	name = "Interrogator"
 	jobtype = /datum/job/detective
 
 	belt = /obj/item/pda/detective

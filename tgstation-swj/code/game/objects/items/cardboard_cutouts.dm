@@ -10,7 +10,7 @@
 	// add an entry in change_appearance() if you add to here
 	var/list/possible_appearances = list("Assistant", "Clown", "Mime",
 		"Traitor", "Nuke Op", "Cultist", "Clockwork Cultist",
-		"Syndicate", "Jedi", "Shadowling", "Xenomorph", "Xenomorph Maid", "Swarmer",
+		"Rebel", "Jedi", "Shadowling", "Xenomorph", "Xenomorph Maid", "Swarmer",
 		"Ash Walker", "Deathsquad Officer", "Ian", "Slaughter Demon",
 		"Laughter Demon", "Private Stormtrooper")
 	var/pushed_over = FALSE //If the cutout is pushed over and has to be righted
@@ -127,7 +127,7 @@
 			name = "[pick(GLOB.first_names_male)] [pick(GLOB.last_names)]"
 			desc = "A cardboard cutout of a servant of Ratvar."
 			icon_state = "cutout_servant"
-		if("Syndicate")
+		if("Rebel")
 			name = "Unknown"
 			desc = "A cardboard cutout of a rebel."
 			icon_state = "cutout_viva"

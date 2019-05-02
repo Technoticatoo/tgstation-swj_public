@@ -111,7 +111,7 @@
 	has_gravity = STANDARD_GRAVITY
 	flags_1 = NONE
 
-//Rebels
+//Syndicates
 /area/syndicate_mothership
 	name = "Syndicate Mothership"
 	icon_state = "syndie-ship"

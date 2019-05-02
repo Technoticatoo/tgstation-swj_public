@@ -438,33 +438,3 @@
 	ears = /obj/item/radio/headset/headset_cent/commander
 	back = /obj/item/storage/backpack/holding
 	backpack_contents = list(/obj/item/card/emag=1,	/obj/item/flashlight/emp/debug=1, /obj/item/construction/rcd/combat=1, /obj/item/gun/magic/wand/resurrection/debug=1, /obj/item/melee/transforming/energy/axe=1)
-
-/datum/outfit/emperor
-	//name = "The Emperor"
-	name= "Emperor"
-	id = /obj/item/card/id/gold
-	uniform =  /obj/item/clothing/under/rank/sith
-	belt = /obj/item/pda/sith
-	//suit = /obj/item/clothing/suit/wizrobe
-	shoes = /obj/item/clothing/shoes/combat
-	ears = /obj/item/radio/headset/heads/sith/alt
-	gloves = /obj/item/clothing/gloves/color/sith
-	head = /obj/item/clothing/head/sithat
-	/*head = /obj/item/clothing/head/jedi*/
-	//r_pocket = /obj/item/teleportation_scroll
-	/*r_hand = /obj/item/spellbook
-	l_hand = /obj/item/staff*/
-	back = /obj/item/storage/backpack
-	backpack_contents = list(/obj/item/melee/transforming/energy/sword/saber/red=1, /obj/item/card/id/departmental_budget/civ=1)
-	implants = list(/obj/item/implant/mindshield)
-
-
-	//suit = /obj/item/clothing/suit/armor/vest/sithcarapace
-
-/*/datum/outfit/emperor/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	if(visualsOnly)
-		return
-
-	var/obj/item/spellbook/S = locate() in H.held_items
-	if(S)
-		S.owner = H*/

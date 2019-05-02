@@ -308,8 +308,6 @@
 		else
 			traitor_mob.mind.store_memory(U.unlock_note)
 
-
-
 //Link a new mobs mind to the creator of said mob. They will join any team they are currently on, and will only switch teams when their creator does.
 
 /datum/mind/proc/enslave_mind_to_creator(mob/living/creator)
@@ -605,13 +603,6 @@
 	if(!C)
 		C = add_antag_datum(/datum/antagonist/changeling)
 		special_role = ROLE_CHANGELING
-	return C
-
-/datum/mind/proc/make_Emperor()
-	var/datum/antagonist/emperor/C = has_antag_datum(/datum/antagonist/emperor)
-	if(!C)
-		C = add_antag_datum(/datum/antagonist/emperor)
-		special_role = ROLE_EMPEROR
 	return C
 
 /datum/mind/proc/make_Jedi()

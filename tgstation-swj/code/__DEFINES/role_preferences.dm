@@ -13,7 +13,7 @@
 #define ROLE_WIZARD					"jedi"
 #define ROLE_MALF					"malf AI"
 #define ROLE_REV					"rebel"
-#define ROLE_REV_HEAD				"Head Syndicate"
+#define ROLE_REV_HEAD				"Head Rebel"
 #define ROLE_ALIEN					"xenomorph"
 #define ROLE_PAI					"pAI"
 #define ROLE_CULTIST				"cultist"
@@ -35,7 +35,6 @@
 #define ROLE_DEATHSQUAD             "deathsquad"
 #define ROLE_LAVALAND               "lavaland"
 #define ROLE_INTERNAL_AFFAIRS	"internal affairs agent"
-#define ROLE_EMPEROR				"emperor"
 
 //Missing assignment means it's not a gamemode specific role, IT'S NOT A BUG OR ERROR.
 //The gamemode specific ones are just so the gamemodes can query whether a player is old enough
@@ -61,7 +60,6 @@ GLOBAL_LIST_INIT(special_roles, list(
 	ROLE_OVERTHROW = /datum/game_mode/overthrow,
 	ROLE_HIVE = /datum/game_mode/hivemind,
 	ROLE_INTERNAL_AFFAIRS = /datum/game_mode/traitor/internal_affairs,
-	ROLE_EMPEROR = /datum/game_mode/traitor/emperor,
 	ROLE_SENTIENCE
 ))
 

@@ -857,22 +857,17 @@
 		else
 			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=changeling;jobban4=[REF(M)]'>Changeling</a></td>"
 
-		if(jobban_isbanned(M, ROLE_EMPEROR) || isbanned_dept)
-			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=emperor;jobban4=[REF(M)]'><font color=red>Emperor</font></a></td>"
-		else
-			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=emperor;jobban4=[REF(M)]'>Emperor</a></td>"
-
 		//Nuke Operative
 		if(jobban_isbanned(M, ROLE_OPERATIVE) || isbanned_dept)
 			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=operative;jobban4=[REF(M)]'><font color=red>Nuke Operative</font></a></td>"
 		else
 			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=operative;jobban4=[REF(M)]'>Nuke Operative</a></td>"
 
-		//Syndicate
+		//Rebel
 		if(jobban_isbanned(M, ROLE_REV) || isbanned_dept)
-			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=rebel;jobban4=[REF(M)]'><font color=red>Syndicate</font></a></td>"
+			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=rebel;jobban4=[REF(M)]'><font color=red>Rebel</font></a></td>"
 		else
-			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=rebel;jobban4=[REF(M)]'>Syndicate</a></td>"
+			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=rebel;jobban4=[REF(M)]'>Rebel</a></td>"
 
 		//Cultist
 		if(jobban_isbanned(M, ROLE_CULTIST) || isbanned_dept)
@@ -1882,11 +1877,11 @@
 		var/mob/M = locate(href_list["CentComReply"])
 		usr.client.admin_headset_message(M, "CentCom")
 
-	else if(href_list["RebelReply"])
+	else if(href_list["SyndicateReply"])
 		if(!check_rights(R_ADMIN))
 			return
 
-		var/mob/M = locate(href_list["RebelReply"])
+		var/mob/M = locate(href_list["SyndicateReply"])
 		usr.client.admin_headset_message(M, "Syndicate")
 
 	else if(href_list["HeadsetMessage"])

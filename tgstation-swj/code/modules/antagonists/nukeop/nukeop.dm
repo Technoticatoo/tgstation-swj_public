@@ -348,7 +348,7 @@
 			purchases += H.generate_render(show_key = FALSE)
 	text += printplayerlist(members)
 	text += "<br>"
-	text += "(Rebels used [TC_uses] TC) [purchases]"
+	text += "(Syndicates used [TC_uses] TC) [purchases]"
 	if(TC_uses == 0 && SSticker.mode.station_was_nuked && !operatives_dead())
 		text += "<BIG>[icon2html('icons/badass.dmi', world, "badass")]</BIG>"
 
@@ -358,9 +358,9 @@
 
 /datum/team/nuclear/antag_listing_name()
 	if(syndicate_name)
-		return "[syndicate_name] Rebels"
+		return "[syndicate_name] Syndicates"
 	else
-		return "Rebels"
+		return "Syndicates"
 
 /datum/team/nuclear/antag_listing_entry()
 	var/disk_report = "<b>Nuclear Disk(s)</b><br>"

@@ -165,8 +165,8 @@
 		return 1
 
 /obj/item/clothing/suit/armor/vest/det_suit
-	name = "ISB Agent's armor vest"
-	desc = "An armored vest with a ISB Agent's badge on it."
+	name = "detective's armor vest"
+	desc = "An armored vest with a detective's badge on it."
 	icon_state = "detective-armor"
 	resistance_flags = FLAMMABLE
 	dog_fashion = null
