@@ -56,7 +56,7 @@
 	icon_state = "pda-security"
 
 /obj/item/pda/detective
-	name = "detective PDA"
+	name = "ISB AGENT PDA"
 	default_cartridge = /obj/item/cartridge/detective
 	icon_state = "pda-detective"
 
