@@ -5,7 +5,7 @@
 	if (!istype(emperor_mob))
 		return
 
-	var/list/all_contents = emperor_mob.GetAllContents()
+//	var/list/all_contents = emperor_mob.GetAllContents()
 	//var/obj/item/pda/PDA = locate() in all_contents
 	//var/obj/item/radio/R = locate() in all_contents
 	//var/obj/item/pen/P
