@@ -24,6 +24,7 @@
 		return 0
 	possible_emperors = get_players_for_role(ROLE_EMPEROR)
 	if(possible_emperors.len < required_enemies)
+		//to_chat(world, "<B>Not enough!!!!</B>")
 		return 0
 	return 1
 
@@ -50,7 +51,7 @@
 			emperor.special_role = ROLE_EMPEROR
 			emperors += emperor
 			emperor.restricted_roles = restricted_jobs
-		return ..()
+		return 1
 	else
 		return 0
 	return 1
