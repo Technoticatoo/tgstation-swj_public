@@ -3,7 +3,7 @@
 	config_tag = "emperor"
 	false_report_weight = 10
 	traitors_possible = 3 //hard limit on traitors if scaling is turned off
-	restricted_jobs = list("AI", "Cyborg")
+	restricted_jobs = list("AI", "Cyborg", "Sith")
 	protected_jobs = list("Captain")
 	required_players = 1	// how many of each type are required
 	required_enemies = 1	// how many of each type are required
@@ -79,4 +79,4 @@
 	..()
 
 /datum/game_mode/traitor/emperor/generate_report()
-	return "The Emperor has come to visit the station, Syndicate specialists have arrived to assassinate him and fullfill secondary objectives."
+	return "The Emperor has come to visit the station, Rebel specialists have arrived to assassinate him and fullfill secondary objectives."

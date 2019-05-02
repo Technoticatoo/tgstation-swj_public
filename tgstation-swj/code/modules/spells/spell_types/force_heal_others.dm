@@ -1,6 +1,6 @@
 /obj/effect/proc_holder/spell/targeted/forcehealothers
-	name = "Force Healing"
-	desc = "Use the force to heal."
+	name = "Heal Others"
+	desc = "Use the force to heal others."
 	clothes_req = FALSE
 	invocation = "May the force heal you!"
 	invocation_type = "shout"

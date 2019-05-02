@@ -445,7 +445,7 @@
 	id = /obj/item/card/id/gold
 	uniform =  /obj/item/clothing/under/rank/sith
 	belt = /obj/item/pda/sith
-	suit = /obj/item/clothing/suit/wizrobe
+	//suit = /obj/item/clothing/suit/wizrobe
 	shoes = /obj/item/clothing/shoes/combat
 	ears = /obj/item/radio/headset/heads/sith/alt
 	gloves = /obj/item/clothing/gloves/color/sith

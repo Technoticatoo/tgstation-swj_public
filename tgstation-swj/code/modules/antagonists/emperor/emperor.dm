@@ -10,7 +10,7 @@
 	var/employer = "The Empire"
 	var/give_objectives = TRUE
 	var/should_give_codewords = TRUE
-	var/should_equip = TRUE
+	var/should_equip = FALSE
 	var/emperor_kind = EMPEROR_HUMAN //Set on initial assignment
 	can_hijack = HIJACK_HIJACKER
 	var/strip = TRUE //strip before equipping
@@ -57,6 +57,10 @@
 	//Jedis are human by default. Use the mirror if you want something else.
 	H.set_species(/datum/species/human)
 	H.equipOutfit(outfit_type)
+	owner.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceck(null))
+	owner.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/forceth(null))
+	owner.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceln(null))
+	owner.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceslow(null))
 	owner.AddSpell(new /obj/effect/proc_holder/spell/self/forceheal(null))
 	owner.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcehealothers(null))
 	owner.AddSpell(new /obj/effect/proc_holder/spell/self/forceprotect(null))
