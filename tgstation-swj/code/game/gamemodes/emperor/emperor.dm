@@ -17,7 +17,7 @@
 
 /datum/game_mode/traitor/emperor/announce()
 	to_chat(world, "<B>The current game mode is - The Emperor visits!</B>")
-	to_chat(world, "<B>The Emperor is visiting, the Syndicate scum has send assassins to the station, do not let the Emperor die!</B>")
+	to_chat(world, "<B>The Emperor is visiting, the Rebel scum has send assassins to the station, do not let the Emperor die!</B>")
 
 /datum/game_mode/traitor/emperor/can_start()
 	if(!..())

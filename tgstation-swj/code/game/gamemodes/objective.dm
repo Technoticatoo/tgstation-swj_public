@@ -549,14 +549,14 @@ GLOBAL_LIST_EMPTY(possible_items_special)
 		targetinfo = new/datum/objective_item/unique/docs_blue
 	else if(faction == "blue")
 		targetinfo = new/datum/objective_item/unique/docs_red
-	explanation_text = "Acquire [targetinfo.name] held by [target.current.real_name], the [target.assigned_role] and syndicate agent"
+	explanation_text = "Acquire [targetinfo.name] held by [target.current.real_name], the [target.assigned_role] and rebel agent"
 	steal_target = targetinfo.targetitem
 
 
 /datum/objective/steal/exchange/update_explanation_text()
 	..()
 	if(target && target.current)
-		explanation_text = "Acquire [targetinfo.name] held by [target.name], the [target.assigned_role] and syndicate agent"
+		explanation_text = "Acquire [targetinfo.name] held by [target.name], the [target.assigned_role] and rebel agent"
 	else
 		explanation_text = "Free Objective"
 

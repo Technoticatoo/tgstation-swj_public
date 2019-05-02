@@ -8,7 +8,7 @@
 	antag_moodlet = /datum/mood_event/focused
 	var/special_role = ROLE_EMPEROR
 	var/employer = "The Empire"
-	var/give_objectives = TRUE
+	var/give_objectives = FALSE
 	var/should_give_codewords = TRUE
 	var/should_equip = FALSE
 	var/emperor_kind = EMPEROR_HUMAN //Set on initial assignment
@@ -78,8 +78,8 @@
 /datum/antagonist/emperor/proc/forge_human_objectives()
 	var/is_hijacker = FALSE
 	if (GLOB.joined_player_list.len >= 30) // Less murderboning on lowpop thanks
-		is_hijacker = prob(10)
-	var/martyr_chance = prob(20)
+		is_hijacker = prob(1)
+	var/martyr_chance = prob(1)
 	var/objective_count = is_hijacker 			//Hijacking counts towards number of objectives
 	/*if(!SSticker.mode.exchange_blue && SSticker.mode.emperors.len >= 8) 	//Set up an exchange if there are enough emperors
 		if(!SSticker.mode.exchange_red)
@@ -125,34 +125,10 @@
 
 /datum/antagonist/emperor/proc/forge_single_human_objective() //Returns how many objectives are added
 	.=1
-	if(prob(50))
-		var/list/active_ais = active_ais()
-		if(active_ais.len && prob(100/GLOB.joined_player_list.len))
-			var/datum/objective/destroy/destroy_objective = new
-			destroy_objective.owner = owner
-			destroy_objective.find_target()
-			add_objective(destroy_objective)
-		else if(prob(30))
-			var/datum/objective/maroon/maroon_objective = new
-			maroon_objective.owner = owner
-			maroon_objective.find_target()
-			add_objective(maroon_objective)
-		else
-			var/datum/objective/assassinate/kill_objective = new
-			kill_objective.owner = owner
-			kill_objective.find_target()
-			add_objective(kill_objective)
-	else
-		if(prob(15) && !(locate(/datum/objective/download) in objectives) && !(owner.assigned_role in list("Science Director", "Scientist", "Roboticist")))
-			var/datum/objective/download/download_objective = new
-			download_objective.owner = owner
-			download_objective.gen_amount_goal()
-			add_objective(download_objective)
-		else
-			var/datum/objective/steal/steal_objective = new
-			steal_objective.owner = owner
-			steal_objective.find_target()
-			add_objective(steal_objective)
+	var/datum/objective/assassinate/kill_objective = new
+	kill_objective.owner = owner
+	kill_objective.find_target()
+	add_objective(kill_objective)
 
 
 /datum/antagonist/emperor/greet()
