@@ -8,9 +8,9 @@
 	antag_moodlet = /datum/mood_event/focused
 	var/special_role = ROLE_EMPEROR
 	var/employer = "The Empire"
-	var/give_objectives = FALSE
+	var/give_objectives = TRUE
 	var/should_give_codewords = TRUE
-	var/should_equip = FALSE
+	var/should_equip = TRUE
 	var/emperor_kind = EMPEROR_HUMAN //Set on initial assignment
 	can_hijack = HIJACK_HIJACKER
 	var/strip = TRUE //strip before equipping
