@@ -1,9 +1,9 @@
 #define EMPEROR_HUMAN "human"
 
 /datum/antagonist/emperor
-	name = "emperor"
-	roundend_category = "emperor"
-	antagpanel_category = "emperor"
+	name = "Emperor"
+	roundend_category = "Emperor"
+	antagpanel_category = "Emperor"
 	job_rank = ROLE_EMPEROR
 	antag_moodlet = /datum/mood_event/focused
 	var/special_role = ROLE_EMPEROR
