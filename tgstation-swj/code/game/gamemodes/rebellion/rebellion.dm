@@ -12,7 +12,7 @@
 	config_tag = "rebellion"
 	antag_flag = ROLE_REV
 	false_report_weight = 10
-	restricted_jobs = list("Stormtrooper", "Master Sergeant", "Interrogator", "AI", "Cyborg","Captain", "Lieutenant", "Stormtrooper Commander", "Engineer Sergeant", "Science Director", "Chief Medical Officer")
+	restricted_jobs = list("Stormtrooper", "Master Sergeant", "Interrogator", "AI", "Cyborg","Captain", "Lieutenant", "Captain of the Guard", "Engineer Sergeant", "Science Director", "Chief Medical Officer")
 	required_players = 30
 	required_enemies = 2
 	recommended_enemies = 3

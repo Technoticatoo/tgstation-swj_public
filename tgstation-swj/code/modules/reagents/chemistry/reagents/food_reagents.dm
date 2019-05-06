@@ -432,7 +432,7 @@
 	taste_description = "childhood whimsy"
 
 /datum/reagent/consumable/sprinkles/on_mob_life(mob/living/carbon/M)
-	if(ishuman(M) && M.job in list("Stormtrooper", "Stormtrooper Commander", "Interrogator", "Master Sergeant"))
+	if(ishuman(M) && M.job in list("Stormtrooper", "Captain of the Guard", "Interrogator", "Master Sergeant"))
 		M.heal_bodypart_damage(1,1, 0)
 		. = 1
 	..()

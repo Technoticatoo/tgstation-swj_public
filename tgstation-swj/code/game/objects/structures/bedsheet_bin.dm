@@ -148,11 +148,11 @@ LINEN BINS
 	dream_messages = list("authority", "a silvery ID", "healing", "life", "surgery", "a cat", "the chief medical officer")
 
 /obj/item/bedsheet/hos
-	name = "Stormtrooper Commander's bedsheet"
+	name = "Captain of the Guard's bedsheet"
 	desc = "It is decorated with a shield emblem. While crime doesn't sleep, you do, but you are still THE LAW!"
 	icon_state = "sheethos"
 	item_color = "hosred"
-	dream_messages = list("authority", "a silvery ID", "handcuffs", "a baton", "a flashbang", "sunglasses", "the Stormtrooper Commander")
+	dream_messages = list("authority", "a silvery ID", "handcuffs", "a baton", "a flashbang", "sunglasses", "the Captain of the Guard")
 
 /obj/item/bedsheet/hop
 	name = "Lieutenant's bedsheet"

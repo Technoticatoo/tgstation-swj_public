@@ -13,7 +13,7 @@
 #define AI_JF			(1<<9)
 #define CYBORG			(1<<10)
 #define SITH			(1<<11)
-
+#define SHIPWARDEN		(1<<12)
 
 #define MEDSCI			(1<<1)
 

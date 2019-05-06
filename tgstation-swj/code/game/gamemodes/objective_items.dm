@@ -32,10 +32,10 @@
 	excludefromjob = list("Captain")
 
 /datum/objective_item/steal/hoslaser
-	name = "the Stormtrooper Commander's personal laser gun."
+	name = "the Captain of the Guard's personal laser gun."
 	targetitem = /obj/item/gun/energy/e_gun/hos
 	difficulty = 10
-	excludefromjob = list("Stormtrooper Commander")
+	excludefromjob = list("Captain of the Guard")
 
 /datum/objective_item/steal/handtele
 	name = "a hand teleporter."
@@ -80,7 +80,7 @@
 	name = "a reflector vest."
 	targetitem = /obj/item/clothing/suit/armor/laserproof
 	difficulty = 3
-	excludefromjob = list("Stormtrooper Commander", "Master Sergeant")
+	excludefromjob = list("Captain of the Guard", "Master Sergeant")
 
 /datum/objective_item/steal/reactive
 	name = "the reactive teleport armor."

@@ -434,16 +434,16 @@
 	can_adjust = FALSE
 
 /obj/item/clothing/under/hosparademale
-	name = "Stormtrooper Commander's parade uniform"
-	desc = "A male Stormtrooper Commander's luxury-wear, for special occasions."
+	name = "Captain of the Guard's parade uniform"
+	desc = "A male Captain of the Guard's luxury-wear, for special occasions."
 	icon_state = "hos_parade_male"
 	item_state = "r_suit"
 	item_color = "hos_parade_male"
 	can_adjust = FALSE
 
 /obj/item/clothing/under/hosparadefem
-	name = "Stormtrooper Commander's parade uniform"
-	desc = "A female Stormtrooper Commander's luxury-wear, for special occasions."
+	name = "Captain of the Guard's parade uniform"
+	desc = "A female Captain of the Guard's luxury-wear, for special occasions."
 	icon_state = "hos_parade_fem"
 	item_state = "r_suit"
 	item_color = "hos_parade_fem"

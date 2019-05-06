@@ -149,7 +149,7 @@
 	body_parts_covered = CHEST|ARMS
 
 /obj/item/clothing/suit/security/hos
-	name = "Stormtrooper Commander's jacket"
+	name = "Captain of the Guard's jacket"
 	desc = "This piece of clothing was specifically designed for asserting superior authority."
 	icon_state = "hosbluejacket"
 	item_state = "hosbluejacket"

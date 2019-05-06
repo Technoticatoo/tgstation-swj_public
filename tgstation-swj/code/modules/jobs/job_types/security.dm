@@ -5,10 +5,10 @@
 	return list()
 
 /*
-Stormtrooper Commander
+Captain of the Guard
 */
 /datum/job/hos
-	title = "Stormtrooper Commander"
+	title = "Captain of the Guard"
 	flag = HOS
 	department_head = list("Captain")
 	department_flag = ENGSEC
@@ -37,7 +37,7 @@ Stormtrooper Commander
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_SEC
 /datum/outfit/job/hos
-	name = "Stormtrooper Commander"
+	name = "Captain of the Guard"
 	jobtype = /datum/job/hos
 
 	id = /obj/item/card/id/silver
@@ -64,7 +64,7 @@ Stormtrooper Commander
 	chameleon_extras = list(/obj/item/gun/energy/e_gun/hos, /obj/item/stamp/hos)
 
 /datum/outfit/job/hos/hardsuit
-	name = "Stormtrooper Commander (Hardsuit)"
+	name = "Captain of the Guard (Hardsuit)"
 
 	mask = /obj/item/clothing/mask/gas/sechailer
 	suit = /obj/item/clothing/suit/space/hardsuit/security/hos
@@ -77,12 +77,12 @@ Master Sergeant
 /datum/job/warden
 	title = "Master Sergeant"
 	flag = WARDEN
-	department_head = list("Stormtrooper Commander")
+	department_head = list("Captain of the Guard")
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Stormtrooper Commander"
+	supervisors = "the Captain of the Guard"
 	selection_color = "#ffeeee"
 	minimal_player_age = 7
 	exp_requirements = 300
@@ -132,12 +132,12 @@ Interrogator
 /datum/job/detective
 	title = "Interrogator"
 	flag = DETECTIVE
-	department_head = list("Stormtrooper Commander")
+	department_head = list("Captain of the Guard")
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Stormtrooper Commander"
+	supervisors = "the Captain of the Guard"
 	selection_color = "#ffeeee"
 	minimal_player_age = 7
 	exp_requirements = 300
@@ -187,12 +187,12 @@ Stormtrooper
 /datum/job/officer
 	title = "Stormtrooper"
 	flag = OFFICER
-	department_head = list("Stormtrooper Commander")
+	department_head = list("Captain of the Guard")
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
-	supervisors = "the Stormtrooper Commander, and the head of your assigned department (if applicable)"
+	supervisors = "the Captain of the Guard, and the head of your assigned department (if applicable)"
 	selection_color = "#ffeeee"
 	minimal_player_age = 7
 	exp_requirements = 300

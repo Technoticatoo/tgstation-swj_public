@@ -3,7 +3,7 @@
 	config_tag = "hivemind"
 	antag_flag = ROLE_HIVE
 	false_report_weight = 5
-	protected_jobs = list("Stormtrooper", "Master Sergeant", "Interrogator", "Stormtrooper Commander", "Captain")
+	protected_jobs = list("Stormtrooper", "Master Sergeant", "Interrogator", "Captain of the Guard", "Captain")
 	restricted_jobs = list("Cyborg","AI")
 	required_players = 25
 	required_enemies = 2

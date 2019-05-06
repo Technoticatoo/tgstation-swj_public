@@ -164,13 +164,13 @@
 	keyslot = new /obj/item/encryptionkey/heads/rd
 
 /obj/item/radio/headset/heads/hos
-	name = "\proper the Stormtrooper Commander's headset"
+	name = "\proper the Captain of the Guard's headset"
 	desc = "The headset of the man in charge of keeping order and protecting the station.\nTo access the security channel, use :s. For command, use :c."
 	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/heads/hos
 
 /obj/item/radio/headset/heads/hos/alt
-	name = "\proper the Stormtrooper Commander's bowman headset"
+	name = "\proper the Captain of the Guard's bowman headset"
 	desc = "The headset of the man in charge of keeping order and protecting the station. Protects ears from flashbangs.\nTo access the security channel, use :s. For command, use :c."
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"

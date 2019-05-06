@@ -17,9 +17,9 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/stormtrooper
 
 
-// Stormtrooper Commander
+// Captain of the Guard
 /obj/item/clothing/head/helmet/space/hardsuit/stcommander
-	name = "Stormtrooper Commander Helmet"
+	name = "Captain of the Guard Helmet"
 	desc = "A special helmet designed for work in a hazardous, low pressure environment. Armoured and mass produced for Commanders of the Imperial Army."
 	alternate_worn_icon = 'icons/starwars/hardsuit_mob.dmi'
 	icon = 'icons/starwars/hardsuit_obj.dmi'
@@ -28,7 +28,7 @@
 
 
 /obj/item/clothing/suit/space/hardsuit/stcommander
-	name = "Stormtrooper Commander Armour"
+	name = "Captain of the Guard Armour"
 	desc = "A special armour designed for work in a hazardous, low pressure environment. Armoured and mass produced for Commanders of the Imperial Army."
 	alternate_worn_icon = 'icons/starwars/hardsuit_mob.dmi'
 	icon = 'icons/starwars/hardsuit_obj.dmi'

@@ -3,7 +3,7 @@
 	config_tag = "devil"
 	antag_flag = ROLE_DEVIL
 	false_report_weight = 1
-	protected_jobs = list("Lawyer", "Curator", "Chaplain", "Stormtrooper Commander", "Captain", "AI")
+	protected_jobs = list("Lawyer", "Curator", "Chaplain", "Captain of the Guard", "Captain", "AI")
 	required_players = 0
 	required_enemies = 1
 	recommended_enemies = 4

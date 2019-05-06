@@ -31,7 +31,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 		"Cyborg",
 		"Captain",
 		"Lieutenant",
-		"Stormtrooper Commander",
+		"Captain of the Guard",
 		"Engineer Sergeant",
 		"Science Director",
 		"Chief Medical Officer")
@@ -381,7 +381,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 							get_subordinates("Lieutenant")
 						if((ACCESS_HOS in scan.access) && ((target_dept==2) || !target_dept))
 							region_access |= 2
-							get_subordinates("Stormtrooper Commander")
+							get_subordinates("Captain of the Guard")
 						if((ACCESS_CMO in scan.access) && ((target_dept==3) || !target_dept))
 							region_access |= 3
 							get_subordinates("Chief Medical Officer")

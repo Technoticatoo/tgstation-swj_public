@@ -857,10 +857,10 @@ GLOBAL_LIST_EMPTY(possible_items_special)
 	department_minds = list()
 	department_real_names = list()
 
-	var/list/departments = list("Stormtrooper Commander","Science Director","Engineer Sergeant","Chief Medical Officer")
+	var/list/departments = list("Captain of the Guard","Science Director","Engineer Sergeant","Chief Medical Officer")
 	var/department_head = pick(departments)
 	switch(department_head)
-		if("Stormtrooper Commander")
+		if("Captain of the Guard")
 			department_string = "security"
 		if("Science Director")
 			department_string = "science"

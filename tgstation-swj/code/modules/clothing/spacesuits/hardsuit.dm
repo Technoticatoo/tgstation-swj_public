@@ -515,9 +515,9 @@
 	. = ..()
 	allowed = GLOB.security_hardsuit_allowed
 
-	//Stormtrooper Commander hardsuit
+	//Captain of the Guard hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/security/hos
-	name = "Stormtrooper Commander's hardsuit helmet"
+	name = "Captain of the Guard's hardsuit helmet"
 	desc = "A special bulky helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor."
 	icon_state = "hardsuit0-hos"
 	item_color = "hos"
@@ -526,7 +526,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/security/hos
 	icon_state = "hardsuit-hos"
-	name = "Stormtrooper Commander's hardsuit"
+	name = "Captain of the Guard's hardsuit"
 	desc = "A special bulky suit that protects against hazardous, low pressure environments. Has an additional layer of armor."
 	armor = list("melee" = 45, "bullet" = 25, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 100, "rad" = 50, "fire" = 95, "acid" = 95)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/hos

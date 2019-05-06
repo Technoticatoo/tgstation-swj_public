@@ -359,7 +359,7 @@
 	return list("Assistant", "Captain", "Lieutenant", "Bartender", "Cook", "Botanist", "Quartermaster", "Cargo Technician",
 				"Shaft Miner", "Clown", "Mime", "Janitor", "Curator", "Lawyer", "Chaplain", "Engineer Sergeant", "Engineer Corporal",
 				"Engineer Private", "Chief Medical Officer", "Medical Doctor", "Chemist", "Geneticist", "Virologist",
-				"Science Director", "Scientist", "Roboticist", "Stormtrooper Commander", "Master Sergeant", "Interrogator", "Stormtrooper")
+				"Science Director", "Scientist", "Roboticist", "Captain of the Guard", "Master Sergeant", "Interrogator", "Stormtrooper")
 
 /proc/get_all_job_icons() //For all existing HUD icons
 	return get_all_jobs() + list("Prisoner")

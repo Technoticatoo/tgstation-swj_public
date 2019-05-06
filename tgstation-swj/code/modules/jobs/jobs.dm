@@ -2,7 +2,7 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Captain",
 	"Sith",
 	"Lieutenant",
-	"Stormtrooper Commander",
+	"Captain of the Guard",
 	"Engineer Sergeant",
 	"Science Director",
 	"Chief Medical Officer"))
@@ -50,7 +50,7 @@ GLOBAL_LIST_INIT(civilian_positions, list(
 
 
 GLOBAL_LIST_INIT(security_positions, list(
-	"Stormtrooper Commander",
+	"Captain of the Guard",
 	"Master Sergeant",
 	"Interrogator",
 	"Stormtrooper"))
@@ -116,7 +116,7 @@ GLOBAL_PROTECT(exp_specialmap)
 	job = lowertext(job)
 	job = cap_expand.Replace(job, "captain")
 	job = cmo_expand.Replace(job, "chief medical officer")
-	job = hos_expand.Replace(job, "Stormtrooper Commander")
+	job = hos_expand.Replace(job, "Captain of the Guard")
 	job = hop_expand.Replace(job, "Lieutenant")
 	job = rd_expand.Replace(job, "Science Director")
 	job = ce_expand.Replace(job, "engineer sergeant")

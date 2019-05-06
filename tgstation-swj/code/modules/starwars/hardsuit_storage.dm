@@ -5,9 +5,9 @@
 	mask_type = /obj/item/clothing/mask/breath
 	storage_type = /obj/item/tank/internals/emergency_oxygen/double
 
-// Stormtrooper Commander
+// Captain of the Guard
 /obj/machinery/suit_storage_unit/stcommander
-	name = "Stormtrooper Commander Armour Storage Unit"
+	name = "Captain of the Guard Armour Storage Unit"
 	suit_type = /obj/item/clothing/suit/space/hardsuit/stcommander
 	mask_type = /obj/item/clothing/mask/breath
 	storage_type = /obj/item/tank/internals/emergency_oxygen/double

@@ -81,11 +81,11 @@
 	alt_covers_chest = TRUE
 
 /*
- * Stormtrooper Commander
+ * Captain of the Guard
  */
 /obj/item/clothing/under/rank/head_of_security
-	name = "Stormtrooper Commander's jumpsuit"
-	desc = "A security jumpsuit decorated for those few with the dedication to achieve the position of Stormtrooper Commander."
+	name = "Captain of the Guard's jumpsuit"
+	desc = "A security jumpsuit decorated for those few with the dedication to achieve the position of Captain of the Guard."
 	icon_state = "rhos"
 	item_state = "r_suit"
 	item_color = "hos"
@@ -96,15 +96,15 @@
 	random_sensor = FALSE
 
 /obj/item/clothing/under/rank/head_of_security/grey
-	name = "Stormtrooper Commander's grey jumpsuit"
+	name = "Captain of the Guard's grey jumpsuit"
 	desc = "There are old men, and there are bold men, but there are very few old, bold men."
 	icon_state = "hos"
 	item_state = "gy_suit"
 	item_color = "hos"
 
 /obj/item/clothing/under/rank/head_of_security/alt
-	name = "Stormtrooper Commander's turtleneck"
-	desc = "A stylish alternative to the normal Stormtrooper Commander jumpsuit, complete with tactical pants."
+	name = "Captain of the Guard's turtleneck"
+	desc = "A stylish alternative to the normal Captain of the Guard jumpsuit, complete with tactical pants."
 	icon_state = "hosalt"
 	item_state = "bl_suit"
 	item_color = "hosalt"
@@ -122,8 +122,8 @@
 	alt_covers_chest = TRUE
 
 /obj/item/clothing/under/rank/head_of_security/navyblue
-	desc = "The insignia on this uniform tells you that this uniform belongs to the Stormtrooper Commander."
-	name = "Stormtrooper Commander's formal uniform"
+	desc = "The insignia on this uniform tells you that this uniform belongs to the Captain of the Guard."
+	name = "Captain of the Guard's formal uniform"
 	icon_state = "hosblueclothes"
 	item_state = "hosblueclothes"
 	item_color = "hosblueclothes"

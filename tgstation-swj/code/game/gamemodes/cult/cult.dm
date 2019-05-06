@@ -35,7 +35,7 @@
 	config_tag = "cult"
 	antag_flag = ROLE_CULTIST
 	false_report_weight = 10
-	restricted_jobs = list("Chaplain","AI", "Cyborg", "Stormtrooper", "Master Sergeant", "Interrogator", "Stormtrooper Commander", "Captain", "Lieutenant")
+	restricted_jobs = list("Chaplain","AI", "Cyborg", "Stormtrooper", "Master Sergeant", "Interrogator", "Captain of the Guard", "Captain", "Lieutenant")
 	protected_jobs = list()
 	required_players = 24
 	required_enemies = 4

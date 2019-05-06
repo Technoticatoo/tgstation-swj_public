@@ -61,7 +61,7 @@
 	icon_state = "pda-detective"
 
 /obj/item/pda/warden
-	name = "warden PDA"
+	name = "master sergeant PDA"
 	default_cartridge = /obj/item/cartridge/security
 	icon_state = "pda-warden"
 
@@ -95,7 +95,7 @@
 	icon_state = "pda-hop"
 
 /obj/item/pda/heads/hos
-	name = "Stormtrooper Commander PDA"
+	name = "Captain of the Guard PDA"
 	default_cartridge = /obj/item/cartridge/hos
 	icon_state = "pda-hos"
 

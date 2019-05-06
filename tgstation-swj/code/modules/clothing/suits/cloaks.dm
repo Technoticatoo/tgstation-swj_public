@@ -23,7 +23,7 @@
 	return(OXYLOSS)
 
 /obj/item/clothing/neck/cloak/hos
-	name = "Stormtrooper Commander's cloak"
+	name = "Captain of the Guard's cloak"
 	desc = "Worn by Securistan, ruling the station with an iron fist."
 	icon_state = "hoscloak"
 

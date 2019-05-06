@@ -5,7 +5,7 @@
 // Point system:
 // Base points for each role:
 // AI, Captain = 5;
-// Lieutenant, Stormtrooper Commander, target = 4;
+// Lieutenant, Captain of the Guard, target = 4;
 // Engineer Sergeant, Chief Medical Officer, Science Director = 3;
 
 // Modifiers:
@@ -93,7 +93,7 @@
 					target_points = CAPPTS
 				if("Lieutenant")
 					target_points = HOPPTS
-				if("Stormtrooper Commander")
+				if("Captain of the Guard")
 					target_points = HOSPTS
 				if("Engineer Sergeant")
 					target_points = CEPTS

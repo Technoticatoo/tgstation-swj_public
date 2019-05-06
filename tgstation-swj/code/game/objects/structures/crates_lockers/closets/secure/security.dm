@@ -62,7 +62,7 @@
 	new /obj/item/storage/photo_album/HoP(src)
 
 /obj/structure/closet/secure_closet/hos
-	name = "\proper Stormtrooper Commander's locker"
+	name = "\proper Captain of the Guard's locker"
 	req_access = list(ACCESS_HOS)
 	icon_state = "hos"
 

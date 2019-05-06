@@ -38,7 +38,7 @@
 	item_color = "hop"
 
 /obj/item/stamp/hos
-	name = "Stormtrooper Commander's rubber stamp"
+	name = "Captain of the Guard's rubber stamp"
 	icon_state = "stamp-hos"
 	item_color = "hosred"
 

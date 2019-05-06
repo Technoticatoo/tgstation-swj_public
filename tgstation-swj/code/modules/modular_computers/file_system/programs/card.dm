@@ -27,7 +27,7 @@
 		"Cyborg",
 		"Captain",
 		"Lieutenant",
-		"Stormtrooper Commander",
+		"Captain of the Guard",
 		"Engineer Sergeant",
 		"Science Director",
 		"Chief Medical Officer")
@@ -457,7 +457,7 @@
 						get_subordinates("Lieutenant")
 					if((ACCESS_HOS in auth_card.access) && ((target_dept==2) || !target_dept))
 						region_access |= 2
-						get_subordinates("Stormtrooper Commander")
+						get_subordinates("Captain of the Guard")
 					if((ACCESS_CMO in auth_card.access) && ((target_dept==3) || !target_dept))
 						region_access |= 3
 						get_subordinates("Chief Medical Officer")

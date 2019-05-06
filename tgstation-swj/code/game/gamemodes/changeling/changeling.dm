@@ -11,7 +11,7 @@ GLOBAL_VAR(changeling_team_objective_type) //If this is not null, we hand our th
 	antag_flag = ROLE_CHANGELING
 	false_report_weight = 10
 	restricted_jobs = list("AI", "Cyborg")
-	protected_jobs = list("Stormtrooper", "Master Sergeant", "Interrogator", "Stormtrooper Commander", "Captain")
+	protected_jobs = list("Stormtrooper", "Master Sergeant", "Interrogator", "Captain of the Guard", "Captain")
 	required_players = 15
 	required_enemies = 1
 	recommended_enemies = 4

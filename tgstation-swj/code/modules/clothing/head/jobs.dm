@@ -117,8 +117,8 @@
 //Security
 
 /obj/item/clothing/head/HoS
-	name = "Stormtrooper Commander cap"
-	desc = "The robust standard-issue cap of the Stormtrooper Commander. For showing the officers who's in charge."
+	name = "Captain of the Guard cap"
+	desc = "The robust standard-issue cap of the Captain of the Guard. For showing the officers who's in charge."
 	icon_state = "hoscap"
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 25, "energy" = 10, "bomb" = 25, "bio" = 10, "rad" = 0, "fire" = 50, "acid" = 60)
 	strip_delay = 80
@@ -129,8 +129,8 @@
 	desc = "A black cap fit for a high ranking syndicate officer."
 
 /obj/item/clothing/head/HoS/beret
-	name = "Stormtrooper Commander beret"
-	desc = "A robust beret for the Stormtrooper Commander, for looking stylish while not sacrificing protection."
+	name = "Captain of the Guard beret"
+	desc = "A robust beret for the Captain of the Guard, for looking stylish while not sacrificing protection."
 	icon_state = "hosberetblack"
 
 /obj/item/clothing/head/HoS/beret/syndicate
@@ -154,8 +154,8 @@
 	dog_fashion = null
 
 /obj/item/clothing/head/beret/sec/navyhos
-	name = "Stormtrooper Commander's beret"
-	desc = "A special beret with the Stormtrooper Commander's insignia emblazoned on it. A symbol of excellence, a badge of courage, a mark of distinction."
+	name = "Captain of the Guard's beret"
+	desc = "A special beret with the Captain of the Guard's insignia emblazoned on it. A symbol of excellence, a badge of courage, a mark of distinction."
 	icon_state = "hosberet"
 
 /obj/item/clothing/head/beret/sec/navywarden

@@ -112,8 +112,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "Botanist"
 
 /obj/effect/landmark/start/head_of_security
-	name = "Stormtrooper Commander"
-	icon_state = "Stormtrooper Commander"
+	name = "Captain of the Guard"
+	icon_state = "Captain of the Guard"
 
 /obj/effect/landmark/start/captain
 	name = "Captain"

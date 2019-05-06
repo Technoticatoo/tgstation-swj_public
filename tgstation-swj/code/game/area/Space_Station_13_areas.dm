@@ -369,11 +369,11 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "hop_private"
 
 /area/crew_quarters/heads/hos
-	name = "Stormtrooper Commander's Office"
+	name = "Captain of the Guard's Office"
 	icon_state = "hos_office"
 
 /area/crew_quarters/heads/hos/private
-	name = "Stormtrooper Commander's Private Quarters"
+	name = "Captain of the Guard's Private Quarters"
 	icon_state = "hos_private"
 
 /area/crew_quarters/heads/hor
