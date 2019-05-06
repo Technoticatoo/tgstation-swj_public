@@ -3,7 +3,7 @@
 	flag = PRISONER
 	department_head = list("Master Sergeant")
 	department_flag = CIVILIAN
-	faction = "Prisoners"
+	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Master Sergeant"
