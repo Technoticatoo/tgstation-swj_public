@@ -20,8 +20,8 @@
 	jobtype = /datum/job/prisoner
 
 	//belt = /obj/item/pda/curator
-	uniform = /obj/item/clothing/under/rank/curator
-	shoes = /obj/item/clothing/shoes/workboots
+	uniform = /obj/item/clothing/under/rank/prisoner
+	shoes = /obj/item/clothing/shoes/sneakers/orange
 
 	//l_hand = /obj/item/storage/bag/books
 	//r_pocket = /obj/item/key/displaycase
