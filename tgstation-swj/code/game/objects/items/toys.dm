@@ -1174,7 +1174,7 @@
 	toysay = "Grey tide world wide!"
 
 /obj/item/toy/figure/atmos
-	name = "Atmospheric Technician action figure"
+	name = "Engineer Private action figure"
 	icon_state = "atmos"
 	toysay = "Glory to Atmosia!"
 
@@ -1205,7 +1205,7 @@
 	toysay = "For Cargonia!"
 
 /obj/item/toy/figure/ce
-	name = "Chief Engineer action figure"
+	name = "Engineer Sergeant action figure"
 	icon_state = "ce"
 	toysay = "Wire the solars!"
 

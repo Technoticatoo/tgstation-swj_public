@@ -203,7 +203,7 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/engine/atmos
 
 
-	//Chief Engineer's hardsuit
+	//Engineer Sergeant's hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/engine/elite
 	name = "advanced hardsuit helmet"
 	desc = "An advanced helmet designed for work in a hazardous, low pressure environment. Shines with a high polish."

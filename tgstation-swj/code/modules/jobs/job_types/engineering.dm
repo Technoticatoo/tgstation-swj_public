@@ -1,8 +1,8 @@
 /*
-Chief Engineer
+Engineer Sergeant
 */
 /datum/job/chief_engineer
-	title = "Chief Engineer"
+	title = "Engineer Sergeant"
 	flag = CHIEF
 	department_head = list("Captain")
 	department_flag = ENGSEC
@@ -32,7 +32,7 @@ Chief Engineer
 	paycheck_department = ACCOUNT_ENG
 
 /datum/outfit/job/ce
-	name = "Chief Engineer"
+	name = "Engineer Sergeant"
 	jobtype = /datum/job/chief_engineer
 
 	id = /obj/item/card/id/silver
@@ -53,7 +53,7 @@ Chief Engineer
 	chameleon_extras = /obj/item/stamp/ce
 
 /datum/outfit/job/ce/rig
-	name = "Chief Engineer (Hardsuit)"
+	name = "Engineer Sergeant (Hardsuit)"
 
 	mask = /obj/item/clothing/mask/breath
 	suit = /obj/item/clothing/suit/space/hardsuit/engine/elite
@@ -66,17 +66,17 @@ Chief Engineer
 
 
 /*
-Station Engineer
+Engineer Corporal
 */
 /datum/job/engineer
-	title = "Station Engineer"
+	title = "Engineer Corporal"
 	flag = ENGINEER
-	department_head = list("Chief Engineer")
+	department_head = list("Engineer Sergeant")
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the chief engineer"
+	supervisors = "the Engineer Sergeant"
 	selection_color = "#fff5cc"
 	exp_requirements = 60
 	exp_type = EXP_TYPE_CREW
@@ -91,7 +91,7 @@ Station Engineer
 	paycheck_department = ACCOUNT_ENG
 
 /datum/outfit/job/engineer
-	name = "Station Engineer"
+	name = "Engineer Corporal"
 	jobtype = /datum/job/engineer
 
 	belt = /obj/item/storage/belt/utility/full/engi
@@ -110,11 +110,11 @@ Station Engineer
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
 /datum/outfit/job/engineer/gloved
-	name = "Station Engineer (Gloves)"
+	name = "Engineer Corporal (Gloves)"
 	gloves = /obj/item/clothing/gloves/color/yellow
 
 /datum/outfit/job/engineer/gloved/rig
-	name = "Station Engineer (Hardsuit)"
+	name = "Engineer Corporal (Hardsuit)"
 
 	mask = /obj/item/clothing/mask/breath
 	suit = /obj/item/clothing/suit/space/hardsuit/engine
@@ -124,17 +124,17 @@ Station Engineer
 
 
 /*
-Atmospheric Technician
+Engineer Private
 */
 /datum/job/atmos
-	title = "Atmospheric Technician"
+	title = "Engineer Private"
 	flag = ATMOSTECH
-	department_head = list("Chief Engineer")
+	department_head = list("Engineer Sergeant")
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 2
-	supervisors = "the chief engineer"
+	supervisors = "the Engineer Sergeant"
 	selection_color = "#fff5cc"
 	exp_requirements = 60
 	exp_type = EXP_TYPE_CREW
@@ -148,7 +148,7 @@ Atmospheric Technician
 	paycheck_department = ACCOUNT_ENG
 
 /datum/outfit/job/atmos
-	name = "Atmospheric Technician"
+	name = "Engineer Private"
 	jobtype = /datum/job/atmos
 
 	belt = /obj/item/storage/belt/utility/atmostech
@@ -165,7 +165,7 @@ Atmospheric Technician
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
 /datum/outfit/job/atmos/rig
-	name = "Atmospheric Technician (Hardsuit)"
+	name = "Engineer Private (Hardsuit)"
 
 	mask = /obj/item/clothing/mask/gas
 	suit = /obj/item/clothing/suit/space/hardsuit/engine/atmos

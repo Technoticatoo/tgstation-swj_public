@@ -1,5 +1,5 @@
 /obj/structure/closet/secure_closet/engineering_chief
-	name = "\proper chief engineer's locker"
+	name = "\proper engineer sergeant's locker"
 	req_access = list(ACCESS_CE)
 	icon_state = "ce"
 
@@ -80,7 +80,7 @@
 
 
 /obj/structure/closet/secure_closet/atmospherics
-	name = "\proper atmospheric technician's locker"
+	name = "\proper engineer private's locker"
 	req_access = list(ACCESS_ATMOSPHERICS)
 	icon_state = "atmos"
 

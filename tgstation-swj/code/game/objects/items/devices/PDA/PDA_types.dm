@@ -100,7 +100,7 @@
 	icon_state = "pda-hos"
 
 /obj/item/pda/heads/ce
-	name = "chief engineer PDA"
+	name = "engineer sergeant PDA"
 	default_cartridge = /obj/item/cartridge/ce
 	icon_state = "pda-ce"
 

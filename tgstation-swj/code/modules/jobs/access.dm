@@ -357,8 +357,8 @@
 
 /proc/get_all_jobs()
 	return list("Assistant", "Captain", "Lieutenant", "Bartender", "Cook", "Botanist", "Quartermaster", "Cargo Technician",
-				"Shaft Miner", "Clown", "Mime", "Janitor", "Curator", "Lawyer", "Chaplain", "Chief Engineer", "Station Engineer",
-				"Atmospheric Technician", "Chief Medical Officer", "Medical Doctor", "Chemist", "Geneticist", "Virologist",
+				"Shaft Miner", "Clown", "Mime", "Janitor", "Curator", "Lawyer", "Chaplain", "Engineer Sergeant", "Engineer Corporal",
+				"Engineer Private", "Chief Medical Officer", "Medical Doctor", "Chemist", "Geneticist", "Virologist",
 				"Science Director", "Scientist", "Roboticist", "Stormtrooper Commander", "Master Sergeant", "Interrogator", "Stormtrooper")
 
 /proc/get_all_job_icons() //For all existing HUD icons

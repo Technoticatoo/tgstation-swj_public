@@ -162,11 +162,11 @@ LINEN BINS
 	dream_messages = list("authority", "a silvery ID", "obligation", "a computer", "an ID", "a corgi", "the Lieutenant")
 
 /obj/item/bedsheet/ce
-	name = "chief engineer's bedsheet"
+	name = "engineer sergeant's bedsheet"
 	desc = "It is decorated with a wrench emblem. It's highly reflective and stain resistant, so you don't need to worry about ruining it with oil."
 	icon_state = "sheetce"
 	item_color = "chief"
-	dream_messages = list("authority", "a silvery ID", "the engine", "power tools", "an APC", "a parrot", "the chief engineer")
+	dream_messages = list("authority", "a silvery ID", "the engine", "power tools", "an APC", "a parrot", "the engineer sergeant")
 
 /obj/item/bedsheet/qm
 	name = "quartermaster's bedsheet"

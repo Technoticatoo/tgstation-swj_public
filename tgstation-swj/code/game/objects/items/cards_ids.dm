@@ -439,9 +439,9 @@ update_label("John Doe", "Clowny")
 	access = list(ACCESS_AWAY_GENERAL)
 
 /obj/item/card/id/away/old/eng
-	name = "Charlie Station Engineer's ID card"
-	desc = "A faded Charlie Station ID card. You can make out the rank \"Station Engineer\"."
-	assignment = "Charlie Station Engineer"
+	name = "Charlie Engineer Corporal's ID card"
+	desc = "A faded Charlie Station ID card. You can make out the rank \"Engineer Corporal\"."
+	assignment = "Charlie Engineer Corporal"
 	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_ENGINE)
 
 /obj/item/card/id/away/old/apc

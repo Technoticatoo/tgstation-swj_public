@@ -3,7 +3,7 @@
 	name = "overthrow"
 	config_tag = "overthrow"
 	antag_flag = ROLE_OVERTHROW
-	restricted_jobs = list("Stormtrooper", "Master Sergeant", "Interrogator", "AI", "Cyborg","Captain", "Lieutenant", "Stormtrooper Commander", "Chief Engineer", "Science Director", "Chief Medical Officer")
+	restricted_jobs = list("Stormtrooper", "Master Sergeant", "Interrogator", "AI", "Cyborg","Captain", "Lieutenant", "Stormtrooper Commander", "Engineer Sergeant", "Science Director", "Chief Medical Officer")
 	required_players = 20 // the core idea is of a swift, bloodless coup, so it shouldn't be as chaotic as revs.
 	required_enemies = 2 // minimum two teams, otherwise it's just nerfed revs.
 	recommended_enemies = 4

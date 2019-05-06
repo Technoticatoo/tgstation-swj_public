@@ -3,15 +3,15 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Sith",
 	"Lieutenant",
 	"Stormtrooper Commander",
-	"Chief Engineer",
+	"Engineer Sergeant",
 	"Science Director",
 	"Chief Medical Officer"))
 
 
 GLOBAL_LIST_INIT(engineering_positions, list(
-	"Chief Engineer",
-	"Station Engineer",
-	"Atmospheric Technician"))
+	"Engineer Sergeant",
+	"Engineer Corporal",
+	"Engineer Private"))
 
 
 GLOBAL_LIST_INIT(medical_positions, list(
@@ -119,11 +119,11 @@ GLOBAL_PROTECT(exp_specialmap)
 	job = hos_expand.Replace(job, "Stormtrooper Commander")
 	job = hop_expand.Replace(job, "Lieutenant")
 	job = rd_expand.Replace(job, "Science Director")
-	job = ce_expand.Replace(job, "chief engineer")
+	job = ce_expand.Replace(job, "engineer sergeant")
 	job = qm_expand.Replace(job, "quartermaster")
 	job = sec_expand.Replace(job, "Stormtrooper")
-	job = engi_expand.Replace(job, "station engineer")
-	job = atmos_expand.Replace(job, "atmospheric technician")
+	job = engi_expand.Replace(job, "engineer corporal")
+	job = atmos_expand.Replace(job, "engineer private")
 	job = doc_expand.Replace(job, "medical doctor")
 	job = mine_expand.Replace(job, "shaft miner")
 	job = chef_expand.Replace(job, "cook")

@@ -52205,7 +52205,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
-	name = "Chief Engineer's Office";
+	name = "Engineer Sergeant's Office";
 	req_access_txt = "56"
 	},
 /obj/structure/cable/white{
@@ -54830,13 +54830,13 @@
 "bPQ" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Chief Engineer's Desk";
+	department = "Engineer Sergeant's Desk";
 	departmentType = 5;
-	name = "Chief Engineer's RC";
+	name = "Engineer Sergeant's RC";
 	pixel_x = -32
 	},
 /obj/machinery/camera{
-	c_tag = "Engineering - Chief Engineer's Office";
+	c_tag = "Engineering - Engineer Sergeant's Office";
 	dir = 4;
 	name = "engineering camera"
 	},
@@ -56194,7 +56194,7 @@
 	pixel_y = 26
 	},
 /obj/machinery/camera{
-	c_tag = "Engineering - Chief Engineer's Quarters";
+	c_tag = "Engineering - Engineer Sergeant's Quarters";
 	dir = 2;
 	name = "engineering camera"
 	},
@@ -57426,7 +57426,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
-	name = "Chief Engineer's Quarters";
+	name = "Engineer Sergeant's Quarters";
 	req_access_txt = "56"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -60788,7 +60788,7 @@
 /obj/structure/cable/white,
 /obj/machinery/power/apc{
 	dir = 2;
-	name = "Chief Engineer's APC";
+	name = "Engineer Sergeant's APC";
 	areastring = "/area/crew_quarters/heads/chief";
 	pixel_y = -26
 	},

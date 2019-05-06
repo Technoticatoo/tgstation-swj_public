@@ -47276,13 +47276,13 @@
 	},
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Chief Engineer's Desk";
+	department = "Engineer Sergeant's Desk";
 	departmentType = 3;
-	name = "Chief Engineer RC";
+	name = "Engineer Sergeant RC";
 	pixel_x = -32
 	},
 /obj/machinery/camera{
-	c_tag = "Chief Engineer's Office";
+	c_tag = "Engineer Sergeant's Office";
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -47908,7 +47908,7 @@
 /area/crew_quarters/heads/chief)
 "ckO" = (
 /obj/machinery/door/airlock/command/glass{
-	name = "Chief Engineer";
+	name = "Engineer Sergeant";
 	req_access_txt = "56"
 	},
 /obj/structure/cable{

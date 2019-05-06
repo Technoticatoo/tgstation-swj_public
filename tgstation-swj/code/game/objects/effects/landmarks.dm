@@ -92,8 +92,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "Quartermaster"
 
 /obj/effect/landmark/start/atmospheric_technician
-	name = "Atmospheric Technician"
-	icon_state = "Atmospheric Technician"
+	name = "Engineer Private"
+	icon_state = "Engineer Private"
 
 /obj/effect/landmark/start/cook
 	name = "Cook"
@@ -128,8 +128,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "Master Sergeant"
 
 /obj/effect/landmark/start/chief_engineer
-	name = "Chief Engineer"
-	icon_state = "Chief Engineer"
+	name = "Engineer Sergeant"
+	icon_state = "Engineer Sergeant"
 
 /obj/effect/landmark/start/head_of_personnel
 	name = "Lieutenant"
@@ -144,8 +144,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "Lawyer"
 
 /obj/effect/landmark/start/station_engineer
-	name = "Station Engineer"
-	icon_state = "Station Engineer"
+	name = "Engineer Corporal"
+	icon_state = "Engineer Corporal"
 
 /obj/effect/landmark/start/medical_doctor
 	name = "Medical Doctor"

@@ -345,11 +345,11 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "captain"
 
 /area/crew_quarters/heads/chief
-	name = "Chief Engineer's Office"
+	name = "Engineer Sergeant's Office"
 	icon_state = "ce_office"
 
 /area/crew_quarters/heads/chief/private
-	name = "Chief Engineer's Private Quarters"
+	name = "Engineer Sergeant's Private Quarters"
 	icon_state = "ce_private"
 
 /area/crew_quarters/heads/cmo

@@ -180,7 +180,7 @@
 	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 /obj/item/radio/headset/heads/ce
-	name = "\proper the chief engineer's headset"
+	name = "\proper the engineer sergeant's headset"
 	desc = "The headset of the guy in charge of keeping the station powered and undamaged.\nTo access the engineering channel, use :e. For command, use :c."
 	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/heads/ce

@@ -25165,9 +25165,9 @@
 "aWy" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Chief Engineer's Desk";
+	department = "Engineer Sergeant's Desk";
 	departmentType = 3;
-	name = "Chief Engineer RC";
+	name = "Engineer Sergeant RC";
 	pixel_y = 32
 	},
 /obj/machinery/computer/card/minor/ce,
@@ -25212,7 +25212,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/door/airlock/command{
-	name = "Chief Engineer's Office";
+	name = "Engineer Sergeant's Office";
 	req_access_txt = "56"
 	},
 /obj/effect/turf_decal/bot{
@@ -26114,7 +26114,7 @@
 	pixel_y = 30
 	},
 /obj/machinery/camera{
-	c_tag = "Chief Engineer's Office";
+	c_tag = "Engineer Sergeant's Office";
 	dir = 2
 	},
 /obj/effect/turf_decal/tile/neutral{

@@ -83,7 +83,7 @@
 	channels = list("Security" = 1, "Command" = 1)
 
 /obj/item/encryptionkey/heads/ce
-	name = "\proper the chief engineer's encryption key"
+	name = "\proper the engineer sergeant's encryption key"
 	desc = "An encryption key for a radio headset.  To access the engineering channel, use :e. For command, use :c."
 	icon_state = "ce_cypherkey"
 	channels = list("Engineering" = 1, "Command" = 1)

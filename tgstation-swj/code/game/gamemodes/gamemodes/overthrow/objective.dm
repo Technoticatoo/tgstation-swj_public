@@ -6,7 +6,7 @@
 // Base points for each role:
 // AI, Captain = 5;
 // Lieutenant, Stormtrooper Commander, target = 4;
-// Chief Engineer, Chief Medical Officer, Science Director = 3;
+// Engineer Sergeant, Chief Medical Officer, Science Director = 3;
 
 // Modifiers:
 // Converting: 1.5 for the converting team, 1 for all the other ones;
@@ -95,7 +95,7 @@
 					target_points = HOPPTS
 				if("Stormtrooper Commander")
 					target_points = HOSPTS
-				if("Chief Engineer")
+				if("Engineer Sergeant")
 					target_points = CEPTS
 				if("Science Director")
 					target_points = RDPTS

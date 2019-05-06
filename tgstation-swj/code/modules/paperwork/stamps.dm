@@ -43,7 +43,7 @@
 	item_color = "hosred"
 
 /obj/item/stamp/ce
-	name = "chief engineer's rubber stamp"
+	name = "engineer sergeant's rubber stamp"
 	icon_state = "stamp-ce"
 	item_color = "chief"
 

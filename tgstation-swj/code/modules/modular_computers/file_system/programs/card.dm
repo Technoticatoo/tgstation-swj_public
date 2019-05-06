@@ -28,7 +28,7 @@
 		"Captain",
 		"Lieutenant",
 		"Stormtrooper Commander",
-		"Chief Engineer",
+		"Engineer Sergeant",
 		"Science Director",
 		"Chief Medical Officer")
 
@@ -466,7 +466,7 @@
 						get_subordinates("Science Director")
 					if((ACCESS_CE in auth_card.access) && ((target_dept==5) || !target_dept))
 						region_access |= 5
-						get_subordinates("Chief Engineer")
+						get_subordinates("Engineer Sergeant")
 					if(region_access.len)
 						minor = 1
 						authenticated = 1
