@@ -7,22 +7,21 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Imperial High Command"
-	selection_color = "#ffeeee"
+	selection_color = "#ccccff"
+	req_admin_notify = 1
 	minimal_player_age = 30
 	exp_requirements = 300
 	exp_type = EXP_TYPE_CREW
 
 	outfit = /datum/outfit/job/shipwarden
 
-	access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_ARMORY, ACCESS_COURT, ACCESS_MECH_SECURITY, ACCESS_MAINT_TUNNELS, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_FORENSICS_LOCKERS, ACCESS_MINERAL_STOREROOM)
-	minimal_access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_ARMORY, ACCESS_MECH_SECURITY, ACCESS_COURT, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM) //SEE /DATUM/JOB/WARDEN/GET_ACCESS()
+	access = list()
+	minimal_access = list() //SEE /DATUM/JOB/WARDEN/GET_ACCESS()
 	paycheck = PAYCHECK_HARD
 	paycheck_department = ACCOUNT_SEC
 
 /datum/job/shipwarden/get_access()
-	var/list/L = list()
-	L = ..() | check_config_for_sec_maint()
-	return L
+	return get_all_accesses()
 
 /datum/outfit/job/shipwarden
 	name = "Warden"

@@ -1,9 +1,9 @@
 #define EMPEROR_HUMAN "human"
 
 /datum/antagonist/emperor
-	name = "emperor"
-	roundend_category = "emperor"
-	antagpanel_category = "emperor"
+	name = "Emperor"
+	roundend_category = "Emperor"
+	antagpanel_category = "Emperor"
 	job_rank = ROLE_EMPEROR
 	antag_moodlet = /datum/mood_event/focused
 	var/special_role = ROLE_EMPEROR
@@ -226,7 +226,7 @@
 	var/equipped_slot = mob.equip_in_one_of_slots(folder, slots)
 	if (equipped_slot)
 		where = "In your [equipped_slot]"
-	to_chat(mob, "<BR><BR><span class='info'>[where] is a folder containing <b>secret documents</b> that another Syndicate group wants. We have set up a meeting with one of their agents on station to make an exchange. Exercise extreme caution as they cannot be trusted and may be hostile.</span><BR>")
+	to_chat(mob, "<BR><BR><span class='info'>[where] is a folder containing <b>secret documents</b> that another Rebel group wants. We have set up a meeting with one of their agents on station to make an exchange. Exercise extreme caution as they cannot be trusted and may be hostile.</span><BR>")
 
 //TODO Collate
 /datum/antagonist/emperor/roundend_report()

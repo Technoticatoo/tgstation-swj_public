@@ -9,7 +9,7 @@
 	required_enemies = 1	// how many of each type are required
 	recommended_enemies = 3
 	reroll_friendly = 1
-	enemy_minimum_age = 0
+	enemy_minimum_age = 14
 
 	var/list/possible_emperors = list()
 	var/list/emperors = list()

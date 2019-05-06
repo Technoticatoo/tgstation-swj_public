@@ -7,7 +7,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Master Sergeant"
-	selection_color = "#dddddd"
+	selection_color = "#ff7e16"
 
 	outfit = /datum/outfit/job/prisoner
 
