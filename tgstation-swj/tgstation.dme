@@ -2626,6 +2626,7 @@
 #include "code\modules\starwars\hardsuits.dm"
 #include "code\modules\starwars\weapon_ammo.dm"
 #include "code\modules\starwars\weapons.dm"
+#include "code\modules\starwars\clothing\uniforms.dm"
 #include "code\modules\starwars\clothing\head\shipwarden.dm"
 #include "code\modules\starwars\clothing\under\uniforms.dm"
 #include "code\modules\starwars\items\pda.dm"
