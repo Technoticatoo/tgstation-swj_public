@@ -3,7 +3,7 @@
 	config_tag = "emperor"
 	false_report_weight = 10
 	traitors_possible = 3 //hard limit on traitors if scaling is turned off
-	restricted_jobs = list("AI", "Cyborg", "Sith")
+	restricted_jobs = list("AI", "Cyborg", "Sith", "Prisoner")
 	protected_jobs = list("Captain")
 	required_players = 1	// how many of each type are required
 	required_enemies = 1	// how many of each type are required
