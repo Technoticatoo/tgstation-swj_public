@@ -25,7 +25,3 @@
 		add_movespeed_modifier(MOVESPEED_ID_LIVING_TURF_SPEEDMOD, TRUE, 100, override = TRUE, multiplicative_slowdown = T.slowdown)
 	else
 		remove_movespeed_modifier(MOVESPEED_ID_LIVING_TURF_SPEEDMOD)
-
-/*
-test
-*/
