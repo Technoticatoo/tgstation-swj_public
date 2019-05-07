@@ -363,6 +363,16 @@
 "gY" = (/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 8},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/science)
 "gZ" = (/obj/item/clothing/under/rebel/jedi,/turf/open/floor/plating,/area/security/armory)
 "ha" = (/obj/item/clothing/under/rebel,/turf/open/floor/plating,/area/security/armory)
+"hb" = (/obj/item/clothing/head/helmet/imperial/captain,/turf/open/floor/plating,/area/security/armory)
+"hc" = (/obj/item/clothing/shoes/rebel/jedi,/turf/open/floor/plating,/area/security/armory)
+"hd" = (/obj/item/clothing/head/helmet/imperial/blast,/turf/open/floor/plating,/area/security/armory)
+"he" = (/obj/item/clothing/shoes/rebel,/turf/open/floor/plating,/area/security/armory)
+"hf" = (/obj/item/clothing/shoes/imperial,/turf/open/floor/plating,/area/security/armory)
+"hg" = (/obj/item/clothing/head/helmet/imperial/cotg,/turf/open/floor/plating,/area/security/armory)
+"hh" = (/obj/item/clothing/head/helmet/imperial,/turf/open/floor/plating,/area/security/armory)
+"hi" = (/obj/item/clothing/head/helmet/imperial/lieutenant,/turf/open/floor/plating,/area/security/armory)
+"hj" = (/obj/item/clothing/head/helmet/imperial/warden,/turf/open/floor/plating,/area/security/armory)
+"hk" = (/obj/item/clothing/head/helmet/rebel,/turf/open/floor/plating,/area/security/armory)
 "hD" = (/obj/machinery/power/apc{dir = 1; pixel_y = 25},/obj/structure/cable{icon_state = "0-2"},/turf/open/floor/plasteel,/area/medical/chemistry)
 "jb" = (/obj/machinery/door/airlock,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/science)
 "jE" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 8},/turf/open/floor/plating,/area/engine/atmos)
@@ -453,10 +463,10 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeneheBeFbWdodpcYcY
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadYeVeLeMbWdodpcYcYcYcYcYcYcYcZcZdxcSdydCdJdJdJdJdDdJdJdJdJeHdzcSePeQeAfhewfhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadYdYeneneoenendYdYeneneoendYdYeheLfMbWdLdKdMdWcYcYcYcYcYcYcYdZcSeadCdJdJdJdJdJdJdJdJdJeHefcSfYeueNeYeCeYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadYeheheheheheheheheheheheheheheheLeheDdodXfkcYcYcYcYcYcYcYcYdxdGdEeIdJdIdIdIdIdIdIdIdFeKezfNeZfaeveRfFeSeJaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadYehehehgvehgFehgwekekekgxekekekfdeheDdocYcYcYcYcYcYcYcYcYcYdxdGdBeWdJdJdJdJdJdJdJdJdJfwdBvveueufefhfBfhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadYdYenendYenfjendYenenendYendYeheLehbWeOcYcYcYgzcYcYcYcYcYcYdZcSdydCdJdJdJdJdJdJdJdJdJfGdzcSfqeueveRfFeSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadYeVeLehbWdocYcYcYgLcYgMcYcYcYcYdxcSdydCdJdJdJdJdJdJdJdJdJfGdzcSfreueTfcflfcaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafneheLehbWdocYcYcYgNcYgOcYcYcYgZdxcSdydCdJdJdJdJdJdJdJdJdJfGdzcSeufofmfhewfhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadYehehehgvehgFehgwekekekgxekekekfdeheDdocYcYcYcYcYcYcYcYcYhkdxdGdBeWdJdJdJdJdJdJdJdJdJfwdBvveueufefhfBfhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadYdYenendYenfjendYenenendYendYeheLehbWeOhbcYcYgzcYcYcYcYcYhcdZcSdydCdJdJdJdJdJdJdJdJdJfGdzcSfqeueveRfFeSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadYeVeLehbWdohdcYcYgLcYgMcYcYcYhedxcSdydCdJdJdJdJdJdJdJdJdJfGdzcSfreueTfcflfcaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafneheLehbWdohfhghhgNhigOcYhjcYgZdxcSdydCdJdJdJdJdJdJdJdJdJfGdzcSeufofmfhewfhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeEfseheLehbWcQgPgQgRgSgTgUgVgWgXhadlcSdmdCdJdJdJdJdJdJdJdJdJfGdncSeueufmfhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeneheLehbWfJfQfQfQfQfQfXfQfQfQfQggcSdEeIdJnydOdNgydNdQdNdJfHdEcSeueuevfhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadYeVeLehbWbWbWbWbWbWbWbWbWbWbWbWbWcScSvvcScScScScScScScScSfRcScSetetetetaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
