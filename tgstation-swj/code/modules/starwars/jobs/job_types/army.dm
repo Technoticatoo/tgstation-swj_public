@@ -353,7 +353,7 @@ Alpha Squad Stormtrooper
 
 	belt = /obj/item/pda/security
 	ears = /obj/item/radio/headset/headset_sec/alt
-	uniform = /obj/item/clothing/under/rank/security/stormtrooper
+	uniform = /obj/item/clothing/under/imperial/stormtrooper
 	gloves = /obj/item/clothing/gloves/color/black
 	//head = /obj/item/clothing/head/helmet/sec
 	//suit = /obj/item/clothing/suit/armor/vest/alt
@@ -489,7 +489,7 @@ Bravo Squad Stormtrooper
 
 	belt = /obj/item/pda/security
 	ears = /obj/item/radio/headset/headset_sec/alt
-	uniform = /obj/item/clothing/under/rank/security/stormtrooper
+	uniform = /obj/item/clothing/under/imperial/stormtrooper
 	gloves = /obj/item/clothing/gloves/color/black
 	//head = /obj/item/clothing/head/helmet/sec
 	//suit = /obj/item/clothing/suit/armor/vest/alt
