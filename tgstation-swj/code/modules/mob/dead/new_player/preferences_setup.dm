@@ -50,7 +50,7 @@
 		else if(job_medsci_high)
 			highDeptFlag = MEDSCI
 		else if(job_engsec_high)
-			highDeptFlag = ENGSEC
+			highDeptFlag = ARMY
 
 		for(var/datum/job/job in SSjob.occupations)
 			if(job.flag == highRankFlag && job.department_flag == highDeptFlag)

@@ -13,8 +13,8 @@
 	item_color = "trek_command"
 	item_state = "y_suit"
 
-/obj/item/clothing/under/trek/engsec
-	name = "engsec uniform"
+/obj/item/clothing/under/trek/army
+	name = "army uniform"
 	desc = "The uniform worn by engineering/Stormtroopers."
 	icon_state = "trek_engsec"
 	item_color = "trek_engsec"
@@ -36,7 +36,7 @@
 	item_color = "trek_next_command"
 	item_state = "r_suit"
 
-/obj/item/clothing/under/trek/engsec/next
+/obj/item/clothing/under/trek/army/next
 	icon_state = "trek_next_engsec"
 	item_color = "trek_next_engsec"
 	item_state = "y_suit"
@@ -52,7 +52,7 @@
 	item_color = "trek_ent_command"
 	item_state = "bl_suit"
 
-/obj/item/clothing/under/trek/engsec/ent
+/obj/item/clothing/under/trek/army/ent
 	icon_state = "trek_ent_engsec"
 	item_color = "trek_ent_engsec"
 	item_state = "bl_suit"

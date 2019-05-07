@@ -11,7 +11,7 @@ Captain of the Guard
 	title = "Captain of the Guard"
 	flag = HOS
 	department_head = list("Captain")
-	department_flag = ENGSEC
+	department_flag = ARMY
 	head_announce = list("Security")
 	faction = "Station"
 	total_positions = 1
@@ -78,7 +78,7 @@ Master Sergeant
 	title = "Master Sergeant"
 	flag = WARDEN
 	department_head = list("Captain of the Guard")
-	department_flag = ENGSEC
+	department_flag = ARMY
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
@@ -133,7 +133,7 @@ Interrogator
 	title = "Interrogator"
 	flag = DETECTIVE
 	department_head = list("Captain of the Guard")
-	department_flag = ENGSEC
+	department_flag = ARMY
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
@@ -188,7 +188,7 @@ Stormtrooper
 	title = "Stormtrooper"
 	flag = OFFICER
 	department_head = list("Captain of the Guard")
-	department_flag = ENGSEC
+	department_flag = ARMY
 	faction = "Station"
 	total_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()

@@ -277,7 +277,7 @@
 "fq" = (/obj/structure/chair/wood/normal{dir = 1},/turf/open/floor/holofloor/grass,/area/holodeck/rec_center/thunderdome1218)
 "fr" = (/obj/structure/rack,/obj/item/clothing/under/trek/medsci,/obj/item/clothing/under/trek/medsci,/obj/item/clothing/under/trek/command,/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 1},/turf/open/floor/holofloor,/area/holodeck/rec_center/kobayashi)
 "fs" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 8},/turf/open/floor/holofloor,/area/holodeck/rec_center/kobayashi)
-"ft" = (/obj/structure/rack,/obj/item/clothing/under/trek/engsec,/obj/item/clothing/under/trek/engsec,/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 1},/turf/open/floor/holofloor,/area/holodeck/rec_center/kobayashi)
+"ft" = (/obj/structure/rack,/obj/item/clothing/under/trek/army,/obj/item/clothing/under/trek/army,/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 1},/turf/open/floor/holofloor,/area/holodeck/rec_center/kobayashi)
 "fu" = (/obj/item/target,/obj/item/target/clown,/obj/effect/turf_decal/tile/green{dir = 8},/obj/effect/turf_decal/tile/green,/turf/open/floor/holofloor,/area/holodeck/rec_center/firingrange)
 "fv" = (/obj/item/target,/obj/item/target/syndicate,/obj/effect/turf_decal/tile/green{dir = 8},/obj/effect/turf_decal/tile/green,/turf/open/floor/holofloor,/area/holodeck/rec_center/firingrange)
 "fw" = (/obj/structure/rack,/obj/item/gun/energy/laser/practice,/obj/item/clothing/ears/earmuffs,/obj/effect/turf_decal/tile/green{dir = 8},/obj/effect/turf_decal/tile/green,/turf/open/floor/holofloor,/area/holodeck/rec_center/firingrange)

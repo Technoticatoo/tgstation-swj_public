@@ -1,14 +1,16 @@
 GLOBAL_LIST_INIT(command_positions, list(
 	"Captain",
 	"Sith",
+	"Warden",
 	"Lieutenant",
 	"Captain of the Guard",
-	"Engineer Sergeant",
+	"Head Engineer",
 	"Science Director",
 	"Chief Medical Officer"))
 
 
 GLOBAL_LIST_INIT(engineering_positions, list(
+	"Head Engineer",
 	"Engineer Sergeant",
 	"Engineer Corporal",
 	"Engineer Private"))
@@ -119,7 +121,7 @@ GLOBAL_PROTECT(exp_specialmap)
 	job = hos_expand.Replace(job, "Captain of the Guard")
 	job = hop_expand.Replace(job, "Lieutenant")
 	job = rd_expand.Replace(job, "Science Director")
-	job = ce_expand.Replace(job, "engineer sergeant")
+	job = ce_expand.Replace(job, "head engineer")
 	job = qm_expand.Replace(job, "quartermaster")
 	job = sec_expand.Replace(job, "Stormtrooper")
 	job = engi_expand.Replace(job, "engineer corporal")

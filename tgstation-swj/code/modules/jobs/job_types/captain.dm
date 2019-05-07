@@ -5,7 +5,7 @@ Captain
 	title = "Captain"
 	flag = CAPTAIN
 	department_head = list("CentCom")
-	department_flag = ENGSEC
+	department_flag = ARMY
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1

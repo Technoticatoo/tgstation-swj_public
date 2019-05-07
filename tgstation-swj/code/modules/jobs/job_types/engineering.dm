@@ -8,7 +8,7 @@ Engineer Sergeant
 	title = "Engineer Sergeant"
 	flag = CHIEF
 	department_head = list("Captain")
-	department_flag = ENGSEC
+	department_flag = ARMY
 	head_announce = list("Engineering")
 	faction = "Station"
 	total_positions = 1
@@ -75,7 +75,7 @@ Engineer Corporal
 	title = "Engineer Corporal"
 	flag = ENGINEER
 	department_head = list("Engineer Sergeant")
-	department_flag = ENGSEC
+	department_flag = ARMY
 	faction = "Station"
 	total_positions = 5
 	spawn_positions = 5
@@ -133,7 +133,7 @@ Engineer Private
 	title = "Engineer Private"
 	flag = ATMOSTECH
 	department_head = list("Engineer Sergeant")
-	department_flag = ENGSEC
+	department_flag = ARMY
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 2

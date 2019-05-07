@@ -4,7 +4,7 @@ AI
 /datum/job/ai
 	title = "AI"
 	flag = AI_JF
-	department_flag = ENGSEC
+	department_flag = ARMY
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
@@ -71,7 +71,7 @@ Cyborg
 /datum/job/cyborg
 	title = "Cyborg"
 	flag = CYBORG
-	department_flag = ENGSEC
+	department_flag = ARMY
 	faction = "Station"
 	total_positions = 0
 	spawn_positions = 1

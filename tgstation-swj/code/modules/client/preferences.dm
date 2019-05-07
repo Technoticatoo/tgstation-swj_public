@@ -759,7 +759,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				job_civilian_low |= job.flag
 
 		return 1
-	else if (job.department_flag == ENGSEC)
+	else if (job.department_flag == ARMY)
 		job_engsec_low &= ~job.flag
 		job_engsec_med &= ~job.flag
 		job_engsec_high &= ~job.flag
@@ -854,7 +854,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					return job_medsci_med
 				if(3)
 					return job_medsci_low
-		if(ENGSEC)
+		if(ARMY)
 			switch(level)
 				if(1)
 					return job_engsec_high

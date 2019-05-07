@@ -1,25 +1,28 @@
 
-#define ENGSEC			(1<<0)
+#define ARMY			(1<<0)
+
+#define SHIPWARDEN		(1<<0)
+#define HOS				(1<<1)
+//#define WARDEN			(1<<2)
+#define ASERGEANT		(1<<2)
+#define BSERGEANT		(1<<3)
+#define DETECTIVE		(1<<4)
+#define ATROOPER		(1<<5)
+#define BTROOPER		(1<<6)
+#define SITH			(1<<7)
+
+#define NAVY			(1<<1)
 
 #define CAPTAIN			(1<<0)
-#define SHIPWARDEN		(1<<1)
-#define HOS				(1<<2)
-//#define WARDEN			(1<<2)
-#define ASERGEANT		(1<<3)
-#define BSERGEANT		(1<<4)
-#define DETECTIVE		(1<<5)
-#define ATROOPER		(1<<6)
-#define BTROOPER		(1<<7)
-#define CHIEF			(1<<8)
-#define ENGINEER		(1<<9)
-#define ATMOSTECH		(1<<10)
-#define ROBOTICIST		(1<<11)
-#define AI_JF			(1<<12)
-#define CYBORG			(1<<13)
-#define SITH			(1<<14)
+#define AI_JF			(1<<1)
+#define CYBORG			(1<<2)
+#define CHIEF			(1<<3)
+#define ESERGEANT		(1<<4)
+#define ENGINEER		(1<<5)
+#define ATMOSTECH		(1<<6)
+#define ROBOTICIST		(1<<7)
 
-
-#define MEDSCI			(1<<1)
+#define MEDSCI			(1<<2)
 
 #define RD_JF			(1<<0)
 #define SCIENTIST		(1<<1)
@@ -30,7 +33,7 @@
 #define VIROLOGIST		(1<<6)
 
 
-#define CIVILIAN		(1<<2)
+#define CIVILIAN		(1<<3)
 
 #define HOP				(1<<0)
 #define BARTENDER		(1<<1)

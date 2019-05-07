@@ -11,7 +11,7 @@ Captain of the Guard
 	title = "Captain of the Guard"
 	flag = HOS
 	department_head = list("Captain")
-	department_flag = ENGSEC
+	department_flag = ARMY
 	head_announce = list("Security")
 	faction = "Station"
 	total_positions = 1
@@ -78,7 +78,7 @@ Alpha Squad Sergeant
 	title = "Alpha Squad Sergeant"
 	flag = ASERGEANT
 	department_head = list("Captain of the Guard")
-	department_flag = ENGSEC
+	department_flag = ARMY
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
@@ -133,7 +133,7 @@ Bravo Squad Sergeant
 	title = "Bravo Squad Sergeant"
 	flag = BSERGEANT
 	department_head = list("Captain of the Guard")
-	department_flag = ENGSEC
+	department_flag = ARMY
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
@@ -188,7 +188,7 @@ Interrogator
 	title = "Interrogator"
 	flag = DETECTIVE
 	department_head = list("Captain of the Guard")
-	department_flag = ENGSEC
+	department_flag = ARMY
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
@@ -247,7 +247,7 @@ Alpha Squad Stormtrooper
 	title = "Alpha Squad Stormtrooper"
 	flag = ATROOPER
 	department_head = list("Alpha Squad Sergeant")
-	department_flag = ENGSEC
+	department_flag = ARMY
 	faction = "Station"
 	total_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
@@ -383,7 +383,7 @@ Bravo Squad Stormtrooper
 	title = "Bravo Squad Stormtrooper"
 	flag = BTROOPER
 	department_head = list("Bravo Squad Sergeant")
-	department_flag = ENGSEC
+	department_flag = ARMY
 	faction = "Station"
 	total_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
