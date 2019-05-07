@@ -2631,6 +2631,7 @@
 #include "code\modules\starwars\clothing\head\shipwarden.dm"
 #include "code\modules\starwars\clothing\under\uniforms.dm"
 #include "code\modules\starwars\items\pda.dm"
+#include "code\modules\starwars\jobs\job_types\engineers.dm"
 #include "code\modules\starwars\jobs\job_types\prisoner.dm"
 #include "code\modules\starwars\jobs\job_types\shipwarden.dm"
 #include "code\modules\station_goals\bsa.dm"
