@@ -2625,6 +2625,7 @@
 #include "code\modules\starwars\weapons.dm"
 #include "code\modules\starwars\clothing\hardsuits.dm"
 #include "code\modules\starwars\clothing\head.dm"
+#include "code\modules\starwars\clothing\shoes.dm"
 #include "code\modules\starwars\clothing\uniforms.dm"
 #include "code\modules\starwars\items\pda.dm"
 #include "code\modules\starwars\jobs\job_types\army.dm"
