@@ -70,7 +70,7 @@ Engineer Sergeant
 
 /datum/job/engineer_sergeant
 	title = "Engineer Sergeant"
-	flag = ESEREGEANT
+	flag = ESERGEANT
 	department_head = list("Head Engineer")
 	department_flag = ARMY
 	head_announce = list("Engineering")
