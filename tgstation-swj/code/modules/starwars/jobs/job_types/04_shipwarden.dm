@@ -2,7 +2,7 @@
 	title = "Warden"
 	flag = SHIPWARDEN
 	department_head = list("Imperial Army")
-	department_flag = ARMY
+	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1

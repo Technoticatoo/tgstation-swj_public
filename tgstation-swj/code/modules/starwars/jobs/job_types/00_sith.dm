@@ -7,13 +7,11 @@
     H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceln(null))
     H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceslow(null))
 
-
-
 /datum/job/sith
 	title = "Sith"
 	flag = SITH
 	department_head = list("CentCom")
-	department_flag = COUNCIL
+	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
@@ -66,13 +64,12 @@
 	..()
 	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/minor_announce, "Sith Lord [H.real_name] on deck, tremble in fear, you who are disloyal!"))
 
-
 /*
 Sith Acolyte
 */
 /datum/job/chaplain
 	title = "Sith Acolyte"
-	flag = COUNCIL
+	flag = ENGSEC
 	department_head = list("Sith")
 	department_flag = CIVILIAN
 	faction = "Station"

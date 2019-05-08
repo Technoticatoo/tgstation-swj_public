@@ -604,7 +604,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 #undef APPEARANCE_CATEGORY_COLUMN
 #undef MAX_MUTANT_ROWS
 
-/datum/preferences/proc/SetChoices(mob/user, limit = 17, list/splitJobs = list(""), widthPerColumn = 295, height = 620)
+/datum/preferences/proc/SetChoices(mob/user, limit = 17, list/splitJobs = list("Prisoner"), widthPerColumn = 295, height = 620)
 	if(!SSjob)
 		return
 
@@ -759,7 +759,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				job_civilian_low |= job.flag
 
 		return 1
-	else if (job.department_flag == ARMY)
+	else if (job.department_flag == ENGSEC)
 		job_engsec_low &= ~job.flag
 		job_engsec_med &= ~job.flag
 		job_engsec_high &= ~job.flag
@@ -854,7 +854,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					return job_medsci_med
 				if(3)
 					return job_medsci_low
-		if(ARMY)
+		if(ENGSEC)
 			switch(level)
 				if(1)
 					return job_engsec_high

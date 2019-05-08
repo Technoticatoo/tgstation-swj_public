@@ -18,6 +18,7 @@ Quartermaster
 	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_QM, ACCESS_MINING, ACCESS_MECH_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM, ACCESS_VAULT)
 	paycheck = PAYCHECK_MEDIUM
 	paycheck_department = ACCOUNT_CAR
+
 /datum/outfit/job/quartermaster
 	name = "Quartermaster"
 	jobtype = /datum/job/qm
@@ -52,6 +53,7 @@ Away Team Leader
 	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_MINERAL_STOREROOM)
 	paycheck = PAYCHECK_EASY
 	paycheck_department = ACCOUNT_CAR
+
 /datum/outfit/job/away_lead
 	name = "Away Team Leader"
 	jobtype = /datum/job/away_lead
@@ -81,6 +83,7 @@ Cargo Technician
 	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_MINERAL_STOREROOM)
 	paycheck = PAYCHECK_EASY
 	paycheck_department = ACCOUNT_CAR
+
 /datum/outfit/job/cargo_tech
 	name = "Cargo Technician"
 	jobtype = /datum/job/cargo_tech
@@ -110,6 +113,7 @@ Requisitions Officer
 	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_MINERAL_STOREROOM)
 	paycheck = PAYCHECK_EASY
 	paycheck_department = ACCOUNT_CAR
+
 /datum/outfit/job/req_off
 	name = "Requisitions Officer"
 	jobtype = /datum/job/req_off

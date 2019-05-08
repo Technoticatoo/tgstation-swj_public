@@ -1,3 +1,6 @@
+GLOBAL_LIST_INIT(available_depts, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICAL, SEC_DEPT_SCIENCE, SEC_DEPT_SUPPLY))
+
+
 //Master Sergeant and regular officers add this result to their get_access()
 /datum/job/proc/check_config_for_sec_maint()
 	if(CONFIG_GET(flag/security_has_maint_access))
@@ -11,7 +14,7 @@ Captain of the Guard
 	title = "Captain of the Guard"
 	flag = HOS
 	department_head = list("Warden")
-	department_flag = ARMY
+	department_flag = ENGSEC
 	head_announce = list("Security")
 	faction = "Station"
 	total_positions = 1
@@ -78,7 +81,7 @@ Alpha Squad Sergeant
 	title = "Alpha Squad Sergeant"
 	flag = ASERGEANT
 	department_head = list("Captain of the Guard")
-	department_flag = ARMY
+	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
@@ -133,7 +136,7 @@ Alpha Squad Stormtrooper
 	title = "Alpha Squad Stormtrooper"
 	flag = ATROOPER
 	department_head = list("Alpha Squad Sergeant")
-	department_flag = ARMY
+	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 4 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 4 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
@@ -269,7 +272,7 @@ Bravo Squad Sergeant
 	title = "Bravo Squad Sergeant"
 	flag = BSERGEANT
 	department_head = list("Captain of the Guard")
-	department_flag = ARMY
+	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
@@ -324,7 +327,7 @@ Bravo Squad Stormtrooper
 	title = "Bravo Squad Stormtrooper"
 	flag = BTROOPER
 	department_head = list("Bravo Squad Sergeant")
-	department_flag = ARMY
+	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 4 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 4 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
@@ -451,8 +454,6 @@ Bravo Squad Stormtrooper
 	chameleon_extras = list(/obj/item/gun/energy/e_gun/advtaser, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
 	//The helmet is necessary because /obj/item/clothing/head/helmet/sec is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
 
-
-
 /*
 Interrogator
 */
@@ -460,7 +461,7 @@ Interrogator
 	title = "Interrogator"
 	flag = DETECTIVE
 	department_head = list("Captain of the Guard")
-	department_flag = ARMY
+	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
@@ -507,9 +508,6 @@ Interrogator
 
 	if(visualsOnly)
 		return
-
-
-GLOBAL_LIST_INIT(available_depts, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICAL, SEC_DEPT_SCIENCE, SEC_DEPT_SUPPLY))
 
 
 
