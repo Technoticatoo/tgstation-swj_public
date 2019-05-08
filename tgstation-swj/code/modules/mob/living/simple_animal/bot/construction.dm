@@ -337,7 +337,9 @@
 				S.healthanalyzer = healthanalyzer
 				qdel(src)
 
+//Removed Clown Star Wars
 
+/*
 //Honkbot Assembly
 /obj/item/bot_assembly/honkbot
 	name = "incomplete honkbot assembly"
@@ -370,7 +372,7 @@
 				S.bikehorn = I.type
 				qdel(I)
 				qdel(src)
-
+*/
 
 //Secbot Assembly
 /obj/item/bot_assembly/secbot

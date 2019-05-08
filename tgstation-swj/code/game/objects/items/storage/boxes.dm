@@ -680,6 +680,9 @@
 	playsound(loc, "rustle", 50, 1, -5)
 	user.visible_message("<span class='notice'>[user] hugs \the [src].</span>","<span class='notice'>You hug \the [src].</span>")
 
+
+// Removed Clown Star Wars
+/*
 /////clown box & honkbot assembly
 /obj/item/storage/box/clown
 	name = "clown box"
@@ -702,6 +705,8 @@
 		return ..()
 
 //////
+*/
+
 /obj/item/storage/box/hug/medical/PopulateContents()
 	new /obj/item/stack/medical/bruise_pack(src)
 	new /obj/item/stack/medical/ointment(src)

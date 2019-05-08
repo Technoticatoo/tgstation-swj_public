@@ -10,14 +10,14 @@ Captain of the Guard
 /datum/job/hos
 	title = "Captain of the Guard"
 	flag = HOS
-	department_head = list("Captain")
+	department_head = list("Warden")
 	department_flag = ARMY
 	head_announce = list("Security")
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
-	selection_color = "#ffdddd"
+	supervisors = "the Warden"
+	selection_color = "#de6666"
 	req_admin_notify = 1
 	minimal_player_age = 14
 	exp_requirements = 300
@@ -83,7 +83,7 @@ Alpha Squad Sergeant
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Captain of the Guard"
-	selection_color = "#ffeeee"
+	selection_color = "#de6f6f"
 	minimal_player_age = 7
 	exp_requirements = 300
 	exp_type = EXP_TYPE_CREW
@@ -127,120 +127,6 @@ Alpha Squad Sergeant
 	chameleon_extras = /obj/item/gun/ballistic/shotgun/automatic/combat/compact
 
 /*
-Bravo Squad Sergeant
-*/
-/datum/job/bsergeant
-	title = "Bravo Squad Sergeant"
-	flag = BSERGEANT
-	department_head = list("Captain of the Guard")
-	department_flag = ARMY
-	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the Captain of the Guard"
-	selection_color = "#ffeeee"
-	minimal_player_age = 7
-	exp_requirements = 300
-	exp_type = EXP_TYPE_CREW
-
-	outfit = /datum/outfit/job/bsergeant
-
-	access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_ARMORY, ACCESS_COURT, ACCESS_MECH_SECURITY, ACCESS_MAINT_TUNNELS, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_FORENSICS_LOCKERS, ACCESS_MINERAL_STOREROOM)
-	minimal_access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_ARMORY, ACCESS_MECH_SECURITY, ACCESS_COURT, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM) //SEE /DATUM/JOB/WARDEN/GET_ACCESS()
-	paycheck = PAYCHECK_HARD
-	paycheck_department = ACCOUNT_SEC
-
-/datum/job/bsergeant/get_access()
-	var/list/L = list()
-	L = ..() | check_config_for_sec_maint()
-	return L
-
-/datum/outfit/job/bsergeant
-	name = "Bravo Squad Sergeant Sergeant"
-	jobtype = /datum/job/bsergeant
-
-	belt = /obj/item/pda/warden
-	ears = /obj/item/radio/headset/headset_sec/alt
-	uniform = /obj/item/clothing/under/imperial/crewman
-	shoes = /obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/armor/vest/warden/alt
-	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/helmet/imperial/blast
-	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
-	r_pocket = /obj/item/assembly/flash/handheld
-	l_pocket = /obj/item/restraints/handcuffs
-	suit_store = /obj/item/gun/energy/e_gun/advtaser
-	backpack_contents = list(/obj/item/melee/baton/loaded=1)
-
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/sec
-	box = /obj/item/storage/box/security
-
-	implants = list(/obj/item/implant/mindshield)
-
-	chameleon_extras = /obj/item/gun/ballistic/shotgun/automatic/combat/compact
-
-/*
-Interrogator
-*/
-/datum/job/detective
-	title = "Interrogator"
-	flag = DETECTIVE
-	department_head = list("Captain of the Guard")
-	department_flag = ARMY
-	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the Captain of the Guard"
-	selection_color = "#ffeeee"
-	minimal_player_age = 7
-	exp_requirements = 300
-	exp_type = EXP_TYPE_CREW
-
-	outfit = /datum/outfit/job/detective
-
-	access = list(ACCESS_SEC_DOORS, ACCESS_FORENSICS_LOCKERS, ACCESS_MORGUE, ACCESS_MAINT_TUNNELS, ACCESS_MECH_SECURITY, ACCESS_COURT, ACCESS_BRIG, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM)
-	minimal_access = list(ACCESS_SEC_DOORS, ACCESS_FORENSICS_LOCKERS, ACCESS_MORGUE, ACCESS_MAINT_TUNNELS, ACCESS_MECH_SECURITY, ACCESS_COURT, ACCESS_BRIG, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM)
-	paycheck = PAYCHECK_MEDIUM
-	paycheck_department = ACCOUNT_SEC
-
-/datum/outfit/job/detective
-	name = "Interrogator"
-	jobtype = /datum/job/detective
-
-	belt = /obj/item/pda/detective
-	ears = /obj/item/radio/headset/headset_sec/alt
-	uniform = /obj/item/clothing/under/rank/det
-	shoes = /obj/item/clothing/shoes/sneakers/brown
-	suit = /obj/item/clothing/suit/det_suit
-	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/fedora/det_hat
-	l_pocket = /obj/item/toy/crayon/white
-	r_pocket = /obj/item/lighter
-	backpack_contents = list(/obj/item/storage/box/evidence=1,\
-		/obj/item/detective_scanner=1,\
-		/obj/item/melee/classic_baton=1)
-	mask = /obj/item/clothing/mask/cigarette
-
-	implants = list(/obj/item/implant/mindshield)
-
-	chameleon_extras = list(/obj/item/gun/ballistic/revolver/detective, /obj/item/clothing/glasses/sunglasses)
-
-/datum/outfit/job/detective/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	var/obj/item/clothing/mask/cigarette/cig = H.wear_mask
-	if(istype(cig)) //Some species specfic changes can mess this up (plasmamen)
-		cig.light("")
-
-	if(visualsOnly)
-		return
-
-
-GLOBAL_LIST_INIT(available_depts, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICAL, SEC_DEPT_SCIENCE, SEC_DEPT_SUPPLY))
-
-
-/*
 Alpha Squad Stormtrooper
 */
 /datum/job/atrooper
@@ -249,10 +135,10 @@ Alpha Squad Stormtrooper
 	department_head = list("Alpha Squad Sergeant")
 	department_flag = ARMY
 	faction = "Station"
-	total_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
-	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
+	total_positions = 4 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
+	spawn_positions = 4 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	supervisors = "the Alpha Squad Sergeant"
-	selection_color = "#ffeeee"
+	selection_color = "#de8383"
 	minimal_player_age = 7
 	exp_requirements = 300
 	exp_type = EXP_TYPE_CREW
@@ -377,6 +263,61 @@ Alpha Squad Stormtrooper
 
 
 /*
+Bravo Squad Sergeant
+*/
+/datum/job/bsergeant
+	title = "Bravo Squad Sergeant"
+	flag = BSERGEANT
+	department_head = list("Captain of the Guard")
+	department_flag = ARMY
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Captain of the Guard"
+	selection_color = "#de6f6f"
+	minimal_player_age = 7
+	exp_requirements = 300
+	exp_type = EXP_TYPE_CREW
+
+	outfit = /datum/outfit/job/bsergeant
+
+	access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_ARMORY, ACCESS_COURT, ACCESS_MECH_SECURITY, ACCESS_MAINT_TUNNELS, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_FORENSICS_LOCKERS, ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_ARMORY, ACCESS_MECH_SECURITY, ACCESS_COURT, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM) //SEE /DATUM/JOB/WARDEN/GET_ACCESS()
+	paycheck = PAYCHECK_HARD
+	paycheck_department = ACCOUNT_SEC
+
+/datum/job/bsergeant/get_access()
+	var/list/L = list()
+	L = ..() | check_config_for_sec_maint()
+	return L
+
+/datum/outfit/job/bsergeant
+	name = "Bravo Squad Sergeant Sergeant"
+	jobtype = /datum/job/bsergeant
+
+	belt = /obj/item/pda/warden
+	ears = /obj/item/radio/headset/headset_sec/alt
+	uniform = /obj/item/clothing/under/imperial/crewman
+	shoes = /obj/item/clothing/shoes/jackboots
+	suit = /obj/item/clothing/suit/armor/vest/warden/alt
+	gloves = /obj/item/clothing/gloves/color/black
+	head = /obj/item/clothing/head/helmet/imperial/blast
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
+	r_pocket = /obj/item/assembly/flash/handheld
+	l_pocket = /obj/item/restraints/handcuffs
+	suit_store = /obj/item/gun/energy/e_gun/advtaser
+	backpack_contents = list(/obj/item/melee/baton/loaded=1)
+
+	backpack = /obj/item/storage/backpack/security
+	satchel = /obj/item/storage/backpack/satchel/sec
+	duffelbag = /obj/item/storage/backpack/duffelbag/sec
+	box = /obj/item/storage/box/security
+
+	implants = list(/obj/item/implant/mindshield)
+
+	chameleon_extras = /obj/item/gun/ballistic/shotgun/automatic/combat/compact
+
+/*
 Bravo Squad Stormtrooper
 */
 /datum/job/btrooper
@@ -385,10 +326,10 @@ Bravo Squad Stormtrooper
 	department_head = list("Bravo Squad Sergeant")
 	department_flag = ARMY
 	faction = "Station"
-	total_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
-	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
+	total_positions = 4 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
+	spawn_positions = 4 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	supervisors = "the Bravo Squad Sergeant"
-	selection_color = "#ffeeee"
+	selection_color = "#de8383"
 	minimal_player_age = 7
 	exp_requirements = 300
 	exp_type = EXP_TYPE_CREW
@@ -482,7 +423,6 @@ Bravo Squad Stormtrooper
 		to_chat(M, "<b>You have not been assigned to any department. Patrol the halls and help where needed.</b>")
 
 
-
 /datum/outfit/job/btrooper
 	name = "Bravo Squad Stormtrooper"
 	jobtype = /datum/job/btrooper
@@ -511,6 +451,65 @@ Bravo Squad Stormtrooper
 	chameleon_extras = list(/obj/item/gun/energy/e_gun/advtaser, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
 	//The helmet is necessary because /obj/item/clothing/head/helmet/sec is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
 
+
+
+/*
+Interrogator
+*/
+/datum/job/detective
+	title = "Interrogator"
+	flag = DETECTIVE
+	department_head = list("Captain of the Guard")
+	department_flag = ARMY
+	faction = "Station"
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the Captain of the Guard"
+	selection_color = "#de8383"
+	minimal_player_age = 7
+	exp_requirements = 300
+	exp_type = EXP_TYPE_CREW
+
+	outfit = /datum/outfit/job/detective
+
+	access = list(ACCESS_SEC_DOORS, ACCESS_FORENSICS_LOCKERS, ACCESS_MORGUE, ACCESS_MAINT_TUNNELS, ACCESS_MECH_SECURITY, ACCESS_COURT, ACCESS_BRIG, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_SEC_DOORS, ACCESS_FORENSICS_LOCKERS, ACCESS_MORGUE, ACCESS_MAINT_TUNNELS, ACCESS_MECH_SECURITY, ACCESS_COURT, ACCESS_BRIG, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM)
+	paycheck = PAYCHECK_MEDIUM
+	paycheck_department = ACCOUNT_SEC
+
+/datum/outfit/job/detective
+	name = "Interrogator"
+	jobtype = /datum/job/detective
+
+	belt = /obj/item/pda/detective
+	ears = /obj/item/radio/headset/headset_sec/alt
+	uniform = /obj/item/clothing/under/rank/det
+	shoes = /obj/item/clothing/shoes/sneakers/brown
+	suit = /obj/item/clothing/suit/det_suit
+	gloves = /obj/item/clothing/gloves/color/black
+	head = /obj/item/clothing/head/fedora/det_hat
+	l_pocket = /obj/item/toy/crayon/white
+	r_pocket = /obj/item/lighter
+	backpack_contents = list(/obj/item/storage/box/evidence=1,\
+		/obj/item/detective_scanner=1,\
+		/obj/item/melee/classic_baton=1)
+	mask = /obj/item/clothing/mask/cigarette
+
+	implants = list(/obj/item/implant/mindshield)
+
+	chameleon_extras = list(/obj/item/gun/ballistic/revolver/detective, /obj/item/clothing/glasses/sunglasses)
+
+/datum/outfit/job/detective/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	var/obj/item/clothing/mask/cigarette/cig = H.wear_mask
+	if(istype(cig)) //Some species specfic changes can mess this up (plasmamen)
+		cig.light("")
+
+	if(visualsOnly)
+		return
+
+
+GLOBAL_LIST_INIT(available_depts, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICAL, SEC_DEPT_SCIENCE, SEC_DEPT_SUPPLY))
 
 
 

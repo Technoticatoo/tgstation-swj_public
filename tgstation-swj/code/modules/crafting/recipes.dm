@@ -189,6 +189,9 @@
 	time = 40
 	category = CAT_ROBOT
 
+//Removed Clown Star Wars
+
+/*
 /datum/crafting_recipe/honkbot
 	name = "Honkbot"
 	result = /mob/living/simple_animal/bot/honkbot
@@ -198,6 +201,7 @@
 				/obj/item/bikehorn/ = 1)
 	time = 40
 	category = CAT_ROBOT
+	*/
 
 /datum/crafting_recipe/improvised_pneumatic_cannon //Pretty easy to obtain but
 	name = "Pneumatic Cannon"

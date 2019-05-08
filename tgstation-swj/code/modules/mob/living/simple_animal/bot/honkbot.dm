@@ -1,3 +1,5 @@
+//Removed Clown Star Wars
+
 /mob/living/simple_animal/bot/honkbot
 	name = "\improper honkbot"
 	desc = "A little robot. It looks happy with its bike horn."

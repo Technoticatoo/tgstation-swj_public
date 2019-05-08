@@ -7,7 +7,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Imperial High Command"
-	selection_color = "#ccccff"
+	selection_color = "#dc5a5a"
 	req_admin_notify = 1
 	minimal_player_age = 30
 	exp_requirements = 300

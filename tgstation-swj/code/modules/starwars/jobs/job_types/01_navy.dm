@@ -10,7 +10,7 @@ Captain
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Imperial officials and Space law"
-	selection_color = "#ccccff"
+	selection_color = "#7cd2ff"
 	req_admin_notify = 1
 	minimal_player_age = 14
 	exp_requirements = 180
@@ -74,7 +74,7 @@ Lieutenant
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the captain"
-	selection_color = "#ddddff"
+	selection_color = "#94daff"
 	req_admin_notify = 1
 	minimal_player_age = 10
 	exp_requirements = 180
@@ -125,10 +125,10 @@ Crewman
 	department_flag = NAVY
 	head_announce = list("Supply", "Service")
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "the Lieutenant"
-	selection_color = "#ddddff"
+	selection_color = "#a8e1ff"
 	req_admin_notify = 1
 	minimal_player_age = 10
 	exp_requirements = 180
@@ -168,10 +168,10 @@ Navy Guard
 	department_flag = NAVY
 	head_announce = list("Supply", "Service")
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "the Lieutenant"
-	selection_color = "#ddddff"
+	selection_color = "#a8e1ff"
 	req_admin_notify = 1
 	minimal_player_age = 10
 	exp_requirements = 180

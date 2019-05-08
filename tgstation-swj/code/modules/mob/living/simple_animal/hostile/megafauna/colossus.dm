@@ -425,6 +425,8 @@ Difficulty: Very Hard
 	possible_methods = list(ACTIVATE_MOB_BUMP, ACTIVATE_SPEECH)
 	activation_sound = 'sound/items/bikehorn.ogg'
 
+// Removed Clown Star Wars
+/*
 /obj/machinery/anomalous_crystal/honk/ActivationReaction(mob/user)
 	if(..() && ishuman(user) && !(user in affected_targets))
 		var/mob/living/carbon/human/H = user
@@ -434,6 +436,7 @@ Difficulty: Very Hard
 		C.equip(H)
 		qdel(C)
 		affected_targets.Add(H)
+*/
 
 /obj/machinery/anomalous_crystal/theme_warp //Warps the area you're in to look like a new one
 	observer_desc = "This crystal warps the area around it to a theme."

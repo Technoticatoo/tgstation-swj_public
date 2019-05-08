@@ -78,7 +78,7 @@ Engineer Sergeant
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Head Engineer"
-	selection_color = "#ffeeaa"
+	selection_color = "#fff4c6"
 	req_admin_notify = 1
 	minimal_player_age = 7
 	exp_requirements = 180
@@ -142,8 +142,8 @@ Engineer Corporal
 	department_head = list("Engineer Sergeant")
 	department_flag = ARMY
 	faction = "Station"
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Engineer Sergeant"
 	selection_color = "#fff5cc"
 	exp_requirements = 60
@@ -200,8 +200,8 @@ Engineer Private
 	department_head = list("Engineer Sergeant")
 	department_flag = ARMY
 	faction = "Station"
-	total_positions = 3
-	spawn_positions = 2
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "the Engineer Sergeant"
 	selection_color = "#fff5cc"
 	exp_requirements = 60

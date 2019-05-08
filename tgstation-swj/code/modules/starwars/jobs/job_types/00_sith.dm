@@ -18,11 +18,11 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Emperor"
-	selection_color = "#ccccff"
+	selection_color = "#afafaf"
 	req_admin_notify = 1
 	minimal_player_age = 14
 	exp_requirements = 180
-	exp_type = EXP_TYPE_CREW
+	exp_type = EXP_TYPE_COMMAND
 	var/hud_version = "jedi"
 
 	outfit = /datum/outfit/job/sith
@@ -76,10 +76,10 @@ Sith Acolyte
 	department_head = list("Sith")
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "the Sith Lord"
-	selection_color = "#dddddd"
+	selection_color = "#d9d9d9"
 
 	outfit = /datum/outfit/job/chaplain
 

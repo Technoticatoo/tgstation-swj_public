@@ -33,6 +33,35 @@ Quartermaster
 	chameleon_extras = /obj/item/stamp/qm
 
 /*
+Away Team Leader
+*/
+/datum/job/away_lead
+	title = "Away Team Leader"
+	flag = AWAYLEAD
+	department_head = list("Quartermaster")
+	department_flag = SUPPLY
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the quartermaster"
+	selection_color = "#d8b48d"
+
+	outfit = /datum/outfit/job/away_lead
+
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_QM, ACCESS_MINING, ACCESS_MECH_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_MINERAL_STOREROOM)
+	paycheck = PAYCHECK_EASY
+	paycheck_department = ACCOUNT_CAR
+/datum/outfit/job/away_lead
+	name = "Away Team Leader"
+	jobtype = /datum/job/away_lead
+
+	belt = /obj/item/pda/cargo
+	ears = /obj/item/radio/headset/headset_cargo
+	uniform = /obj/item/clothing/under/rank/cargotech
+	l_hand = /obj/item/export_scanner
+
+/*
 Cargo Technician
 */
 /datum/job/cargo_tech
@@ -41,8 +70,8 @@ Cargo Technician
 	department_head = list("Quartermaster")
 	department_flag = SUPPLY
 	faction = "Station"
-	total_positions = 3
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the quartermaster and the Lieutenant"
 	selection_color = "#dcba97"
 
@@ -62,6 +91,35 @@ Cargo Technician
 	l_hand = /obj/item/export_scanner
 
 /*
+Requisitions Officer
+*/
+/datum/job/req_off
+	title = "Requisitions Officer"
+	flag = REQOFF
+	department_head = list("Quartermaster")
+	department_flag = SUPPLY
+	faction = "Station"
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the quartermaster"
+	selection_color = "#dcba97"
+
+	outfit = /datum/outfit/job/req_off
+
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_QM, ACCESS_MINING, ACCESS_MECH_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_MINERAL_STOREROOM)
+	paycheck = PAYCHECK_EASY
+	paycheck_department = ACCOUNT_CAR
+/datum/outfit/job/req_off
+	name = "Requisitions Officer"
+	jobtype = /datum/job/req_off
+
+	belt = /obj/item/pda/cargo
+	ears = /obj/item/radio/headset/headset_cargo
+	uniform = /obj/item/clothing/under/rank/cargotech
+	l_hand = /obj/item/export_scanner
+
+/*
 Shaft Miner
 */
 /datum/job/mining
@@ -70,8 +128,8 @@ Shaft Miner
 	department_head = list("Lieutenant")
 	department_flag = SUPPLY
 	faction = "Station"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "the quartermaster and the Lieutenant"
 	selection_color = "#dcba97"
 
@@ -134,60 +192,5 @@ Shaft Miner
 	suit = /obj/item/clothing/suit/space/hardsuit/mining
 	mask = /obj/item/clothing/mask/breath
 
-/*
-Requisitions Officer
-*/
-/datum/job/req_off
-	title = "Requisitions Officer"
-	flag = REQOFF
-	department_head = list("Quartermaster")
-	department_flag = SUPPLY
-	faction = "Station"
-	total_positions = 3
-	spawn_positions = 2
-	supervisors = "the quartermaster"
-	selection_color = "#dcba97"
 
-	outfit = /datum/outfit/job/req_off
 
-	access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_QM, ACCESS_MINING, ACCESS_MECH_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM)
-	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_MINERAL_STOREROOM)
-	paycheck = PAYCHECK_EASY
-	paycheck_department = ACCOUNT_CAR
-/datum/outfit/job/req_off
-	name = "Requisitions Officer"
-	jobtype = /datum/job/req_off
-
-	belt = /obj/item/pda/cargo
-	ears = /obj/item/radio/headset/headset_cargo
-	uniform = /obj/item/clothing/under/rank/cargotech
-	l_hand = /obj/item/export_scanner
-
-/*
-Requisitions Officer
-*/
-/datum/job/away_lead
-	title = "Away Team Leader"
-	flag = AWAYLEAD
-	department_head = list("Quartermaster")
-	department_flag = SUPPLY
-	faction = "Station"
-	total_positions = 3
-	spawn_positions = 2
-	supervisors = "the quartermaster"
-	selection_color = "#dcba97"
-
-	outfit = /datum/outfit/job/away_lead
-
-	access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_QM, ACCESS_MINING, ACCESS_MECH_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM)
-	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_MINERAL_STOREROOM)
-	paycheck = PAYCHECK_EASY
-	paycheck_department = ACCOUNT_CAR
-/datum/outfit/job/away_lead
-	name = "Away Team Leader"
-	jobtype = /datum/job/away_lead
-
-	belt = /obj/item/pda/cargo
-	ears = /obj/item/radio/headset/headset_cargo
-	uniform = /obj/item/clothing/under/rank/cargotech
-	l_hand = /obj/item/export_scanner

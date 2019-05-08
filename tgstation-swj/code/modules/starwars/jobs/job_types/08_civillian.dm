@@ -1,4 +1,48 @@
 /*
+/*
+Chief Clerk
+*/
+/datum/job/chief_clerk
+	title = "Chief Clerk"
+	flag = CHIEFCLERK
+	department_head = list("Coalition Administrative Officer")
+	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Coalition Administrative Officer"
+	selection_color = "#ffe8ff"
+
+	outfit = /datum/outfit/job/chief_clerk
+
+	access = list(ACCESS_COURT, ACCESS_MEDICAL, ACCESS_HEADS,
+						ACCESS_MAINT_TUNNELS, ACCESS_BAR, ACCESS_JANITOR, ACCESS_CONSTRUCTION, ACCESS_MORGUE,
+			            ACCESS_CREMATORIUM, ACCESS_KITCHEN, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_QM, ACCESS_HYDROPONICS, ACCESS_LAWYER,
+			            ACCESS_THEATRE)
+	minimal_access = list(ACCESS_COURT, ACCESS_BAR, ACCESS_JANITOR, ACCESS_CONSTRUCTION, ACCESS_MORGUE,
+			            ACCESS_CREMATORIUM, ACCESS_KITCHEN, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_QM, ACCESS_HYDROPONICS, ACCESS_LAWYER,
+			            ACCESS_THEATRE)
+	paycheck = PAYCHECK_EASY
+	paycheck_department = ACCOUNT_SRV
+
+/datum/outfit/job/chief_clerk
+	name = "Chief Clerk"
+	jobtype = /datum/job/chief_clerk
+
+	glasses = /obj/item/clothing/glasses/sunglasses/reagent
+	belt = /obj/item/pda/bar
+	ears = /obj/item/radio/headset/headset_srv
+	uniform = /obj/item/clothing/under/rank/bartender
+	suit = /obj/item/clothing/suit/armor/vest
+	backpack_contents = list(/obj/item/storage/box/beanbag=1,/obj/item/book/granter/action/drink_fling=1)
+	shoes = /obj/item/clothing/shoes/laceup
+*/
+/*
+Clerk
+*/
+
+
+/*
 Bartender
 */
 /datum/job/bartender
@@ -41,7 +85,7 @@ Cook
 	department_flag = CIVILIAN
 	faction = "Station"
 	total_positions = 2
-	spawn_positions = 1
+	spawn_positions = 2
 	supervisors = "the Lieutenant"
 	selection_color = "#bbe291"
 	var/cooks = 0 //Counts cooks amount
@@ -88,7 +132,7 @@ Cook
 
 /*
 Botanist
-*/
+
 /datum/job/hydro
 	title = "Botanist"
 	flag = BOTANIST
@@ -124,6 +168,7 @@ Botanist
 	backpack = /obj/item/storage/backpack/botany
 	satchel = /obj/item/storage/backpack/satchel/hyd
 
+*/
 
 /*
 Janitor
@@ -134,8 +179,8 @@ Janitor
 	department_head = list("Lieutenant")
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 1
+	total_positions = 6
+	spawn_positions = 6
 	supervisors = "the Lieutenant"
 	selection_color = "#bbe291"
 	var/global/janitors = 0
@@ -156,116 +201,5 @@ Janitor
 	uniform = /obj/item/clothing/under/rank/janitor
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
-/*
-Coalition Administrative Officer
-*/
-/datum/job/cao
-	title = "Coalition Administrative Officer"
-	flag = CAO
-	department_head = list("Lieutenant")
-	department_flag = CIVILIAN
-	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the Lieutenant"
-	selection_color = "#bbe291"
 
-	outfit = /datum/outfit/job/cao
 
-	access = list(ACCESS_COURT, ACCESS_MEDICAL, ACCESS_HEADS,
-						ACCESS_MAINT_TUNNELS, ACCESS_BAR, ACCESS_JANITOR, ACCESS_CONSTRUCTION, ACCESS_MORGUE,
-			            ACCESS_CREMATORIUM, ACCESS_KITCHEN, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_QM, ACCESS_HYDROPONICS, ACCESS_LAWYER,
-			            ACCESS_THEATRE)
-	minimal_access = list(ACCESS_COURT, ACCESS_BAR, ACCESS_JANITOR, ACCESS_CONSTRUCTION, ACCESS_MORGUE,
-			            ACCESS_CREMATORIUM, ACCESS_KITCHEN, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_QM, ACCESS_HYDROPONICS, ACCESS_LAWYER,
-			            ACCESS_THEATRE)
-	paycheck = PAYCHECK_EASY
-	paycheck_department = ACCOUNT_SRV
-
-/datum/outfit/job/cao
-	name = "Coalition Administrative Officer"
-	jobtype = /datum/job/cao
-
-	glasses = /obj/item/clothing/glasses/sunglasses/reagent
-	belt = /obj/item/pda/bar
-	ears = /obj/item/radio/headset/headset_srv
-	uniform = /obj/item/clothing/under/rank/bartender
-	suit = /obj/item/clothing/suit/armor/vest
-	backpack_contents = list(/obj/item/storage/box/beanbag=1,/obj/item/book/granter/action/drink_fling=1)
-	shoes = /obj/item/clothing/shoes/laceup
-
-/*
-Chief Clerk
-*/
-/datum/job/chief_clerk
-	title = "Chief Clerk"
-	flag = CHIEFCLERK
-	department_head = list("Coalition Administrative Officer")
-	department_flag = CIVILIAN
-	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the Coalition Administrative Officer"
-	selection_color = "#bbe291"
-
-	outfit = /datum/outfit/job/chief_clerk
-
-	access = list(ACCESS_COURT, ACCESS_MEDICAL, ACCESS_HEADS,
-						ACCESS_MAINT_TUNNELS, ACCESS_BAR, ACCESS_JANITOR, ACCESS_CONSTRUCTION, ACCESS_MORGUE,
-			            ACCESS_CREMATORIUM, ACCESS_KITCHEN, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_QM, ACCESS_HYDROPONICS, ACCESS_LAWYER,
-			            ACCESS_THEATRE)
-	minimal_access = list(ACCESS_COURT, ACCESS_BAR, ACCESS_JANITOR, ACCESS_CONSTRUCTION, ACCESS_MORGUE,
-			            ACCESS_CREMATORIUM, ACCESS_KITCHEN, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_QM, ACCESS_HYDROPONICS, ACCESS_LAWYER,
-			            ACCESS_THEATRE)
-	paycheck = PAYCHECK_EASY
-	paycheck_department = ACCOUNT_SRV
-
-/datum/outfit/job/chief_clerk
-	name = "Chief Clerk"
-	jobtype = /datum/job/chief_clerk
-
-	glasses = /obj/item/clothing/glasses/sunglasses/reagent
-	belt = /obj/item/pda/bar
-	ears = /obj/item/radio/headset/headset_srv
-	uniform = /obj/item/clothing/under/rank/bartender
-	suit = /obj/item/clothing/suit/armor/vest
-	backpack_contents = list(/obj/item/storage/box/beanbag=1,/obj/item/book/granter/action/drink_fling=1)
-	shoes = /obj/item/clothing/shoes/laceup
-
-/*
-Clerk
-*/
-/datum/job/clerk
-	title = "Clerk"
-	flag = CHIEFCLERK
-	department_head = list("Chief Clerk")
-	department_flag = CIVILIAN
-	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the Chief Clerk"
-	selection_color = "#bbe291"
-
-	outfit = /datum/outfit/job/clerk
-
-	access = list(ACCESS_COURT, ACCESS_MEDICAL, ACCESS_HEADS,
-						ACCESS_MAINT_TUNNELS, ACCESS_BAR, ACCESS_JANITOR, ACCESS_CONSTRUCTION, ACCESS_MORGUE,
-			            ACCESS_CREMATORIUM, ACCESS_KITCHEN, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_QM, ACCESS_HYDROPONICS, ACCESS_LAWYER,
-			            ACCESS_THEATRE)
-	minimal_access = list(ACCESS_COURT, ACCESS_BAR, ACCESS_JANITOR, ACCESS_CONSTRUCTION, ACCESS_MORGUE,
-			            ACCESS_CREMATORIUM, ACCESS_KITCHEN, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_QM, ACCESS_HYDROPONICS, ACCESS_LAWYER,
-			            ACCESS_THEATRE)
-	paycheck = PAYCHECK_EASY
-	paycheck_department = ACCOUNT_SRV
-
-/datum/outfit/job/clerk
-	name = "Clerk"
-	jobtype = /datum/job/clerk
-
-	glasses = /obj/item/clothing/glasses/sunglasses/reagent
-	belt = /obj/item/pda/bar
-	ears = /obj/item/radio/headset/headset_srv
-	uniform = /obj/item/clothing/under/rank/bartender
-	suit = /obj/item/clothing/suit/armor/vest
-	backpack_contents = list(/obj/item/storage/box/beanbag=1,/obj/item/book/granter/action/drink_fling=1)
-	shoes = /obj/item/clothing/shoes/laceup

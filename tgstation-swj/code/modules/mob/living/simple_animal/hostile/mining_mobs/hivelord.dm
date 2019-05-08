@@ -311,7 +311,9 @@
 				r_pocket = /obj/item/kitchen/knife/combat/bone
 			if(prob(30))
 				l_pocket = /obj/item/kitchen/knife/combat/bone
-		if("Clown")
+
+		//Removed Clown Star Wars
+		/*if("Clown")
 			name = pick(GLOB.clown_names)
 			outfit = /datum/outfit/job/clown
 			belt = null
@@ -324,6 +326,7 @@
 				l_pocket = pickweight(list(/obj/item/bikehorn/golden = 3, /obj/item/bikehorn/airhorn= 1 ))
 			if(prob(10))
 				r_pocket = /obj/item/implanter/sad_trombone
+				*/
 		if("Golem")
 			mob_species = pick(list(/datum/species/golem/adamantine, /datum/species/golem/plasma, /datum/species/golem/diamond, /datum/species/golem/gold, /datum/species/golem/silver, /datum/species/golem/plasteel, /datum/species/golem/titanium, /datum/species/golem/plastitanium))
 			if(prob(30))

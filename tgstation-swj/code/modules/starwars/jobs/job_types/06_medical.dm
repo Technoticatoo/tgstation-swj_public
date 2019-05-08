@@ -98,7 +98,7 @@ Medical Doctor
 
 /*
 Chemist
-*/
+
 /datum/job/chemist
 	title = "Chemist"
 	flag = CHEMIST
@@ -134,83 +134,7 @@ Chemist
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 
 	chameleon_extras = /obj/item/gun/syringe
-
-/*
-Geneticist
 */
-/datum/job/geneticist
-	title = "Geneticist"
-	flag = GENETICIST
-	department_head = list("Chief Medical Officer", "Science Director")
-	department_flag = MEDSCI
-	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "the chief medical officer and Science Director"
-	selection_color = "#ffeef0"
-	exp_type = EXP_TYPE_CREW
-	exp_requirements = 60
-
-	outfit = /datum/outfit/job/geneticist
-
-	access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_CHEMISTRY, ACCESS_GENETICS, ACCESS_CLONING, ACCESS_MECH_MEDICAL, ACCESS_RESEARCH, ACCESS_XENOBIOLOGY, ACCESS_ROBOTICS, ACCESS_MINERAL_STOREROOM, ACCESS_TECH_STORAGE)
-	minimal_access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_GENETICS, ACCESS_CLONING, ACCESS_MECH_MEDICAL, ACCESS_RESEARCH, ACCESS_MINERAL_STOREROOM)
-	paycheck = PAYCHECK_MEDIUM
-	paycheck_department = ACCOUNT_MED
-
-/datum/outfit/job/geneticist
-	name = "Geneticist"
-	jobtype = /datum/job/geneticist
-
-	belt = /obj/item/pda/geneticist
-	ears = /obj/item/radio/headset/headset_medsci
-	uniform = /obj/item/clothing/under/rank/geneticist
-	shoes = /obj/item/clothing/shoes/sneakers/white
-	suit =  /obj/item/clothing/suit/toggle/labcoat/genetics
-	suit_store =  /obj/item/flashlight/pen
-
-	backpack = /obj/item/storage/backpack/genetics
-	satchel = /obj/item/storage/backpack/satchel/gen
-	duffelbag = /obj/item/storage/backpack/duffelbag/med
-
-/*
-Virologist
-*/
-/datum/job/virologist
-	title = "Virologist"
-	flag = VIROLOGIST
-	department_head = list("Chief Medical Officer")
-	department_flag = MEDSCI
-	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the chief medical officer"
-	selection_color = "#ffeef0"
-	exp_type = EXP_TYPE_CREW
-	exp_requirements = 60
-
-	outfit = /datum/outfit/job/virologist
-
-	access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_SURGERY, ACCESS_CHEMISTRY, ACCESS_VIROLOGY, ACCESS_MECH_MEDICAL, ACCESS_GENETICS, ACCESS_CLONING, ACCESS_MINERAL_STOREROOM)
-	minimal_access = list(ACCESS_MEDICAL, ACCESS_VIROLOGY, ACCESS_MECH_MEDICAL, ACCESS_MINERAL_STOREROOM)
-	paycheck = PAYCHECK_MEDIUM
-	paycheck_department = ACCOUNT_MED
-
-/datum/outfit/job/virologist
-	name = "Virologist"
-	jobtype = /datum/job/virologist
-
-	belt = /obj/item/pda/viro
-	ears = /obj/item/radio/headset/headset_med
-	uniform = /obj/item/clothing/under/rank/virologist
-	mask = /obj/item/clothing/mask/surgical
-	shoes = /obj/item/clothing/shoes/sneakers/white
-	suit =  /obj/item/clothing/suit/toggle/labcoat/virologist
-	suit_store =  /obj/item/flashlight/pen
-
-	backpack = /obj/item/storage/backpack/virology
-	satchel = /obj/item/storage/backpack/satchel/vir
-	duffelbag = /obj/item/storage/backpack/duffelbag/med
 
 /*
 Stormtrooper Surgeon
@@ -221,8 +145,8 @@ Stormtrooper Surgeon
 	department_head = list("Head Surgeon")
 	department_flag = MEDSCI
 	faction = "Station"
-	total_positions = 5
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Head Surgeon"
 	selection_color = "#ffeef0"
 
@@ -259,8 +183,8 @@ Imperial Medic
 	department_head = list("Chief Medical Officer")
 	department_flag = MEDSCI
 	faction = "Station"
-	total_positions = 5
-	spawn_positions = 3
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "the chief medical officer"
 	selection_color = "#ffeef0"
 
@@ -287,3 +211,82 @@ Imperial Medic
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 
 	chameleon_extras = /obj/item/gun/syringe
+
+/*
+Geneticist
+*/
+/datum/job/geneticist
+	title = "Geneticist"
+	flag = GENETICIST
+	department_head = list("Chief Medical Officer", "Science Director")
+	department_flag = MEDSCI
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the chief medical officer and Science Director"
+	selection_color = "#ffeef0"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 60
+
+	outfit = /datum/outfit/job/geneticist
+
+	access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_CHEMISTRY, ACCESS_VIROLOGY, ACCESS_GENETICS, ACCESS_CLONING, ACCESS_MECH_MEDICAL, ACCESS_RESEARCH, ACCESS_XENOBIOLOGY, ACCESS_ROBOTICS, ACCESS_MINERAL_STOREROOM, ACCESS_TECH_STORAGE)
+	minimal_access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_GENETICS, ACCESS_CLONING, ACCESS_MECH_MEDICAL, ACCESS_RESEARCH, ACCESS_MINERAL_STOREROOM)
+	paycheck = PAYCHECK_MEDIUM
+	paycheck_department = ACCOUNT_MED
+
+/datum/outfit/job/geneticist
+	name = "Geneticist"
+	jobtype = /datum/job/geneticist
+
+	belt = /obj/item/pda/geneticist
+	ears = /obj/item/radio/headset/headset_medsci
+	uniform = /obj/item/clothing/under/rank/geneticist
+	shoes = /obj/item/clothing/shoes/sneakers/white
+	suit =  /obj/item/clothing/suit/toggle/labcoat/genetics
+	suit_store =  /obj/item/flashlight/pen
+
+	backpack = /obj/item/storage/backpack/genetics
+	satchel = /obj/item/storage/backpack/satchel/gen
+	duffelbag = /obj/item/storage/backpack/duffelbag/med
+
+/*
+Virologist
+
+/datum/job/virologist
+	title = "Virologist"
+	flag = VIROLOGIST
+	department_head = list("Chief Medical Officer")
+	department_flag = MEDSCI
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the chief medical officer"
+	selection_color = "#ffeef0"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 60
+
+	outfit = /datum/outfit/job/virologist
+
+	access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_SURGERY, ACCESS_CHEMISTRY, ACCESS_VIROLOGY, ACCESS_MECH_MEDICAL, ACCESS_GENETICS, ACCESS_CLONING, ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_MEDICAL, ACCESS_VIROLOGY, ACCESS_MECH_MEDICAL, ACCESS_MINERAL_STOREROOM)
+	paycheck = PAYCHECK_MEDIUM
+	paycheck_department = ACCOUNT_MED
+
+/datum/outfit/job/virologist
+	name = "Virologist"
+	jobtype = /datum/job/virologist
+
+	belt = /obj/item/pda/viro
+	ears = /obj/item/radio/headset/headset_med
+	uniform = /obj/item/clothing/under/rank/virologist
+	mask = /obj/item/clothing/mask/surgical
+	shoes = /obj/item/clothing/shoes/sneakers/white
+	suit =  /obj/item/clothing/suit/toggle/labcoat/virologist
+	suit_store =  /obj/item/flashlight/pen
+
+	backpack = /obj/item/storage/backpack/virology
+	satchel = /obj/item/storage/backpack/satchel/vir
+	duffelbag = /obj/item/storage/backpack/duffelbag/med
+	*/
+

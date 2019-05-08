@@ -301,6 +301,8 @@ GLOBAL_LIST_INIT(cardboard_recipes, list ( \
 /obj/item/stack/sheet/cardboard/fifty
 	amount = 50
 
+// Removed Clown Star Wars
+/*
 /obj/item/stack/sheet/cardboard/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/stamp/clown) && !istype(loc, /obj/item/storage))
 		var/atom/droploc = drop_location()
@@ -311,7 +313,7 @@ GLOBAL_LIST_INIT(cardboard_recipes, list ( \
 				new/obj/item/storage/box/clown(droploc) //bugfix
 	else
 		. = ..()
-
+*/
 
 /*
  * Runed Metal

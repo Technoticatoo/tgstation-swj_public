@@ -5,8 +5,10 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Lieutenant",
 	"Captain of the Guard",
 	"Head Engineer",
-	"Science Director",
-	"Chief Medical Officer"))
+	"Research Director",
+	"Chief Medical Officer",
+	"Quartermaster",
+	"Coalition Administrative Officer"))
 
 
 GLOBAL_LIST_INIT(engineering_positions, list(
@@ -18,15 +20,17 @@ GLOBAL_LIST_INIT(engineering_positions, list(
 
 GLOBAL_LIST_INIT(medical_positions, list(
 	"Chief Medical Officer",
-	"Medical Doctor",
+	"Head Surgeon",
 	"Geneticist",
-	"Virologist",
-	"Chemist"))
+	"Stormtrooper Surgeon",
+	"Imperial Medic"))
 
 
 GLOBAL_LIST_INIT(science_positions, list(
-	"Science Director",
-	"Scientist",
+	"Coalition Administrative Officer",
+	"Research Director",
+	"Researcher",
+	"Clerk",
 	"Roboticist"))
 
 
@@ -34,28 +38,35 @@ GLOBAL_LIST_INIT(supply_positions, list(
 	"Lieutenant",
 	"Quartermaster",
 	"Cargo Technician",
-	"Shaft Miner"))
+	"Shaft Miner",
+	"Requisitions Officer",
+	"Away Team Leader"))
 
 
 GLOBAL_LIST_INIT(civilian_positions, list(
+	"Coalition Administrative Officer",
 	"Bartender",
-	"Botanist",
 	"Cook",
 	"Janitor",
-	"Curator",
-	"Lawyer",
-	"Chaplain",
-	"Clown",
-	"Mime",
 	"Assistant",
-	"Prisoner"))
+	"Prisoner",
+	"Sith Acolyte"))
 
 
 GLOBAL_LIST_INIT(security_positions, list(
 	"Captain of the Guard",
-	"Master Sergeant",
+	"Alpha Squad Sergeant",
+	"Bravo Squad Sergeant",
+	"Alpha Squad Stormtrooper",
+	"Bravo Squad Stormtrooper",
 	"Interrogator",
-	"Stormtrooper"))
+	"Crewman",
+	"Navy Guard"))
+
+GLOBAL_LIST_INIT(council_positions, list(
+	"Sith",
+	"Sith Acolyte"))
+
 
 
 GLOBAL_LIST_INIT(nonhuman_positions, list(
@@ -64,8 +75,8 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 	ROLE_PAI))
 
 GLOBAL_LIST_INIT(exp_jobsmap, list(
-	EXP_TYPE_CREW = list("titles" = command_positions | engineering_positions | medical_positions | science_positions | supply_positions | security_positions | civilian_positions | list("AI","Cyborg")), // crew positions
-	EXP_TYPE_COMMAND = list("titles" = command_positions),
+	EXP_TYPE_CREW = list("titles" = command_positions | engineering_positions | medical_positions | science_positions | supply_positions | security_positions | civilian_positions | council_positions | list("AI","Cyborg")), // crew positions
+	EXP_TYPE_COMMAND = list("titles" = command_positions | council_positions),
 	EXP_TYPE_ENGINEERING = list("titles" = engineering_positions),
 	EXP_TYPE_MEDICAL = list("titles" = medical_positions),
 	EXP_TYPE_SCIENCE = list("titles" = science_positions),
