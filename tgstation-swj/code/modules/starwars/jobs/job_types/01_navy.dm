@@ -5,7 +5,7 @@ Captain
 	title = "Captain"
 	flag = CAPTAIN
 	department_head = list("CentCom")
-	department_flag = NAVY
+	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
@@ -68,7 +68,7 @@ Lieutenant
 	title = "Lieutenant"
 	flag = HOP
 	department_head = list("Captain")
-	department_flag = NAVY
+	department_flag = ENGSEC
 	head_announce = list("Supply", "Service")
 	faction = "Station"
 	total_positions = 1
@@ -122,7 +122,7 @@ Crewman
 	title = "Crewman"
 	flag = CREWMAN
 	department_head = list("Lieutenant")
-	department_flag = NAVY
+	department_flag = ENGSEC
 	head_announce = list("Supply", "Service")
 	faction = "Station"
 	total_positions = 4
@@ -165,7 +165,7 @@ Navy Guard
 	title = "Navy Guard"
 	flag = NAVYGUARD
 	department_head = list("Lieutenant")
-	department_flag = NAVY
+	department_flag = ENGSEC
 	head_announce = list("Supply", "Service")
 	faction = "Station"
 	total_positions = 4

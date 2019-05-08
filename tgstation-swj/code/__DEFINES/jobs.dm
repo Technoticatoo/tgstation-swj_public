@@ -1,5 +1,5 @@
 
-#define ARMY			(1<<0)
+#define ENGSEC			(1<<0)
 
 #define SHIPWARDEN		(1<<0)
 #define HOS				(1<<1)
@@ -8,39 +8,33 @@
 #define DETECTIVE		(1<<4)
 #define ATROOPER		(1<<5)
 #define BTROOPER		(1<<6)
+#define CAPTAIN			(1<<7)
+#define HOP				(1<<8)
+#define CREWMAN			(1<<9)
+#define NAVYGUARD		(1<<10)
+#define AI_JF			(1<<11)
+#define CYBORG			(1<<12)
+#define CHIEF			(1<<13)
+#define ESERGEANT		(1<<14)
+#define ENGINEER		(1<<15)
+#define ATMOSTECH		(1<<16)
+#define ROBOTICIST		(1<<17)
+#define SITH			(1<<18)
+#define CHAPLAIN		(1<<19)
 
-
-#define NAVY			(1<<1)
-
-#define CAPTAIN			(1<<0)
-#define HOP				(1<<1)
-#define CREWMAN			(1<<2)
-#define NAVYGUARD		(1<<3)
-#define AI_JF			(1<<4)
-#define CYBORG			(1<<5)
-#define CHIEF			(1<<6)
-#define ESERGEANT		(1<<7)
-#define ENGINEER		(1<<8)
-#define ATMOSTECH		(1<<9)
-#define ROBOTICIST		(1<<10)
-
-#define MEDSCI			(1<<2)
+#define MEDSCI			(1<<1)
 
 #define CAO				(1<<0)
 #define RD_JF			(1<<1)
-//#define CHIEFCLERK		(1<<1)
 #define SCIENTIST		(1<<2)
-//#define CHEMIST			(1<<2)
 #define CMO_JF			(1<<3)
 #define DOCTOR			(1<<4)
 #define STORMSURG		(1<<5)
 #define IMPMED			(1<<6)
 #define GENETICIST		(1<<7)
 #define CLERK			(1<<8)
-//#define VIROLOGIST		(1<<8)
 
-
-#define SUPPLY			(1<<3)
+#define SUPPLY			(1<<2)
 
 #define QUARTERMASTER	(1<<0)
 #define CARGOTECH		(1<<1)
@@ -48,23 +42,13 @@
 #define AWAYLEAD		(1<<3)
 #define MINER			(1<<4)
 
-#define CIVILIAN		(1<<4)
+#define CIVILIAN		(1<<3)
 
 #define BARTENDER		(1<<0)
-//#define BOTANIST		(1<<1)
 #define COOK			(1<<1)
 #define JANITOR			(1<<2)
-//#define CURATOR			(1<<7)
-//#define LAWYER			(1<<8)
-//#define CLOWN			(1<<9)
-//#define MIME			(1<<10)
 #define ASSISTANT		(1<<3)
 #define PRISONER		(1<<4)
-
-#define COUNCIL			(1<<5)
-
-#define SITH			(1<<0)
-#define CHAPLAIN		(1<<1)
 
 #define JOB_AVAILABLE 0
 #define JOB_UNAVAILABLE_GENERIC 1
