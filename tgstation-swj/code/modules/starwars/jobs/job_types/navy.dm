@@ -115,7 +115,92 @@ Lieutenant
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/hop)
 
+/*
+Crewman
+*/
+/datum/job/crewman
+	title = "Crewman"
+	flag = CREWMAN
+	department_head = list("Lieutenant")
+	department_flag = NAVY
+	head_announce = list("Supply", "Service")
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Lieutenant"
+	selection_color = "#ddddff"
+	req_admin_notify = 1
+	minimal_player_age = 10
+	exp_requirements = 180
+	exp_type = EXP_TYPE_CREW
+	exp_type_department = EXP_TYPE_SUPPLY
 
+	outfit = /datum/outfit/job/crewman
+
+	access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_MEDICAL, ACCESS_ENGINE, ACCESS_EVA, ACCESS_MAINT_TUNNELS, ACCESS_BAR, ACCESS_JANITOR, ACCESS_CONSTRUCTION,
+						ACCESS_KITCHEN, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_QM, ACCESS_HYDROPONICS,
+			            ACCESS_THEATRE, ACCESS_LIBRARY, ACCESS_MINING, ACCESS_MINING_STATION,
+						ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_MEDICAL, ACCESS_ENGINE, ACCESS_EVA, ACCESS_MAINT_TUNNELS, ACCESS_BAR, ACCESS_JANITOR, ACCESS_CONSTRUCTION,
+						ACCESS_KITCHEN, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_QM, ACCESS_HYDROPONICS,
+			            ACCESS_THEATRE, ACCESS_LIBRARY, ACCESS_MINING, ACCESS_MINING_STATION,
+						ACCESS_MINERAL_STOREROOM)
+	paycheck = PAYCHECK_COMMAND
+	paycheck_department = ACCOUNT_SRV
+
+/datum/outfit/job/crewman
+	name = "Crewman"
+	jobtype = /datum/job/crewman
+
+	belt = /obj/item/pda/heads/hop
+	ears = /obj/item/radio/headset/heads/hop
+	uniform = /obj/item/clothing/under/rank/head_of_personnel
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/hopcap
+
+/*
+Navy Guard
+*/
+/datum/job/navy_guard
+	title = "Navy Guard"
+	flag = NAVYGUARD
+	department_head = list("Lieutenant")
+	department_flag = NAVY
+	head_announce = list("Supply", "Service")
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Lieutenant"
+	selection_color = "#ddddff"
+	req_admin_notify = 1
+	minimal_player_age = 10
+	exp_requirements = 180
+	exp_type = EXP_TYPE_CREW
+	exp_type_department = EXP_TYPE_SUPPLY
+
+	outfit = /datum/outfit/job/navy_guard
+
+	access = list(ACCESS_MEDICAL, ACCESS_ENGINE, ACCESS_EVA, ACCESS_MAINT_TUNNELS, ACCESS_BAR, ACCESS_JANITOR, ACCESS_CONSTRUCTION,
+						ACCESS_KITCHEN, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_QM, ACCESS_HYDROPONICS,
+			            ACCESS_THEATRE, ACCESS_LIBRARY, ACCESS_MINING, ACCESS_MINING_STATION,
+						ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_MEDICAL, ACCESS_ENGINE, ACCESS_EVA, ACCESS_MAINT_TUNNELS, ACCESS_BAR, ACCESS_JANITOR, ACCESS_CONSTRUCTION,
+						ACCESS_KITCHEN, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_QM, ACCESS_HYDROPONICS,
+			            ACCESS_THEATRE, ACCESS_LIBRARY, ACCESS_MINING, ACCESS_MINING_STATION,
+						ACCESS_MINERAL_STOREROOM)
+	paycheck = PAYCHECK_COMMAND
+	paycheck_department = ACCOUNT_SRV
+
+/datum/outfit/job/navy_guard
+	name = "Navy Guard"
+	jobtype = /datum/job/navy_guard
+
+	belt = /obj/item/pda/heads/hop
+	ears = /obj/item/radio/headset/heads/hop
+	uniform = /obj/item/clothing/under/rank/head_of_personnel
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/hopcap
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 
 
 

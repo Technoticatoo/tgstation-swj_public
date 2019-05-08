@@ -13,7 +13,7 @@
 	title = "Sith"
 	flag = SITH
 	department_head = list("CentCom")
-	department_flag = ARMY
+	department_flag = COUNCIL
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
@@ -65,4 +65,81 @@
 /datum/job/sith/announce(mob/living/carbon/human/H)
 	..()
 	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/minor_announce, "Sith Lord [H.real_name] on deck, tremble in fear, you who are disloyal!"))
+
+
+/*
+Sith Acolyte
+*/
+/datum/job/chaplain
+	title = "Sith Acolyte"
+	flag = COUNCIL
+	department_head = list("Sith")
+	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Sith Lord"
+	selection_color = "#dddddd"
+
+	outfit = /datum/outfit/job/chaplain
+
+	access = list(ACCESS_MORGUE, ACCESS_CHAPEL_OFFICE, ACCESS_CREMATORIUM, ACCESS_THEATRE)
+	minimal_access = list(ACCESS_MORGUE, ACCESS_CHAPEL_OFFICE, ACCESS_CREMATORIUM, ACCESS_THEATRE)
+	paycheck = PAYCHECK_EASY
+	paycheck_department = ACCOUNT_CIV
+
+
+/datum/job/chaplain/after_spawn(mob/living/H, mob/M)
+	if(H.mind)
+		H.mind.isholy = TRUE
+
+	var/obj/item/storage/book/bible/booze/B = new
+
+	if(SSreligion.religion)
+		B.deity_name = SSreligion.deity
+		B.name = SSreligion.bible_name
+		B.icon_state = SSreligion.bible_icon_state
+		B.item_state = SSreligion.bible_item_state
+		to_chat(H, "There is already an established religion onboard the station. You are an acolyte of [SSreligion.deity]. Defer to the Sith Acolyte.")
+		H.equip_to_slot_or_del(B, SLOT_IN_BACKPACK)
+		var/nrt = SSreligion.holy_weapon_type || /obj/item/nullrod
+		var/obj/item/nullrod/N = new nrt(H)
+		H.put_in_hands(N)
+		return
+
+	var/new_religion = "Dark Side of the Force"
+	if(M.client && M.client.prefs.custom_names["religion"])
+		new_religion = M.client.prefs.custom_names["religion"]
+
+	var/new_deity = "The Dark Side"
+	if(M.client && M.client.prefs.custom_names["deity"])
+		new_deity = M.client.prefs.custom_names["deity"]
+
+	B.deity_name = new_deity
+
+
+	switch(lowertext(new_religion))
+		if("Dark Side of the Force")
+			B.name = pick("The Sith Code","The Dark Side Scrolls")
+		else
+			B.name = "The Sith Code"
+
+	SSreligion.religion = new_religion
+	SSreligion.bible_name = B.name
+	SSreligion.deity = B.deity_name
+
+	H.equip_to_slot_or_del(B, SLOT_IN_BACKPACK)
+
+	SSblackbox.record_feedback("text", "religion_name", 1, "[new_religion]", 1)
+	SSblackbox.record_feedback("text", "religion_deity", 1, "[new_deity]", 1)
+
+/datum/outfit/job/chaplain
+	name = "Sith Acolyte"
+	jobtype = /datum/job/chaplain
+
+	belt = /obj/item/pda/chaplain
+	uniform = /obj/item/clothing/under/rank/chaplain
+	backpack_contents = list(/obj/item/camera/spooky = 1)
+	backpack = /obj/item/storage/backpack/cultpack
+	satchel = /obj/item/storage/backpack/cultpack
 
