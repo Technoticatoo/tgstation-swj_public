@@ -277,7 +277,7 @@ Bravo Squad Sergeant
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Captain of the Guard"
-	selection_color = "#de6f6f"
+	selection_color = "#efcc6b"
 	minimal_player_age = 7
 	exp_requirements = 300
 	exp_type = EXP_TYPE_CREW
@@ -332,7 +332,7 @@ Bravo Squad Stormtrooper
 	total_positions = 4 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 4 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	supervisors = "the Bravo Squad Sergeant"
-	selection_color = "#de8383"
+	selection_color = "#f2d480"
 	minimal_player_age = 7
 	exp_requirements = 300
 	exp_type = EXP_TYPE_CREW
