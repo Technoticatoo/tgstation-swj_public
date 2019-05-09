@@ -116,7 +116,7 @@ Science Director
 Scientist
 */
 /datum/job/scientist
-	title = "Reaearcher"
+	title = "Researcher"
 	flag = SCIENTIST
 	department_head = list("Research Director")
 	department_flag = MEDSCI

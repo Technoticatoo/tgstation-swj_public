@@ -4,7 +4,9 @@
 	desc = "A special helmet designed for work in a hazardous, low pressure environment. Armoured and mass produced for troopers of the Imperial Army."
 	alternate_worn_icon = 'icons/starwars/clothing/hardsuit_mob.dmi'
 	icon = 'icons/starwars/clothing/hardsuit_obj.dmi'
+	//basestate = "stormtrooper_helmet"
 	icon_state = "stormtrooper_helmet"
+	basestate = icon_state
 	armor = list("melee" = 35, "bullet" = 15, "laser" = 30,"energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
 
 /obj/item/clothing/suit/space/hardsuit/stormtrooper

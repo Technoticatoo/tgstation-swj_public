@@ -11,7 +11,7 @@
 	var/on = FALSE
 	var/obj/item/clothing/suit/space/hardsuit/suit
 	item_color = "engineering" //Determines used sprites: hardsuit[on]-[color] and hardsuit[on]-[color]2 (lying down sprite)
-//	actions_types = list(/datum/action/item_action/toggle_helmet_light)
+	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 
 	var/rad_count = 0
 	var/rad_record = 0
@@ -30,7 +30,10 @@
 
 /obj/item/clothing/head/helmet/space/hardsuit/attack_self(mob/user)
 	on = !on
-	icon_state = "[basestate][on]-[item_color]"
+	if(alternate_worn_icon)
+		icon_state = "[basestate][on]"
+	else
+		icon_state = "[basestate][on]-[item_color]"
 	user.update_inv_head()	//so our mob-overlays update
 
 	if(on)
