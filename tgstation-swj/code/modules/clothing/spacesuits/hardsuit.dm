@@ -29,7 +29,7 @@
 	STOP_PROCESSING(SSobj, src)
 
 /obj/item/clothing/head/helmet/space/hardsuit/attack_self(mob/user)
-	if(colorchange == 5)
+	/*if(colorchange == 5)
 		colorchange = 0
 
 	if(colorchange == 4)
@@ -48,23 +48,27 @@
 		set_light(4, 4, "#f50c0c")
 		colorchange = 2
 
-	if(colorchange == 0)
-		on = !on
-		if(alternate_worn_icon)
-			icon_state = "[basestate][on]"
-		else
-			icon_state = "[basestate][on]-[item_color]"
-		user.update_inv_head()	//so our mob-overlays update
+	if(colorchange == 0)*/
+	on = !on
+	if(alternate_worn_icon)
+		icon_state = "[basestate][on]"
+	else
+		icon_state = "[basestate][on]-[item_color]"
+	user.update_inv_head()	//so our mob-overlays update
 
-		if(on)
-			set_light(brightness_on)
-			colorchange = 1
-		else
-			set_light(0)
-			colorchange = 0
-		for(var/X in actions)
-			var/datum/action/A = X
-			A.UpdateButtonIcon()
+	if(on && alternate_worn_icon )
+		set_light(brightness_on, 4, "#a1f7ff")
+		//colorchange = 1
+	if(on && !alternate_worn_icon)
+		set_light(brightness_on)
+
+	if(on == 0)
+		set_light(0)
+
+		//colorchange = 0
+	for(var/X in actions)
+		var/datum/action/A = X
+		A.UpdateButtonIcon()
 
 
 
