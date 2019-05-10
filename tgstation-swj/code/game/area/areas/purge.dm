@@ -52,3 +52,15 @@ purge areas
 /area/purge/sec/bridge_armory
 	name = "Bridge Armory"
 	icon_state = "armory"
+
+/area/purge/sec/armory_hall
+	name = "Armory Hall"
+	icon_state = "security"
+
+/area/purge/sec/armory_checkpoint
+	name = "Armory Checkpoint"
+	icon_state = "checkpoint_aux"
+
+/area/purge/sec/armory_main
+	name = "Main Armory"
+	icon_state = "armory"
