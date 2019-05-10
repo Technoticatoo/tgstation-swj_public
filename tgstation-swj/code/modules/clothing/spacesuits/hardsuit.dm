@@ -12,7 +12,7 @@
 	var/obj/item/clothing/suit/space/hardsuit/suit
 	item_color = "engineering" //Determines used sprites: hardsuit[on]-[color] and hardsuit[on]-[color]2 (lying down sprite)
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
-
+	var/colorchange = 0
 	var/rad_count = 0
 	var/rad_record = 0
 	var/grace_count = 0
@@ -29,20 +29,45 @@
 	STOP_PROCESSING(SSobj, src)
 
 /obj/item/clothing/head/helmet/space/hardsuit/attack_self(mob/user)
-	on = !on
-	if(alternate_worn_icon)
-		icon_state = "[basestate][on]"
-	else
-		icon_state = "[basestate][on]-[item_color]"
-	user.update_inv_head()	//so our mob-overlays update
+	if(colorchange == 5)
+		colorchange = 0
 
-	if(on)
-		set_light(brightness_on)
-	else
-		set_light(0)
-	for(var/X in actions)
-		var/datum/action/A = X
-		A.UpdateButtonIcon()
+	if(colorchange == 4)
+		set_light(4, 4, "#0cf53d")
+		colorchange = 5
+
+	if(colorchange == 3)
+		set_light(4, 4, "#edf50c")
+		colorchange = 4
+
+	if(colorchange == 2)
+		set_light(4, 4, "#170cf5")
+		colorchange = 3
+
+	if(colorchange == 1)
+		set_light(4, 4, "#f50c0c")
+		colorchange = 2
+
+	if(colorchange == 0)
+		on = !on
+		if(alternate_worn_icon)
+			icon_state = "[basestate][on]"
+		else
+			icon_state = "[basestate][on]-[item_color]"
+		user.update_inv_head()	//so our mob-overlays update
+
+		if(on)
+			set_light(brightness_on)
+			colorchange = 1
+		else
+			set_light(0)
+			colorchange = 0
+		for(var/X in actions)
+			var/datum/action/A = X
+			A.UpdateButtonIcon()
+
+
+
 
 /obj/item/clothing/head/helmet/space/hardsuit/dropped(mob/user)
 	..()
