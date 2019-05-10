@@ -246,8 +246,8 @@ Alpha Squad Stormtrooper
 	gloves = /obj/item/clothing/gloves/color/black
 	//head = /obj/item/clothing/head/helmet/sec
 	//suit = /obj/item/clothing/suit/armor/vest/alt
-	head = /obj/item/clothing/head/helmet/space/hardsuit/stormtrooper
-	suit = /obj/item/clothing/suit/space/hardsuit/stormtrooper
+	head = /obj/item/clothing/head/helmet/space/hardsuit/imperial/stormtrooper
+	suit = /obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/assembly/flash/handheld
@@ -436,8 +436,8 @@ Bravo Squad Stormtrooper
 	gloves = /obj/item/clothing/gloves/color/black
 	//head = /obj/item/clothing/head/helmet/sec
 	//suit = /obj/item/clothing/suit/armor/vest/alt
-	head = /obj/item/clothing/head/helmet/space/hardsuit/stormtrooper
-	suit = /obj/item/clothing/suit/space/hardsuit/stormtrooper
+	head = /obj/item/clothing/head/helmet/space/hardsuit/imperial/stormtrooper
+	suit = /obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/assembly/flash/handheld
