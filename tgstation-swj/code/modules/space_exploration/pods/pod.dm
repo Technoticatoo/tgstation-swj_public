@@ -251,10 +251,18 @@
 				return 1
 
 			if(turn_direction == _dir)
+				if((last_move_time + move_cooldown) > world.time)
+					return 0
+				src.Move(get_step(user, _dir),_dir)
+				UsePower(GLOB.pod_config.movement_cost)
 				inertial_direction = _dir
 			else
-				dir = _dir
+				if((last_move_time + move_cooldown) > world.time)
+					return 0
+				src.Move(get_step(user, _dir),_dir)
+				UsePower(GLOB.pod_config.movement_cost)
 				turn_direction = _dir
+				inertial_direction = _dir
 		else
 			if((last_move_time + move_cooldown) > world.time)
 				return 0

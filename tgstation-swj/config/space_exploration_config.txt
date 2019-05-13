@@ -24,6 +24,7 @@ paw_damage_upper 8
 
 
 drivable /turf/open/space
+drivable /turf/open/space/basic
 drivable /turf/open/floor/engine
 drivable /turf/open/floor/plating
 drivable /turf/open/floor/engine
