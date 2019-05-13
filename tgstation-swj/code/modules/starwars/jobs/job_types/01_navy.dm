@@ -107,7 +107,7 @@ Lieutenant
 	id = /obj/item/card/id/silver
 	belt = /obj/item/pda/heads/hop
 	ears = /obj/item/radio/headset/heads/hop
-	uniform = /obj/item/clothing/under/rank/head_of_personnel
+	uniform = /obj/item/clothing/under/imperial/lieutenant
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/hopcap
 	backpack_contents = list(/obj/item/storage/box/ids=1,\
@@ -154,7 +154,7 @@ Crewman
 
 	belt = /obj/item/pda/heads/hop
 	ears = /obj/item/radio/headset/heads/hop
-	uniform = /obj/item/clothing/under/rank/head_of_personnel
+	uniform = /obj/item/clothing/under/imperial/crewman
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/hopcap
 

@@ -37,7 +37,7 @@ Chief Medical Officer
 	belt = /obj/item/pda/heads/cmo
 	l_pocket = /obj/item/pinpointer/crew
 	ears = /obj/item/radio/headset/heads/cmo
-	uniform = /obj/item/clothing/under/rank/chief_medical_officer
+	uniform = /obj/item/clothing/under/imperial/medical/cmo
 	shoes = /obj/item/clothing/shoes/jackboots
 	suit = /obj/item/clothing/suit/toggle/labcoat/cmo
 	l_hand = /obj/item/storage/firstaid/regular
@@ -84,7 +84,7 @@ Medical Doctor
 
 	belt = /obj/item/pda/medical
 	ears = /obj/item/radio/headset/headset_med
-	uniform = /obj/item/clothing/under/rank/medical
+	uniform = /obj/item/clothing/under/imperial/medical/surgeon
 	shoes = /obj/item/clothing/shoes/sneakers/white
 	suit =  /obj/item/clothing/suit/toggle/labcoat
 	l_hand = /obj/item/storage/firstaid/regular
@@ -200,7 +200,7 @@ Imperial Medic
 
 	belt = /obj/item/pda/medical
 	ears = /obj/item/radio/headset/headset_med
-	uniform = /obj/item/clothing/under/rank/medical
+	uniform = /obj/item/clothing/under/imperial/medical
 	shoes = /obj/item/clothing/shoes/sneakers/white
 	suit =  /obj/item/clothing/suit/toggle/labcoat
 	l_hand = /obj/item/storage/firstaid/regular

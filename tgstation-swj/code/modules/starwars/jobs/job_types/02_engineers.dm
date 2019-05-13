@@ -39,7 +39,7 @@ Engineer Sergeant
 	belt = /obj/item/storage/belt/utility/chief/full
 	l_pocket = /obj/item/pda/heads/ce
 	ears = /obj/item/radio/headset/heads/ce
-	uniform = /obj/item/clothing/under/rank/chief_engineer
+	uniform = /obj/item/clothing/under/imperial/engineering/head
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/hardhat/white
 	gloves = /obj/item/clothing/gloves/color/black/ce
@@ -106,7 +106,7 @@ Engineer Sergeant
 	belt = /obj/item/storage/belt/utility/chief/full
 	l_pocket = /obj/item/pda/heads/ce
 	ears = /obj/item/radio/headset/heads/ce
-	uniform = /obj/item/clothing/under/rank/chief_engineer
+	uniform = /obj/item/clothing/under/imperial/engineering/co
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/hardhat/white
 	gloves = /obj/item/clothing/gloves/color/black/ce
@@ -165,7 +165,7 @@ Engineer Corporal
 	belt = /obj/item/storage/belt/utility/full/engi
 	l_pocket = /obj/item/pda/engineering
 	ears = /obj/item/radio/headset/headset_eng
-	uniform = /obj/item/clothing/under/rank/engineer
+	uniform = /obj/item/clothing/under/imperial/engineering/nco
 	shoes = /obj/item/clothing/shoes/workboots
 	head = /obj/item/clothing/head/hardhat
 	r_pocket = /obj/item/t_scanner
@@ -222,7 +222,7 @@ Engineer Private
 	belt = /obj/item/storage/belt/utility/atmostech
 	l_pocket = /obj/item/pda/atmos
 	ears = /obj/item/radio/headset/headset_eng
-	uniform = /obj/item/clothing/under/rank/atmospheric_technician
+	uniform = /obj/item/clothing/under/imperial/engineering
 	r_pocket = /obj/item/analyzer
 
 	backpack = /obj/item/storage/backpack/industrial
