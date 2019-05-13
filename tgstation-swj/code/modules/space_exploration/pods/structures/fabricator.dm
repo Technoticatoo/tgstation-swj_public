@@ -25,7 +25,7 @@
 */
 /obj/machinery/mecha_part_fabricator/podfab
 	name = "space pod fabricator"
-	fabtype = PODFAB
+	var/fabtype = PODFAB
 	circuit = /obj/item/circuitboard/machine/podfab
 	req_access = list()
 	stored_research = /datum/techweb/specialized/autounlocking/podfab

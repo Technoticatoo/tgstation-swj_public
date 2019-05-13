@@ -46,11 +46,11 @@ Captain of the Guard
 	id = /obj/item/card/id/silver
 	belt = /obj/item/pda/heads/hos
 	ears = /obj/item/radio/headset/heads/hos/alt
-	uniform = /obj/item/clothing/under/rank/head_of_security
-	shoes = /obj/item/clothing/shoes/jackboots
+	uniform = /obj/item/clothing/under/imperial/cotg
+	shoes = /obj/item/clothing/shoes/imperial
 	suit = /obj/item/clothing/suit/armor/hos/trenchcoat
 	gloves = /obj/item/clothing/gloves/color/black/hos
-	head = /obj/item/clothing/head/HoS
+	head = /obj/item/clothing/head/helmet/imperial/cotg
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	suit_store = /obj/item/gun/energy/e_gun
 	r_pocket = /obj/item/assembly/flash/handheld
@@ -110,7 +110,7 @@ Alpha Squad Sergeant
 	belt = /obj/item/pda/warden
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/imperial/crewman
-	shoes = /obj/item/clothing/shoes/jackboots
+	shoes = /obj/item/clothing/shoes/imperial
 	suit = /obj/item/clothing/suit/armor/vest/warden/alt
 	gloves = /obj/item/clothing/gloves/color/black
 	head = /obj/item/clothing/head/helmet/imperial/blast
@@ -246,9 +246,9 @@ Alpha Squad Stormtrooper
 	gloves = /obj/item/clothing/gloves/color/black
 	//head = /obj/item/clothing/head/helmet/sec
 	//suit = /obj/item/clothing/suit/armor/vest/alt
-	head = /obj/item/clothing/head/helmet/space/hardsuit/imperial/stormtrooper
+	//head = /obj/item/clothing/head/helmet/space/hardsuit/imperial/stormtrooper
 	suit = /obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper
-	shoes = /obj/item/clothing/shoes/jackboots
+	shoes = /obj/item/clothing/shoes/imperial
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/assembly/flash/handheld
 	suit_store = /obj/item/gun/energy/e_gun/advtaser
@@ -301,7 +301,7 @@ Bravo Squad Sergeant
 	belt = /obj/item/pda/warden
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/imperial/crewman
-	shoes = /obj/item/clothing/shoes/jackboots
+	shoes = /obj/item/clothing/shoes/imperial
 	suit = /obj/item/clothing/suit/armor/vest/warden/alt
 	gloves = /obj/item/clothing/gloves/color/black
 	head = /obj/item/clothing/head/helmet/imperial/blast
@@ -436,9 +436,9 @@ Bravo Squad Stormtrooper
 	gloves = /obj/item/clothing/gloves/color/black
 	//head = /obj/item/clothing/head/helmet/sec
 	//suit = /obj/item/clothing/suit/armor/vest/alt
-	head = /obj/item/clothing/head/helmet/space/hardsuit/imperial/stormtrooper
+	//head = /obj/item/clothing/head/helmet/space/hardsuit/imperial/stormtrooper
 	suit = /obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper
-	shoes = /obj/item/clothing/shoes/jackboots
+	shoes = /obj/item/clothing/shoes/imperial
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/assembly/flash/handheld
 	suit_store = /obj/item/gun/energy/e_gun/advtaser

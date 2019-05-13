@@ -13,7 +13,13 @@
 /datum/component/storage
 	dupe_mode = COMPONENT_DUPE_UNIQUE
 	var/datum/component/storage/concrete/master		//If not null, all actions act on master and this is just an access point.
+//new for pods
+	var/name
+	var/icon
+	var/icon_state
+	var/foldable
 
+//end of new for pods
 	var/list/can_hold								//if this is set, only things in this typecache will fit.
 	var/list/cant_hold								//if this is set, anything in this typecache will not be able to fit.
 

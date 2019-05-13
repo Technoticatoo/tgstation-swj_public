@@ -383,7 +383,7 @@
 		id = "pcleftframe"
 		category = list("Construction")
 		build_type = PODFAB
-		build_path = /obj/item/storage/box/pod_frame_left
+		build_path = /datum/component/storage/box/pod_frame_left
 		//req_tech = list("materials" = 1)
 		materials = list(MAT_METAL = 2000)
 		construction_time = 80
@@ -393,7 +393,7 @@
 		id = "pcrightframe"
 		category = list("Construction")
 		build_type = PODFAB
-		build_path = /obj/item/storage/box/pod_frame_right
+		build_path = /datum/component/storage/box/pod_frame_right
 		//req_tech = list("materials" = 1)
 		materials = list(MAT_METAL = 2000)
 		construction_time = 80

@@ -92,7 +92,7 @@ Science Director
 	belt = /obj/item/pda/heads/rd
 	ears = /obj/item/radio/headset/heads/rd
 	uniform = /obj/item/clothing/under/rank/research_director
-	shoes = /obj/item/clothing/shoes/jackboots
+	shoes = /obj/item/clothing/shoes/imperial
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	l_hand = /obj/item/clipboard
 	l_pocket = /obj/item/laser_pointer

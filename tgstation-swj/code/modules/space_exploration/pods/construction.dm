@@ -1,4 +1,4 @@
-/obj/item/storage/box/pod_frame_left
+/datum/component/storage/box/pod_frame_left
 	name = "left pod frame box"
 	icon = 'icons/oldschool/spacepods/pod_attachments.dmi'
 	icon_state = "attachment_default"
@@ -13,7 +13,7 @@
 	handle_item_insertion()
 		return 0
 
-/obj/item/storage/box/pod_frame_right
+/datum/component/storage/box/pod_frame_right
 	name = "right pod frame box"
 	icon = 'icons/oldschool/spacepods/pod_attachments.dmi'
 	icon_state = "attachment_default"
@@ -300,7 +300,7 @@
 			bound_height = 64
 			w_class = INFINITY
 			//origin_tech = "materials=1"
-			flags_1 = ABSTRACT_1
+			flags_1 = ABSTRACT
 
 			attackby(var/obj/item/I, var/mob/living/user)
 				if(istype(I, /obj/item/weldingtool))

@@ -41,8 +41,8 @@ Captain
 	gloves = /obj/item/clothing/gloves/color/captain
 	uniform =  /obj/item/clothing/under/rank/captain
 	suit = /obj/item/clothing/suit/armor/vest/capcarapace
-	shoes = /obj/item/clothing/shoes/jackboots
-	head = /obj/item/clothing/head/caphat
+	shoes = /obj/item/clothing/shoes/imperial
+	head = /obj/item/clothing/head/helmet/imperial/captain
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/station_charter=1, /obj/item/card/id/departmental_budget/civ=1)
 
 	backpack = /obj/item/storage/backpack/captain
@@ -107,9 +107,9 @@ Lieutenant
 	id = /obj/item/card/id/silver
 	belt = /obj/item/pda/heads/hop
 	ears = /obj/item/radio/headset/heads/hop
-	uniform = /obj/item/clothing/under/rank/head_of_personnel
-	shoes = /obj/item/clothing/shoes/jackboots
-	head = /obj/item/clothing/head/hopcap
+	uniform = /obj/item/clothing/under/imperial/lieutenant
+	shoes = /obj/item/clothing/shoes/imperial
+	head = /obj/item/clothing/head/helmet/imperial/lieutenant
 	backpack_contents = list(/obj/item/storage/box/ids=1,\
 		/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced = 1, /obj/item/card/id/departmental_budget/srv=1)
 
@@ -154,8 +154,8 @@ Crewman
 
 	belt = /obj/item/pda/heads/hop
 	ears = /obj/item/radio/headset/heads/hop
-	uniform = /obj/item/clothing/under/rank/head_of_personnel
-	shoes = /obj/item/clothing/shoes/jackboots
+	uniform = /obj/item/clothing/under/imperial/crewman
+	shoes = /obj/item/clothing/shoes/imperial
 	head = /obj/item/clothing/head/hopcap
 
 /*
@@ -198,7 +198,7 @@ Navy Guard
 	belt = /obj/item/pda/heads/hop
 	ears = /obj/item/radio/headset/heads/hop
 	uniform = /obj/item/clothing/under/rank/head_of_personnel
-	shoes = /obj/item/clothing/shoes/jackboots
+	shoes = /obj/item/clothing/shoes/imperial
 	head = /obj/item/clothing/head/hopcap
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 
