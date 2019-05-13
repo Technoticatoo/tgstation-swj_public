@@ -9,7 +9,6 @@
 	anchored = 1
 	layer = 3.2
 	resistance_flags = UNACIDABLE
-
 	var/list/size = list(1, 1)
 	var/obj/machinery/portable_atmospherics/canister/internal_canister
 	var/datum/gas_mixture/internal_air
@@ -266,7 +265,7 @@
 		else
 			if((last_move_time + move_cooldown) > world.time)
 				return 0
-			step(src, _dir)
+			src.Move(get_step(user, _dir),_dir)
 			UsePower(GLOB.pod_config.movement_cost)
 			turn_direction = _dir
 			inertial_direction = _dir
@@ -500,12 +499,6 @@
 					attachment.Use(A, M)
 
 		M.changeNext_move(3)
-	Bump(var/atom/movable/AM)
-		if(istype(AM, /obj/effect/particle_effect/water))
-			if(HasDamageFlag(P_DAMAGE_FIRE))
-				RemoveDamageFlag(P_DAMAGE_FIRE)
-				PrintSystemNotice("Fire extinguished.")
-		..()
 
 	CtrlShiftClick(var/mob/user)
 		if(!check_rights(R_ADMIN))
@@ -515,3 +508,10 @@
 			user.client.debug_variables(pod_log)
 
 		OpenDebugMenu(user)
+
+/obj/pod/proc/CollidedWith(var/atom/movable/AM)
+	if(istype(AM, /obj/effect/particle_effect/water))
+		if(HasDamageFlag(P_DAMAGE_FIRE))
+			RemoveDamageFlag(P_DAMAGE_FIRE)
+			PrintSystemNotice("Fire extinguished.")
+	..()

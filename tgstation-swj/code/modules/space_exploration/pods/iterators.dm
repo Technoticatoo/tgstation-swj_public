@@ -14,7 +14,7 @@
 			return 0
 
 		if(!pod.HasTraction())
-			step(pod, pod.inertial_direction)
+			pod.Move(get_step(pod, pod.inertial_direction),pod.inertial_direction)
 			spawn(-1)
 				pod.dir = pod.turn_direction
 
