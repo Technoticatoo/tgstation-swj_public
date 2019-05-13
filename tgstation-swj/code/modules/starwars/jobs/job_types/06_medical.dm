@@ -38,7 +38,7 @@ Chief Medical Officer
 	l_pocket = /obj/item/pinpointer/crew
 	ears = /obj/item/radio/headset/heads/cmo
 	uniform = /obj/item/clothing/under/imperial/medical/cmo
-	shoes = /obj/item/clothing/shoes/jackboots
+	shoes = /obj/item/clothing/shoes/imperial
 	suit = /obj/item/clothing/suit/toggle/labcoat/cmo
 	l_hand = /obj/item/storage/firstaid/regular
 	suit_store = /obj/item/flashlight/pen

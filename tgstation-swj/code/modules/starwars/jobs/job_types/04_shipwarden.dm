@@ -30,10 +30,10 @@
 	belt = /obj/item/pda/shipwarden
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/imperial/warden
-	shoes = /obj/item/clothing/shoes/jackboots
+	shoes = /obj/item/clothing/shoes/imperial
 	//suit = /obj/item/clothing/suit/armor/vest/warden/alt
 	gloves = /obj/item/clothing/gloves/color/black
-	//head = /obj/item/clothing/head/shipwarden
+	head = /obj/item/clothing/head/helmet/imperial/warden
 	r_pocket = /obj/item/assembly/flash/handheld
 	l_pocket = /obj/item/restraints/handcuffs
 	suit_store = /obj/item/gun/energy/e_gun/advtaser

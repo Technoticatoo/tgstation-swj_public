@@ -40,7 +40,7 @@ Engineer Sergeant
 	l_pocket = /obj/item/pda/heads/ce
 	ears = /obj/item/radio/headset/heads/ce
 	uniform = /obj/item/clothing/under/imperial/engineering/head
-	shoes = /obj/item/clothing/shoes/jackboots
+	shoes = /obj/item/clothing/shoes/imperial
 	head = /obj/item/clothing/head/hardhat/white
 	gloves = /obj/item/clothing/gloves/color/black/ce
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1, /obj/item/card/id/departmental_budget/eng=1)
@@ -107,7 +107,7 @@ Engineer Sergeant
 	l_pocket = /obj/item/pda/heads/ce
 	ears = /obj/item/radio/headset/heads/ce
 	uniform = /obj/item/clothing/under/imperial/engineering/co
-	shoes = /obj/item/clothing/shoes/jackboots
+	shoes = /obj/item/clothing/shoes/imperial
 	head = /obj/item/clothing/head/hardhat/white
 	gloves = /obj/item/clothing/gloves/color/black/ce
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1, /obj/item/card/id/departmental_budget/eng=1)
