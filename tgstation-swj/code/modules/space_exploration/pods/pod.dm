@@ -492,7 +492,7 @@
 					attachment.Use(A, M)
 
 		M.changeNext_move(3)
-	Crossed(var/atom/movable/AM)
+	Bump(var/atom/movable/AM)
 		if(istype(AM, /obj/effect/particle_effect/water))
 			if(HasDamageFlag(P_DAMAGE_FIRE))
 				RemoveDamageFlag(P_DAMAGE_FIRE)
