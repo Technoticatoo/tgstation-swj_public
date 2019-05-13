@@ -64,3 +64,15 @@ purge areas
 /area/purge/sec/armory_main
 	name = "Main Armory"
 	icon_state = "armory"
+
+/area/purge/sec/prison_hall_east
+	name = "Prison Hall East"
+	icon_state = "armory"
+
+/area/purge/sec/prison_hall_west
+	name = "Prison Hall West"
+	icon_state = "checkpoint_aux"
+
+/area/purge/sec/prison_hall_central
+	name = "Prison Hall Central"
+	icon_state = "captain"
