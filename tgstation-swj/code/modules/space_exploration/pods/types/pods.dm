@@ -6,8 +6,8 @@
 	size = list(2, 2)
 	icon_state = "pod_civ"
 	icon = 'icons/oldschool/spacepods/pod-2-2.dmi'
-	bound_width = 64
-	bound_height = 64
+	//bound_width = 32
+	//bound_height = 32
 	pre_equipped/
 
 		GetArmor()
