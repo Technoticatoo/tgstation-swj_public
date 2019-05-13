@@ -421,7 +421,7 @@
 		if(I.force)
 			to_chat(user,"<span class='attack'>You hit \the [src] with the [I].</span>")
 			TakeDamage(I.force, 0, I, user)
-			add_log(user, (pilot ? pilot : 0), "attacked a space pod", 1, I, " (REMHP: [health])")
+			log_combat(user, src , "" , I)
 			user.changeNext_move(8)
 
 		update_icon()
@@ -492,7 +492,7 @@
 					attachment.Use(A, M)
 
 		M.changeNext_move(3)
-	CollidedWith(var/atom/movable/AM)
+	Crossed(var/atom/movable/AM)
 		if(istype(AM, /obj/effect/particle_effect/water))
 			if(HasDamageFlag(P_DAMAGE_FIRE))
 				RemoveDamageFlag(P_DAMAGE_FIRE)
