@@ -192,7 +192,7 @@
 	proc/DoMove(var/mob/user, var/_dir)
 		if(user != pilot)
 			return 0
-
+		//PrintSystemAlert("1: [get_step(src, _dir)],2:[_dir],3:[user.dir].")
 		var/obj/item/pod_attachment/engine/engine = GetAttachmentOnHardpoint(P_HARDPOINT_ENGINE)
 		if(!engine)
 			PrintSystemAlert("No engine attached.")
@@ -255,14 +255,14 @@
 				if((last_move_time + move_cooldown) > world.time)
 					return 0
 				dampdelay = 0
-				src.Move(get_step(user, _dir),_dir)
+				src.Move(get_step(src, _dir),_dir)
 				UsePower(GLOB.pod_config.movement_cost)
 				inertial_direction = _dir
 			else
 				if((last_move_time + move_cooldown) > world.time)
 					return 0
 				dampdelay = 0
-				src.Move(get_step(user, _dir),_dir)
+				src.Move(get_step(src, _dir),_dir)
 				UsePower(GLOB.pod_config.movement_cost)
 				turn_direction = _dir
 				inertial_direction = _dir

@@ -224,7 +224,6 @@
 	if(!loc || !newloc)
 		return FALSE
 	var/atom/oldloc = loc
-
 	if(loc != newloc)
 		if (!(direct & (direct - 1))) //Cardinal move
 			. = ..()
