@@ -517,11 +517,15 @@
 
 /obj/pod/Bump(atom/movable/M)
 	. = ..()
-	shake_camera(M, 15, 1)
 	shake_camera(src.pilot, 15, 1)
 	visible_message("<span class='danger'>[src] crashes into [M]!</span>")
 	playsound(src, 'sound/effects/bamf.ogg', 50, 1)
 	TakeDamage(20)
+	if(istype(M, /obj/pod))
+		var/obj/pod/P = M
+		shake_camera(P.pilot, 15, 1)
+		playsound(P, 'sound/effects/bamf.ogg', 50, 1)
+		P.TakeDamage(20)
 
 /obj/pod/proc/CollidedWith(var/atom/movable/AM)
 	if(istype(AM, /obj/effect/particle_effect/water))
