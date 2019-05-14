@@ -6,8 +6,6 @@
 	size = list(2, 2)
 	icon_state = "pod_civ"
 	icon = 'icons/oldschool/spacepods/pod-2-2.dmi'
-	//bound_width = 32
-	//bound_height = 32
 	pre_equipped/
 
 		GetArmor()
@@ -97,6 +95,32 @@
 
 		GetArmor()
 			return new /obj/item/pod_attachment/armor/precursor(src)
+
+		GetSeats()
+			return 2
+
+	fighter/
+		name = "Tie Fighter"
+		icon_state = "tie_fighter"
+		move_cooldown = 2
+
+		GetSeats()
+			return 1
+
+	interceptor/
+		name = "Tie Interceptor"
+		icon_state = "tie_interceptor"
+		move_cooldown = 1.5
+
+		GetSeats()
+			return 1
+	bomber/
+		name = "Tie Bomber"
+		icon_state = "tie_bomber2"
+		move_cooldown = 2.5
+
+		GetArmor()
+			return new /obj/item/pod_attachment/armor/heavy(src)
 
 		GetSeats()
 			return 2

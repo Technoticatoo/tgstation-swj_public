@@ -14,7 +14,11 @@
 			return 0
 
 		if(!pod.HasTraction())
-			pod.Move(get_step(pod, pod.inertial_direction),pod.inertial_direction)
+			if(pod.dampdelay <= pod.dampener)
+				pod.Move(get_step(pod, pod.inertial_direction),pod.inertial_direction)
+				pod.dampdelay = pod.dampdelay +1
+			else
+				return 0
 			spawn(-1)
 				pod.dir = pod.turn_direction
 
