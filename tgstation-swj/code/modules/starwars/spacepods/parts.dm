@@ -119,7 +119,7 @@
 	name = "civilian pod armor"
 	icon_state = "pod_armor_civ"
 	desc = "Spacepod armor. This is the civilian version. It looks rather flimsy."
-	var/pod_icon = 'icons/starwars/spacepods/2x2.dmi'
+	var/pod_icon = 'icons/starwars/fighters.dmi'
 	var/pod_icon_state = "pod_civ"
 	var/pod_desc = "A sleek civilian space pod."
 	var/pod_integrity = 250
@@ -160,6 +160,30 @@
 	icon_state = "pod_armor_mil"
 	desc = "Tough military-grade pod armor, meant for use by the NanoTrasen military and it's sub-divisons for space combat."
 	pod_icon_state = "pod_mil"
+	pod_desc = "An armed security spacepod with reinforced armor plating brandishing the Nanotrasen Military insignia"
+	pod_integrity = 350
+
+/obj/item/pod_parts/armor/fighter
+	name = "tie fighter armor"
+	icon_state = "pod_armor_mil"
+	desc = "Tough military-grade pod armor, meant for use by the NanoTrasen military and it's sub-divisons for space combat."
+	pod_icon_state = "tie_fighter"
+	pod_desc = "An armed security spacepod with reinforced armor plating brandishing the Nanotrasen Military insignia"
+	pod_integrity = 300
+
+/obj/item/pod_parts/armor/interceptor
+	name = "tie interceptor armor"
+	icon_state = "pod_armor_mil"
+	desc = "Tough military-grade pod armor, meant for use by the NanoTrasen military and it's sub-divisons for space combat."
+	pod_icon_state = "tie_interceptor"
+	pod_desc = "An armed security spacepod with reinforced armor plating brandishing the Nanotrasen Military insignia"
+	pod_integrity = 280
+
+/obj/item/pod_parts/armor/bomber
+	name = "tie bomber armor"
+	icon_state = "pod_armor_mil"
+	desc = "Tough military-grade pod armor, meant for use by the NanoTrasen military and it's sub-divisons for space combat."
+	pod_icon_state = "tie_bomber2"
 	pod_desc = "An armed security spacepod with reinforced armor plating brandishing the Nanotrasen Military insignia"
 	pod_integrity = 350
 

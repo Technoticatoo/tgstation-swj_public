@@ -414,13 +414,13 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 		icon = pod_armor.pod_icon
 		icon_state = pod_armor.pod_icon_state
 	else
-		icon = 'icons/starwars/spacepods/2x2.dmi'
+		icon = 'icons/starwars/fighters.dmi'
 		icon_state = initial(icon_state)
 
 	if(obj_integrity <= max_integrity / 2)
-		add_overlay(image(icon='icons/starwars/spacepods/2x2.dmi', icon_state="pod_damage"))
+		add_overlay(image(icon='icons/starwars/fighters.dmi', icon_state="pod_damage"))
 		if(obj_integrity <= max_integrity / 4)
-			add_overlay(image(icon='icons/starwars/spacepods/2x2.dmi', icon_state="pod_fire"))
+			add_overlay(image(icon='icons/starwars/fighters.dmi', icon_state="pod_fire"))
 
 	if(weapon && weapon.overlay_icon_state)
 		add_overlay(image(icon=weapon.overlay_icon,icon_state=weapon.overlay_icon_state))
