@@ -1,4 +1,4 @@
-/obj/spacepod/prebuilt
+	/obj/spacepod/prebuilt
 	icon = 'icons/starwars/fighters.dmi'
 //	icon = 'icons/starwars/spacepods/2x2.dmi'
 	icon_state = "tie_fighter3"
@@ -35,7 +35,7 @@
 	name = "Tie Fighter"
 	icon_state = "tie_fighter"
 	locked = FALSE
-	armor_type = /obj/item/pod_parts/armor/security
+	armor_type = /obj/item/pod_parts/armor/fighter
 	equipment_types = list(/obj/item/spacepod_equipment/weaponry/disabler,
 		/obj/item/spacepod_equipment/lock/keyed/sec,
 		/obj/item/spacepod_equipment/tracker,
@@ -45,7 +45,7 @@
 	name = "Tie Interceptor"
 	icon_state = "tie_interceptor"
 	locked = TRUE
-	armor_type = /obj/item/pod_parts/armor/security
+	armor_type = /obj/item/pod_parts/armor/interceptor
 	equipment_types = list(/obj/item/spacepod_equipment/weaponry/disabler,
 		/obj/item/spacepod_equipment/lock/keyed/sec,
 		/obj/item/spacepod_equipment/tracker,
@@ -55,7 +55,7 @@
 	name = "Tie Bomber"
 	icon_state = "tie_bomber2"
 	locked = TRUE
-	armor_type = /obj/item/pod_parts/armor/security
+	armor_type = /obj/item/pod_parts/armor/bomber
 	equipment_types = list(/obj/item/spacepod_equipment/weaponry/disabler,
 		/obj/item/spacepod_equipment/lock/keyed/sec,
 		/obj/item/spacepod_equipment/tracker,
