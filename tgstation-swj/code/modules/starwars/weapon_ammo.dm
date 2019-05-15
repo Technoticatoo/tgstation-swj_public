@@ -41,21 +41,24 @@
 /obj/item/ammo_casing/energy/laser/e11
 	projectile_type = /obj/item/projectile/beam/laser
 	select_name = "kill"
-	e_cost = 50
+	e_cost = 30
 	fire_sound = 'sound/starwars/e11.ogg'
+	delay = 5
 
 /obj/item/ammo_casing/energy/disabler/e11
 	projectile_type = /obj/item/projectile/beam/disabler
 	select_name  = "stun"
-	e_cost = 50
+	e_cost = 30
 	fire_sound = 'sound/starwars/e11stun.ogg'
 	harmful = FALSE
+	delay = 7
 
 /obj/item/ammo_casing/energy/laser/a280
 	projectile_type = /obj/item/projectile/beam/laser
 	select_name = "kill"
-	e_cost = 50
+	e_cost = 20
 	fire_sound = 'sound/starwars/a280.ogg'
+	delay = 3
 
 /obj/item/ammo_casing/energy/ion/e12d
 	projectile_type = /obj/item/projectile/ion
@@ -65,5 +68,42 @@
 /obj/item/ammo_casing/energy/laser/dl44
 	projectile_type = /obj/item/projectile/beam/laser
 	select_name = "kill"
-	e_cost = 20
+	e_cost = 15
 	fire_sound = 'sound/starwars/dl44.ogg'
+	delay = 7
+
+/obj/item/ammo_casing/energy/laser/dc15a
+	projectile_type = /obj/item/projectile/beam/laser
+	select_name = "kill"
+	e_cost = 25
+	fire_sound = 'sound/starwars/dc15a.ogg'
+	delay = 3
+
+/obj/item/ammo_casing/energy/disabler/dc15a
+	projectile_type = /obj/item/projectile/beam/disabler
+	select_name  = "stun"
+	e_cost = 25
+	fire_sound = 'sound/starwars/dc15astun.ogg'
+	harmful = FALSE
+	delay = 5
+
+/obj/item/ammo_casing/energy/laser/dc17
+	projectile_type = /obj/item/projectile/beam/laser
+	select_name = "kill"
+	e_cost = 25
+	fire_sound = 'sound/starwars/dc17.ogg'
+	delay = 5
+
+/obj/item/ammo_casing/energy/laser/dc17s
+	projectile_type = /obj/item/projectile/beam/laser
+	select_name = "kill"
+	e_cost = 25
+	fire_sound = 'sound/starwars/dc17s.ogg'
+	delay = 5
+
+/obj/item/ammo_casing/energy/laser/dlt19
+	projectile_type = /obj/item/projectile/beam/laser
+	select_name = "kill"
+	e_cost = 25
+	fire_sound = 'sound/starwars/dlt19.ogg'
+	delay = 2

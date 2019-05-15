@@ -6,8 +6,8 @@
 	icon_state = "stormtrooper"
 	icon_deny = "stormtrooper-deny"
 	req_access = list(ACCESS_SECURITY)
-	products = list(/obj/item/gun/energy/e_gun/E11 = 3,
-					/obj/item/gun/energy/ionrifle/e12d = 1,
+	products = list(/obj/item/gun/energy/e_gun/starwars/e11 = 3,
+					/obj/item/gun/energy/ionrifle/starwars/e12d = 1,
 		            /obj/item/clothing/shoes/imperial = 3,
 		            /obj/item/clothing/under/imperial = 3,
 		            /obj/item/clothing/under/imperial/stormtrooper = 3,
@@ -23,3 +23,99 @@
 	default_price = 100
 	extra_price = 150
 	payment_department = ACCOUNT_SEC
+
+/obj/machinery/vending/imperial/alpha
+	name = "Imperial Stormtrooper Armory Dispenser (Alpha)"
+	desc = "An equipment vendor for Alpha Squad Stormtroopers."
+	icon_state = "stormtrooper-alpha"
+	products = list(/obj/item/gun/energy/e_gun/starwars/e11 = 1,
+		            /obj/item/clothing/shoes/imperial = 1,
+		            /obj/item/clothing/under/imperial = 1,
+		            /obj/item/clothing/under/imperial/stormtrooper = 1,
+		            /obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper = 1,
+		            /obj/item/grenade/flashbang = 5,
+		            /obj/item/restraints/handcuffs = 5,
+		            /obj/item/storage/backpack/security = 1,
+		            /obj/item/radio/headset/headset_sec = 1,
+		            /obj/item/clothing/gloves/combat = 1,
+		            /obj/item/tank/internals/oxygen/red = 1)
+
+/obj/machinery/vending/imperial/alpha/specalist
+	name = "Specialist Stormtrooper Armory Dispenser (Alpha)"
+	desc = "An equipment vendor for Specialist Alpha Squad Stormtroopers."
+	icon_state = "stormtrooper-alphaspec"
+	products = list(/obj/item/gun/energy/ionrifle/starwars/e12d = 1,
+		            /obj/item/clothing/shoes/imperial = 1,
+		            /obj/item/clothing/under/imperial = 1,
+		            /obj/item/clothing/under/imperial/stormtrooper = 1,
+		            /obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper = 1,
+		            /obj/item/grenade/flashbang = 5,
+		            /obj/item/restraints/handcuffs = 5,
+		            /obj/item/storage/backpack/security = 1,
+		            /obj/item/radio/headset/headset_sec = 1,
+		            /obj/item/clothing/gloves/combat = 1,
+		            /obj/item/tank/internals/oxygen/red = 1)
+
+/obj/machinery/vending/imperial/alpha/leader
+	name = "Squad Lead Stormtrooper Armory Dispenser (Alpha)"
+	desc = "An equipment vendor for Alpha Squad Leader."
+	icon_state = "stormtrooper-alphaleader"
+	products = list(/obj/item/gun/energy/laser/starwars/dlt19 = 1,
+		            /obj/item/clothing/shoes/imperial = 1,
+		            /obj/item/clothing/under/imperial = 1,
+		            /obj/item/clothing/under/imperial/stormtrooper = 1,
+		            /obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper = 1,
+		            /obj/item/grenade/flashbang = 5,
+		            /obj/item/restraints/handcuffs = 5,
+		            /obj/item/storage/backpack/security = 1,
+		            /obj/item/radio/headset/headset_sec = 1,
+		            /obj/item/clothing/gloves/combat = 1,
+		            /obj/item/tank/internals/oxygen/red = 1)
+
+/obj/machinery/vending/imperial/bravo
+	name = "Imperial Stormtrooper Armory Dispenser (Bravo)"
+	desc = "An equipment vendor for Bravo Squad Stormtroopers."
+	icon_state = "stormtrooper-bravo"
+	products = list(/obj/item/gun/energy/e_gun/starwars/e11 = 1,
+		            /obj/item/clothing/shoes/imperial = 1,
+		            /obj/item/clothing/under/imperial = 1,
+		            /obj/item/clothing/under/imperial/stormtrooper = 1,
+		            /obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper = 1,
+		            /obj/item/grenade/flashbang = 5,
+		            /obj/item/restraints/handcuffs = 5,
+		            /obj/item/storage/backpack/security = 1,
+		            /obj/item/radio/headset/headset_sec = 1,
+		            /obj/item/clothing/gloves/combat = 1,
+		            /obj/item/tank/internals/oxygen/red = 1)
+
+/obj/machinery/vending/imperial/bravo/specalist
+	name = "Specialist Stormtrooper Armory Dispenser (Bravo)"
+	desc = "An equipment vendor for Specialist Bravo Squad Stormtroopers."
+	icon_state = "stormtrooper-bravospec"
+	products = list(/obj/item/gun/energy/ionrifle/starwars/e12d = 1,
+		            /obj/item/clothing/shoes/imperial = 1,
+		            /obj/item/clothing/under/imperial = 1,
+		            /obj/item/clothing/under/imperial/stormtrooper = 1,
+		            /obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper = 1,
+		            /obj/item/grenade/flashbang = 5,
+		            /obj/item/restraints/handcuffs = 5,
+		            /obj/item/storage/backpack/security = 1,
+		            /obj/item/radio/headset/headset_sec = 1,
+		            /obj/item/clothing/gloves/combat = 1,
+		            /obj/item/tank/internals/oxygen/red = 1)
+
+/obj/machinery/vending/imperial/bravo/leader
+	name = "Squad Lead Stormtrooper Armory Dispenser (Bravo)"
+	desc = "An equipment vendor for Bravo Squad Leader."
+	icon_state = "stormtrooper-bravoleader"
+	products = list(/obj/item/gun/energy/laser/starwars/dlt19 = 1,
+		            /obj/item/clothing/shoes/imperial = 1,
+		            /obj/item/clothing/under/imperial = 1,
+		            /obj/item/clothing/under/imperial/stormtrooper = 1,
+		            /obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper = 1,
+		            /obj/item/grenade/flashbang = 5,
+		            /obj/item/restraints/handcuffs = 5,
+		            /obj/item/storage/backpack/security = 1,
+		            /obj/item/radio/headset/headset_sec = 1,
+		            /obj/item/clothing/gloves/combat = 1,
+		            /obj/item/tank/internals/oxygen/red = 1)
