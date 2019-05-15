@@ -36,7 +36,7 @@
 	icon_state = "tie_fighter"
 	locked = FALSE
 	armor_type = /obj/item/pod_parts/armor/fighter
-	equipment_types = list(/obj/item/spacepod_equipment/weaponry/disabler,
+	equipment_types = list(/obj/item/spacepod_equipment/weaponry/laser,
 		/obj/item/spacepod_equipment/lock/keyed/sec,
 		/obj/item/spacepod_equipment/tracker,
 		/obj/item/spacepod_equipment/cargo/chair)
@@ -46,7 +46,7 @@
 	icon_state = "tie_interceptor"
 	locked = TRUE
 	armor_type = /obj/item/pod_parts/armor/interceptor
-	equipment_types = list(/obj/item/spacepod_equipment/weaponry/disabler,
+	equipment_types = list(/obj/item/spacepod_equipment/weaponry/laser,
 		/obj/item/spacepod_equipment/lock/keyed/sec,
 		/obj/item/spacepod_equipment/tracker,
 		/obj/item/spacepod_equipment/cargo/chair)
@@ -56,7 +56,7 @@
 	icon_state = "tie_bomber2"
 	locked = TRUE
 	armor_type = /obj/item/pod_parts/armor/bomber
-	equipment_types = list(/obj/item/spacepod_equipment/weaponry/disabler,
+	equipment_types = list(/obj/item/spacepod_equipment/weaponry/laser,
 		/obj/item/spacepod_equipment/lock/keyed/sec,
 		/obj/item/spacepod_equipment/tracker,
 		/obj/item/spacepod_equipment/cargo/chair)
