@@ -2,7 +2,7 @@
 /mob/living/simple_animal/bot/cleanbot
 	name = "\improper Mouse droid"
 	desc = "A little cleaning robot, he looks so excited!"
-	icon = 'icons/starwars/mob/droids.dmi'
+	icon = 'icons/mob/aibots.dmi'
 	icon_state = "mousedroid0"
 	density = FALSE
 	anchored = FALSE
