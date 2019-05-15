@@ -32,7 +32,7 @@
 	container = null
 	return ..()
 
-/mob/living/brain/update_canmove()
+/mob/living/brain/update_mobility()
 	if(in_contents_of(/obj/mecha))
 		canmove = 1
 	else

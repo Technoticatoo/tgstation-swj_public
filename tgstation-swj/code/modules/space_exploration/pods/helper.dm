@@ -186,7 +186,7 @@
 		return attachments
 
 	proc/GetIterators()
-		return list(inertial_drift_iterator, equalize_air_iterator, process_attachments_iterator, pod_damage_iterator)
+		return list(equalize_air_iterator, process_attachments_iterator, pod_damage_iterator) //REMOVED BECYAUSE OF YOG: inertial_drift_iterator,
 
 	proc/GetLockType(var/_lock)
 		if(!_lock)

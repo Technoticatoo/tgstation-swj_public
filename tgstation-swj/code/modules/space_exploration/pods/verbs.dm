@@ -31,3 +31,13 @@
 		set src = usr.loc
 
 		OpenHUD(usr)
+
+	verb/toggle_brakes()
+		set name = "Toggle Brakes"
+		set category = "Pod"
+		set src = usr.loc
+
+		if(!verb_check())
+			return
+		brakes = !brakes
+		to_chat(usr, "<span class='notice'>You toggle the brakes [brakes ? "on" : "off"].</span>")

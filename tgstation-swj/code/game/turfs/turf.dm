@@ -131,6 +131,24 @@
 
 	return FALSE
 
+// YOG CODE
+
+/turf/proc/multiz_turf_del(turf/T, dir)
+
+/turf/proc/multiz_turf_new(turf/T, dir)
+
+//zPassIn doesn't necessarily pass an atom!
+//direction is direction of travel of air
+/turf/proc/zPassIn(atom/movable/A, direction, turf/source)
+	return FALSE
+
+//direction is direction of travel of air
+/turf/proc/zPassOut(atom/movable/A, direction, turf/destination)
+	return FALSE
+
+
+//END OF
+
 /turf/CanPass(atom/movable/mover, turf/target)
 	if(!target)
 		return FALSE

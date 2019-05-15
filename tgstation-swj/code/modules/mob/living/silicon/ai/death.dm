@@ -12,7 +12,7 @@
 	cameraFollow = null
 
 	anchored = FALSE //unbolt floorbolts
-	update_canmove()
+	update_mobility()
 	if(eyeobj)
 		eyeobj.setLoc(get_turf(src))
 

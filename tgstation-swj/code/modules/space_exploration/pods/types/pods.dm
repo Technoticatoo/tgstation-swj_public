@@ -26,7 +26,7 @@
 	gold/
 		name = "golden pod"
 		icon_state = "pod_gold"
-		move_cooldown = 1.5
+		//REPLACED BY YOG CODE: move_cooldown = 1.5
 
 		GetArmor()
 			return new /obj/item/pod_attachment/armor/gold(src)
@@ -66,7 +66,7 @@
 		name = "industrial pod"
 		icon_state = "pod_industrial"
 		health = 350
-		move_cooldown = 3
+		//REPLACED BY YOG CODE: move_cooldown = 3
 
 		GetAdditionalAttachments()
 			return list(new /obj/item/pod_attachment/cargo/industrial(src))
@@ -102,22 +102,22 @@
 	fighter/
 		name = "Tie Fighter"
 		icon_state = "tie_fighter"
-		move_cooldown = 2
+		//REPLACED BY YOG CODE: move_cooldown = 2
 
 		GetSeats()
 			return 1
 
 	interceptor/
 		name = "Tie Interceptor"
-		icon_state = "tie_interceptor"
-		move_cooldown = 1.5
+		icon_state = "tie_interceptor2"
+		//REPLACED BY YOG CODE: move_cooldown = 1.5
 
 		GetSeats()
 			return 1
 	bomber/
 		name = "Tie Bomber"
 		icon_state = "tie_bomber2"
-		move_cooldown = 2.5
+		//REPLACED BY YOG CODE: move_cooldown = 2.5
 
 		GetArmor()
 			return new /obj/item/pod_attachment/armor/heavy(src)
@@ -132,7 +132,7 @@
 /obj/pod/small
 	name = "miniputt"
 	health = 100
-	move_cooldown = 1.8
+	//REPLACED BY YOG CODE: move_cooldown = 1.8
 
 	GetSeats()
 		return 0
@@ -156,7 +156,7 @@
 	gold/
 		name = "golden miniputt"
 		icon_state = "putt_gold"
-		move_cooldown = 1.3
+		//REPLACED BY YOG CODE: move_cooldown = 1.3
 		health = 100
 
 		GetArmor()

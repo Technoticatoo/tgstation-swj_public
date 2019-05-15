@@ -378,7 +378,7 @@
 			// update resting manually to avoid chat spam
 			for(var/mob/living/carbon/NS in rangers)
 				NS.resting = !NS.resting
-				NS.update_canmove()
+				NS.update_mobility()
 		 time--
 
 /obj/machinery/jukebox/disco/proc/dance5(var/mob/living/M)

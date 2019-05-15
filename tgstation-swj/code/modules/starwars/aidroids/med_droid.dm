@@ -102,7 +102,7 @@
 	skin = new_skin
 	update_icon()
 
-/mob/living/simple_animal/bot/med_droid/update_canmove()
+/mob/living/simple_animal/bot/med_droid/update_mobility()
 	. = ..()
 	update_icon()
 

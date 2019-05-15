@@ -1,3 +1,5 @@
+/*
+Replaced by YOG code!
 /datum/global_iterator/pod_inertial_drift
 	delay = 4
 
@@ -21,7 +23,7 @@
 				return 0
 			spawn(-1)
 				pod.dir = pod.turn_direction
-
+*/
 // Took this from mecha, no need to rewrite anything existing.
 /datum/global_iterator/pod_equalize_air
 	delay = 10
@@ -71,13 +73,15 @@
 		for(var/obj/item/pod_attachment/A in pod.attachments)
 			A.PodProcess(pod)
 
+		/*REPLACED BY YOG MOVEMENT
 		var/obj/item/pod_attachment/engine/E = pod.GetAttachmentOnHardpoint(P_HARDPOINT_ENGINE)
+
 		if(E)
 			pod.move_cooldown = CLAMP((initial(pod.move_cooldown) + E.pod_move_reduction), 0.1, 5)
 			pod.inertial_drift_iterator.delay = initial(pod.inertial_drift_iterator.delay) + E.pod_move_reduction
 		else
 			pod.move_cooldown = initial(pod.move_cooldown)
-			pod.inertial_drift_iterator.delay = initial(pod.inertial_drift_iterator.delay)
+			pod.inertial_drift_iterator.delay = initial(pod.inertial_drift_iterator.delay)*/
 
 		if(pod.toggles & P_TOGGLE_LIGHTS)
 			pod.set_light(pod.lumens)

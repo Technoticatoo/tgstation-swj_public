@@ -7,7 +7,7 @@
 	icon_state = "miniputt"
 	density = 1
 	anchored = 1
-	layer = 3.2
+	layer = SPACEPOD_LAYER
 	resistance_flags = UNACIDABLE
 	var/dampener = 4
 	var/dampdelay = 0
@@ -15,11 +15,36 @@
 	var/obj/machinery/portable_atmospherics/canister/internal_canister
 	var/datum/gas_mixture/internal_air
 	var/obj/item/stock_parts/cell/power_source
+	/* REPLACED BY YOG CODE
 	var/inertial_direction = NORTH
-	var/turn_direction = NORTH
-	var/last_move_time = 0
 	var/move_cooldown = 2
+	var/turn_direction = NORTH*/
+	//var/last_move_time = 0
+
 	var/enter_delay = 10
+
+// YOG VARIABLES
+	var/velocity_x = 0 // tiles per second.
+	var/velocity_y = 0
+	var/offset_x = 0 // like pixel_x/y but in tiles
+	var/offset_y = 0
+	var/angle = 0 // degrees, clockwise
+	var/desired_angle = null // set by pilot moving his mouse
+	var/angular_velocity = 0 // degrees per second
+	var/max_angular_acceleration = 360 // in degrees per second per second
+	var/last_thrust_forward = 0
+	var/last_thrust_right = 0
+	var/last_rotate = 0
+	var/brakes = TRUE
+	var/user_thrust_dir = 0
+	var/forward_maxthrust = 6
+	var/backward_maxthrust = 3
+	var/side_maxthrust = 1
+	var/bump_impulse = 0.6
+	var/bounce_factor = 0.2 // how much of our velocity to keep on collision
+	var/lateral_bounce_factor = 0.95 // mostly there to slow you down when you drive (pilot?) down a 2x2 corridor
+// END OF
+
 	var/exit_delay = 10
 	var/list/locks = list() // DNA (unique_enzymes) or code lock.
 	var/lumens = 6
@@ -31,7 +56,9 @@
 	var/list/hardpoints = list()
 	var/list/attachments = list()
 
-	var/datum/global_iterator/pod_inertial_drift/inertial_drift_iterator
+/*Replaced by YOG code!
+	var/datum/global_iterator/pod_inertial_drift/inertial_drift_iterator*/
+
 	var/datum/global_iterator/pod_equalize_air/equalize_air_iterator
 	var/datum/global_iterator/pod_attachment_processor/process_attachments_iterator
 	var/datum/global_iterator/pod_damage/pod_damage_iterator
@@ -44,7 +71,7 @@
 
 	Initialize()
 		..()
-
+		START_PROCESSING(SSfastprocess, src)
 		if(!size || !size.len)
 			qdel(src)
 			return
@@ -67,7 +94,7 @@
 			GLOB.pod_config = new()*/
 
 		spawn(0)
-			inertial_drift_iterator = new(list(src))
+			//Replaced by YOG code: inertial_drift_iterator = new(list(src))
 			equalize_air_iterator = new(list(src))
 			process_attachments_iterator = new(list(src))
 			pod_damage_iterator = new(list(src))
@@ -132,6 +159,44 @@
 		if(HasDamageFlag(P_DAMAGE_FIRE))
 			overlays += image(icon = "icons/oldschool/spacepods/pod-[size[1]]-[size[2]].dmi", icon_state = "pod_fire")
 
+// YOG Thrust!
+		var/list/left_thrusts = list()
+		left_thrusts.len = 8
+		var/list/right_thrusts = list()
+		right_thrusts.len = 8
+		for(var/cdir in GLOB.cardinals)
+			left_thrusts[cdir] = 0
+			right_thrusts[cdir] = 0
+		var/back_thrust = 0
+		if(last_thrust_right != 0)
+			var/tdir = last_thrust_right > 0 ? WEST : EAST
+			left_thrusts[tdir] = abs(last_thrust_right) / side_maxthrust
+			right_thrusts[tdir] = abs(last_thrust_right) / side_maxthrust
+		if(last_thrust_forward > 0)
+			back_thrust = last_thrust_forward / forward_maxthrust
+		if(last_thrust_forward < 0)
+			left_thrusts[NORTH] = -last_thrust_forward / backward_maxthrust
+			right_thrusts[NORTH] = -last_thrust_forward / backward_maxthrust
+		if(last_rotate != 0)
+			var/frac = abs(last_rotate) / max_angular_acceleration
+			for(var/cdir in GLOB.cardinals)
+				if(last_rotate > 0)
+					right_thrusts[cdir] += frac
+				else
+					left_thrusts[cdir] += frac
+		for(var/cdir in GLOB.cardinals)
+			var/left_thrust = left_thrusts[cdir]
+			var/right_thrust = right_thrusts[cdir]
+			if(left_thrust)
+				add_overlay(image(icon = 'icons/starwars/fighters.dmi', icon_state = "rcs_left", dir = cdir))
+			if(right_thrust)
+				add_overlay(image(icon = 'icons/starwars/fighters.dmi', icon_state = "rcs_right", dir = cdir))
+		if(back_thrust)
+			var/image/I = image(icon = 'icons/starwars/fighters.dmi', icon_state = "thrust")
+			I.transform = matrix(1, 0, 0, 0, 1, -32)
+			add_overlay(I)
+//END OF
+
 	proc/HandleExit(var/mob/living/carbon/human/H)
 		if(toggles & P_TOGGLE_HUDLOCK)
 			if(alert(H, "Outside HUD Access is diabled, are you sure you want to exit?", "Confirmation", "Yes", "No") == "No")
@@ -185,9 +250,12 @@
 			if(dropping == user)
 				HandleEnter(dropping)
 
+/*	Commented Out because of YOG movement
+
 	relaymove(var/mob/user, var/_dir)
 		if(user == pilot)
 			DoMove(user, _dir)
+
 
 	proc/DoMove(var/mob/user, var/_dir)
 		if(user != pilot)
@@ -275,6 +343,7 @@
 			inertial_direction = _dir
 
 		last_move_time = world.time
+*/
 
 	attack_hand(var/mob/living/user)
 		if(user.a_intent == "grab")
@@ -514,6 +583,47 @@
 			user.client.debug_variables(pod_log)
 
 		OpenDebugMenu(user)
+
+
+//YOG CODE
+
+/obj/pod/onMouseMove(object,location,control,params)
+	if(!pilot || !pilot.client || pilot.incapacitated())
+		return // I don't know what's going on.
+	var/list/params_list = params2list(params)
+	var/sl_list = splittext(params_list["screen-loc"],",")
+	var/sl_x_list = splittext(sl_list[1], ":")
+	var/sl_y_list = splittext(sl_list[2], ":")
+	var/view_list = isnum(pilot.client.view) ? list("[pilot.client.view*2+1]","[pilot.client.view*2+1]") : splittext(pilot.client.view, "x")
+	var/dx = text2num(sl_x_list[1]) + (text2num(sl_x_list[2]) / world.icon_size) - 1 - text2num(view_list[1]) / 2
+	var/dy = text2num(sl_y_list[1]) + (text2num(sl_y_list[2]) / world.icon_size) - 1 - text2num(view_list[2]) / 2
+	if(sqrt(dx*dx+dy*dy) > 1)
+		desired_angle = 90 - ATAN2(dx, dy)
+	else
+		desired_angle = null
+
+
+/obj/pod/relaymove(mob/user, direction)
+	if(user != pilot || pilot.incapacitated())
+		return
+	user_thrust_dir = direction
+
+/obj/pod/AltClick(user)
+	if(!verb_check(user = user))
+		return
+	brakes = !brakes
+	to_chat(usr, "<span class='notice'>You toggle the brakes [brakes ? "on" : "off"].</span>")
+
+/obj/pod/proc/verb_check(require_pilot = TRUE, mob/user = null)
+	if(!user)
+		user = usr
+	if(require_pilot && user != pilot)
+		to_chat(user, "<span class='notice'>You can't reach the controls from your chair</span>")
+		return FALSE
+	return !user.incapacitated() && isliving(user)
+
+// END OF
+
 
 /obj/pod/Bump(atom/movable/M)
 	. = ..()

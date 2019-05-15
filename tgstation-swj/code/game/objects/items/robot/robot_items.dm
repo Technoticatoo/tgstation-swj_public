@@ -84,7 +84,7 @@
 								"<span class='notice'>You hug [M] to make [M.p_them()] feel better!</span>")
 					if(M.resting)
 						M.resting = FALSE
-						M.update_canmove()
+						M.update_mobility()
 				else
 					user.visible_message("<span class='notice'>[user] pets [M]!</span>", \
 							"<span class='notice'>You pet [M]!</span>")
@@ -104,7 +104,7 @@
 								"<span class='warning'>You hug [M] firmly to make [M.p_them()] feel better! [M] looks uncomfortable...</span>")
 					if(M.resting)
 						M.resting = FALSE
-						M.update_canmove()
+						M.update_mobility()
 				else
 					user.visible_message("<span class='warning'>[user] bops [M] on the head!</span>", \
 							"<span class='warning'>You bop [M] on the head!</span>")
@@ -116,7 +116,7 @@
 						M.electrocute_act(5, "[user]", safety = 1)
 						user.visible_message("<span class='userdanger'>[user] electrocutes [M] with [user.p_their()] touch!</span>", \
 							"<span class='danger'>You electrocute [M] with your touch!</span>")
-						M.update_canmove()
+						M.update_mobility()
 					else
 						if(!iscyborg(M))
 							M.adjustFireLoss(10)

@@ -223,10 +223,28 @@
 			if(hitscan)
 				store_hitscan_collision(pcache)
 			return TRUE
+/* REPLACED BY YOG CODE
 	if(firer && !ignore_source_check)
 		if(A == firer || (A == firer.loc && ismecha(A))) //cannot shoot yourself or your mech
 			trajectory_ignore_forcemove = TRUE
 			forceMove(get_turf(A))
+			trajectory_ignore_forcemove = FALSE
+			return FALSE
+
+			*/
+
+	if(firer && !ignore_source_check)
+		var/mob/checking = firer
+		if((A == firer) || (((A in firer.buckled_mobs) || (istype(checking) && (A == checking.buckled))) && (A != original)) || (A == firer.loc && (ismecha(A) || isspacepod(A)))) //cannot shoot yourself or your mech // yogs - or your spacepod
+			trajectory_ignore_forcemove = TRUE
+			// yogs start - multitile objects
+			var/turf/T = trajectory.return_turf()
+			if(!istype(T))
+				qdel(src)
+				return
+			if(T != loc)
+				forceMove(get_step_towards(src, T))
+			// yogs end
 			trajectory_ignore_forcemove = FALSE
 			return FALSE
 

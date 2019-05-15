@@ -417,7 +417,7 @@
 	else
 		..()
 
-/mob/living/simple_animal/update_canmove(value_otherwise = TRUE)
+/mob/living/simple_animal/update_mobility(value_otherwise = TRUE)
 	if(IsUnconscious() || IsStun() || IsKnockdown() || stat || resting)
 		drop_all_held_items()
 		canmove = FALSE

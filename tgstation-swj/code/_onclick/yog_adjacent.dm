@@ -1,4 +1,4 @@
-/*
+	/*
 	Adjacency proc for determining touch range
 
 	This is mostly to determine if a user can enter a square for the purposes of touching something.
@@ -44,6 +44,8 @@
 					return TRUE
 			return FALSE
 
+// YOG deleted all of the following, why?
+
 	var/turf/T0 = get_turf(neighbor)
 
 	if(T0 == src) //same turf
@@ -78,6 +80,8 @@
 		return TRUE // we don't care about our own density
 
 	return FALSE
+
+//  Till here, added instead:  return ..()
 
 /*
 	Adjacency (to anything else):

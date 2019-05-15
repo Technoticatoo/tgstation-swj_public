@@ -108,21 +108,21 @@
 
 /mob/living/Resting(amount)
 	..()
-	update_canmove()
+	update_mobility()
 
 /mob/proc/SetResting(amount)
 	resting = max(amount,0)
 
 /mob/living/SetResting(amount)
 	..()
-	update_canmove()
+	update_mobility()
 
 /mob/proc/AdjustResting(amount)
 	resting = max(resting + amount,0)
 
 /mob/living/AdjustResting(amount)
 	..()
-	update_canmove()
+	update_mobility()
 
 /////////////////////////////////// JITTERINESS ////////////////////////////////////
 

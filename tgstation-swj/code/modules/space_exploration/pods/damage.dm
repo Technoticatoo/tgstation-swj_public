@@ -108,8 +108,8 @@
 		for(var/mob/living/carbon/human/H in GetOccupants())
 			H.loc = get_turf(src)
 
-			if(istype(get_turf(src), /turf/open/space) && inertial_direction)
-				step(H, inertial_direction)
+			if(istype(get_turf(src), /turf/open/space) && angle)
+				step(H, angle)
 
 			if(H == pilot)
 				pilot = 0
