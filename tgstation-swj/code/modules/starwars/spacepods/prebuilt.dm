@@ -1,6 +1,7 @@
 /obj/spacepod/prebuilt
-	icon = 'icons/starwars/spacepods/2x2.dmi'
-	icon_state = "pod_civ"
+	icon = 'icons/starwars/fighters.dmi'
+//	icon = 'icons/starwars/spacepods/2x2.dmi'
+	icon_state = "tie_fighter3"
 	var/cell_type = /obj/item/stock_parts/cell/high/plus
 	var/armor_type = /obj/item/pod_parts/armor
 	var/internal_tank_type = /obj/machinery/portable_atmospherics/canister/air
@@ -17,6 +18,7 @@
 	for(var/equip in equipment_types)
 		var/obj/item/spacepod_equipment/SE = new equip(src)
 		SE.on_install(src)
+/*
 
 /obj/spacepod/prebuilt/sec
 	name = "security space pod"
@@ -27,9 +29,9 @@
 		/obj/item/spacepod_equipment/lock/keyed/sec,
 		/obj/item/spacepod_equipment/tracker,
 		/obj/item/spacepod_equipment/cargo/chair)
+*/
 
 /obj/spacepod/prebuilt/fighter
-	icon = 'icons/starwars/fighters.dmi'
 	name = "Tie Fighter"
 	icon_state = "tie_fighter"
 	locked = FALSE
@@ -40,7 +42,6 @@
 		/obj/item/spacepod_equipment/cargo/chair)
 
 /obj/spacepod/prebuilt/interceptor
-	icon = 'icons/starwars/fighters.dmi'
 	name = "Tie Interceptor"
 	icon_state = "tie_interceptor"
 	locked = TRUE
@@ -51,7 +52,6 @@
 		/obj/item/spacepod_equipment/cargo/chair)
 
 /obj/spacepod/prebuilt/bomber
-	icon = 'icons/starwars/fighters.dmi'
 	name = "Tie Bomber"
 	icon_state = "tie_bomber2"
 	locked = TRUE
