@@ -1,4 +1,4 @@
-	/obj/spacepod/prebuilt
+/obj/spacepod/prebuilt
 	icon = 'icons/starwars/fighters.dmi'
 //	icon = 'icons/starwars/spacepods/2x2.dmi'
 	icon_state = "tie_fighter3"
